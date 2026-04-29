@@ -1,0 +1,56 @@
+{
+  "num_layers": 3,
+  "base_neighbors": 128,
+  "neighbors": {
+    "('races', 'rev_f2p_raceId', 'qualifying')": [
+      128,
+      0,
+      128
+    ],
+    "('constructor_standings', 'f2p_constructorId', 'constructors')": [
+      128,
+      128,
+      0
+    ],
+    "('qualifying', 'f2p_constructorId', 'constructors')": [
+      128,
+      128,
+      0
+    ],
+    "('results', 'f2p_constructorId', 'constructors')": [
+      128,
+      128,
+      0
+    ],
+    "('circuits', 'rev_f2p_circuitId', 'races')": [
+      128,
+      128,
+      0
+    ],
+    "('constructor_results', 'f2p_raceId', 'races')": [
+      128,
+      128,
+      0
+    ],
+    "('constructor_standings', 'f2p_raceId', 'races')": [
+      128,
+      128,
+      0
+    ],
+    "('qualifying', 'f2p_raceId', 'races')": [
+      128,
+      128,
+      0
+    ],
+    "('results', 'f2p_raceId', 'races')": [
+      128,
+      128,
+      0
+    ],
+    "('standings', 'f2p_raceId', 'races')": [
+      128,
+      128,
+      0
+    ]
+  }
+}

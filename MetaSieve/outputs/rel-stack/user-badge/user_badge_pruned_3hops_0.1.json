@@ -1,0 +1,51 @@
+{
+  "num_layers": 3,
+  "base_neighbors": 64,
+  "neighbors": {
+    "('posts', 'f2p_AcceptedAnswerId', 'posts')": [
+      64,
+      0,
+      64
+    ],
+    "('postLinks', 'f2p_RelatedPostId', 'posts')": [
+      64,
+      64,
+      0
+    ],
+    "('comments', 'f2p_PostId', 'posts')": [
+      64,
+      64,
+      0
+    ],
+    "('postHistory', 'f2p_PostId', 'posts')": [
+      64,
+      64,
+      0
+    ],
+    "('postLinks', 'f2p_PostId', 'posts')": [
+      64,
+      64,
+      0
+    ],
+    "('votes', 'f2p_PostId', 'posts')": [
+      64,
+      64,
+      0
+    ],
+    "('users', 'rev_f2p_OwnerUserId', 'posts')": [
+      64,
+      64,
+      0
+    ],
+    "('posts', 'f2p_ParentId', 'posts')": [
+      64,
+      64,
+      0
+    ],
+    "('posts', 'rev_f2p_AcceptedAnswerId', 'posts')": [
+      64,
+      64,
+      0
+    ]
+  }
+}

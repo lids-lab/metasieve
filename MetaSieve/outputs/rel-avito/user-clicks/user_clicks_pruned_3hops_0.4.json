@@ -1,0 +1,66 @@
+{
+  "num_layers": 3,
+  "base_neighbors": 64,
+  "neighbors": {
+    "('AdsInfo', 'rev_f2p_AdID', 'PhoneRequestsStream')": [
+      64,
+      0,
+      64
+    ],
+    "('SearchStream', 'f2p_SearchID', 'SearchInfo')": [
+      64,
+      0,
+      64
+    ],
+    "('Category', 'rev_f2p_CategoryID', 'AdsInfo')": [
+      64,
+      64,
+      0
+    ],
+    "('Location', 'rev_f2p_LocationID', 'AdsInfo')": [
+      64,
+      64,
+      0
+    ],
+    "('PhoneRequestsStream', 'f2p_AdID', 'AdsInfo')": [
+      64,
+      64,
+      0
+    ],
+    "('SearchStream', 'f2p_AdID', 'AdsInfo')": [
+      64,
+      64,
+      0
+    ],
+    "('VisitStream', 'f2p_AdID', 'AdsInfo')": [
+      64,
+      64,
+      0
+    ],
+    "('AdsInfo', 'f2p_CategoryID', 'Category')": [
+      64,
+      64,
+      0
+    ],
+    "('SearchInfo', 'f2p_CategoryID', 'Category')": [
+      64,
+      64,
+      0
+    ],
+    "('AdsInfo', 'f2p_LocationID', 'Location')": [
+      64,
+      64,
+      0
+    ],
+    "('SearchInfo', 'f2p_LocationID', 'Location')": [
+      64,
+      64,
+      0
+    ],
+    "('AdsInfo', 'rev_f2p_AdID', 'SearchStream')": [
+      64,
+      64,
+      0
+    ]
+  }
+}
