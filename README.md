@@ -2,7 +2,7 @@
 
 ## Environment Setup
 
-**Requirements:** Linux x86_64, NVIDIA GPU with CUDA driver ≥ 12.1, [Conda](https://docs.conda.io/en/latest/miniconda.html). macOS and Windows are not supported (several dependencies ship Linux-only wheels).
+**Requirements:** Linux x86_64, NVIDIA GPU with CUDA driver ≥ 12.1, [Conda](https://docs.conda.io/en/latest/miniconda.html). 
 
 Verify your CUDA driver:
 ```bash
@@ -15,8 +15,8 @@ The `CUDA Version` shown must be ≥ 12.1.
 From the repo root:
 ```bash
 conda env create -f environment.yml
-conda activate metasieve```
-
+conda activate metasieve
+```
 First run takes 10–20 minutes (downloads ~3 GB of PyTorch + CUDA libraries).
 
 ### Verify
