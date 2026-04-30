@@ -1,0 +1,31 @@
+{
+  "num_layers": 3,
+  "base_neighbors": 64,
+  "neighbors": {
+    "('drop_withdrawals', 'f2p_nct_id', 'studies')": [
+      64,
+      64,
+      0
+    ],
+    "('facilities_studies', 'f2p_nct_id', 'studies')": [
+      64,
+      64,
+      0
+    ],
+    "('outcome_analyses', 'f2p_nct_id', 'studies')": [
+      64,
+      64,
+      0
+    ],
+    "('outcomes', 'f2p_nct_id', 'studies')": [
+      64,
+      64,
+      0
+    ],
+    "('reported_event_totals', 'f2p_nct_id', 'studies')": [
+      64,
+      64,
+      0
+    ]
+  }
+}

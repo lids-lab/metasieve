@@ -1,0 +1,66 @@
+{
+  "num_layers": 3,
+  "base_neighbors": 16,
+  "neighbors": {
+    "('postLinks', 'f2p_RelatedPostId', 'posts')": [
+      16,
+      0,
+      0
+    ],
+    "('votes', 'f2p_UserId', 'users')": [
+      16,
+      0,
+      0
+    ],
+    "('users', 'rev_f2p_UserId', 'votes')": [
+      16,
+      0,
+      16
+    ],
+    "('posts', 'f2p_OwnerUserId', 'users')": [
+      16,
+      16,
+      0
+    ],
+    "('badges', 'f2p_UserId', 'users')": [
+      16,
+      16,
+      0
+    ],
+    "('comments', 'f2p_UserId', 'users')": [
+      16,
+      16,
+      0
+    ],
+    "('postHistory', 'f2p_UserId', 'users')": [
+      16,
+      16,
+      0
+    ],
+    "('posts', 'rev_f2p_PostId', 'postLinks')": [
+      16,
+      16,
+      0
+    ],
+    "('posts', 'rev_f2p_PostId', 'votes')": [
+      16,
+      16,
+      0
+    ],
+    "('posts', 'rev_f2p_ParentId', 'posts')": [
+      16,
+      16,
+      0
+    ],
+    "('posts', 'f2p_AcceptedAnswerId', 'posts')": [
+      16,
+      16,
+      0
+    ],
+    "('votes', 'f2p_PostId', 'posts')": [
+      16,
+      16,
+      0
+    ]
+  }
+}

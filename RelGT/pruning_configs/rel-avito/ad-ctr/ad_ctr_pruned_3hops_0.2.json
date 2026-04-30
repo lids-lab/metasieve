@@ -1,0 +1,31 @@
+{
+  "num_layers": 3,
+  "base_neighbors": 64,
+  "neighbors": {
+    "('SearchStream', 'f2p_AdID', 'AdsInfo')": [
+      64,
+      64,
+      0
+    ],
+    "('VisitStream', 'f2p_AdID', 'AdsInfo')": [
+      64,
+      64,
+      0
+    ],
+    "('UserInfo', 'rev_f2p_UserID', 'SearchInfo')": [
+      64,
+      64,
+      0
+    ],
+    "('SearchStream', 'f2p_SearchID', 'SearchInfo')": [
+      64,
+      64,
+      0
+    ],
+    "('Location', 'rev_f2p_LocationID', 'SearchInfo')": [
+      64,
+      64,
+      0
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "num_layers": 3,
+  "base_neighbors": 64,
+  "neighbors": {
+    "('conditions', 'rev_f2p_condition_id', 'conditions_studies')": [
+      64,
+      0,
+      64
+    ],
+    "('interventions', 'rev_f2p_intervention_id', 'interventions_studies')": [
+      64,
+      0,
+      64
+    ],
+    "('conditions_studies', 'f2p_condition_id', 'conditions')": [
+      64,
+      64,
+      0
+    ],
+    "('facilities_studies', 'f2p_facility_id', 'facilities')": [
+      64,
+      64,
+      0
+    ],
+    "('interventions_studies', 'f2p_intervention_id', 'interventions')": [
+      64,
+      64,
+      0
+    ]
+  }
+}

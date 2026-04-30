@@ -1,0 +1,136 @@
+{
+  "num_layers": 3,
+  "base_neighbors": 16,
+  "neighbors": {
+    "('users', 'rev_f2p_user_id', 'availability')": [
+      16,
+      0,
+      0
+    ],
+    "('beer_ratings', 'f2p_availability_id', 'availability')": [
+      16,
+      0,
+      0
+    ],
+    "('availability', 'rev_f2p_availability_id', 'beer_ratings')": [
+      16,
+      0,
+      16
+    ],
+    "('users', 'rev_f2p_user_id', 'favorites')": [
+      16,
+      0,
+      16
+    ],
+    "('availability', 'f2p_country_id', 'countries')": [
+      16,
+      16,
+      0
+    ],
+    "('brewers', 'f2p_country_id', 'countries')": [
+      16,
+      16,
+      0
+    ],
+    "('places', 'f2p_country_id', 'countries')": [
+      16,
+      16,
+      0
+    ],
+    "('places', 'f2p_state_id', 'states')": [
+      16,
+      16,
+      0
+    ],
+    "('brewers', 'f2p_type_id', 'place_types')": [
+      16,
+      16,
+      0
+    ],
+    "('places', 'f2p_type_id', 'place_types')": [
+      16,
+      16,
+      0
+    ],
+    "('favorites', 'f2p_beer_id', 'beers')": [
+      16,
+      16,
+      0
+    ],
+    "('brewers', 'rev_f2p_brewer_id', 'beers')": [
+      16,
+      16,
+      0
+    ],
+    "('beer_ratings', 'f2p_beer_id', 'beers')": [
+      16,
+      16,
+      0
+    ],
+    "('beer_upcs', 'f2p_beer_id', 'beers')": [
+      16,
+      16,
+      0
+    ],
+    "('states', 'f2p_country_id', 'countries')": [
+      16,
+      16,
+      0
+    ],
+    "('availability', 'f2p_place_id', 'places')": [
+      16,
+      16,
+      0
+    ],
+    "('place_ratings', 'f2p_place_id', 'places')": [
+      16,
+      16,
+      0
+    ],
+    "('availability', 'f2p_user_id', 'users')": [
+      16,
+      16,
+      0
+    ],
+    "('beer_ratings', 'f2p_user_id', 'users')": [
+      16,
+      16,
+      0
+    ],
+    "('favorites', 'f2p_user_id', 'users')": [
+      16,
+      16,
+      0
+    ],
+    "('place_ratings', 'f2p_user_id', 'users')": [
+      16,
+      16,
+      0
+    ],
+    "('beers', 'rev_f2p_beer_id', 'beer_ratings')": [
+      16,
+      16,
+      0
+    ],
+    "('users', 'rev_f2p_user_id', 'beer_ratings')": [
+      16,
+      16,
+      0
+    ],
+    "('beers', 'rev_f2p_beer_id', 'availability')": [
+      16,
+      16,
+      0
+    ],
+    "('countries', 'rev_f2p_country_id', 'availability')": [
+      16,
+      16,
+      0
+    ],
+    "('places', 'rev_f2p_place_id', 'availability')": [
+      16,
+      16,
+      0
+    ]
+  }
+}
