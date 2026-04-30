@@ -28,3 +28,10 @@ python -c "from relbench.datasets import get_dataset; print('RelBench OK')"
 ```
 
 All three should succeed and the first should print `True`.
+
+
+## MetaSieve Code 
+
+## MPS-GNN Code (configured for [Relbench](https://relbench.stanford.edu/) datasets)
+
+## RelGT Code ([main-code](https://github.com/snap-stanford/relgt/tree/main))
