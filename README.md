@@ -2,7 +2,7 @@
 
 ## Environment Setup
 
-**Requirements:** Linux x86_64, NVIDIA GPU with CUDA driver ≥ 12.1, [Conda](https://docs.conda.io/en/latest/miniconda.html). 
+**Requirements:** Linux x86_64, NVIDIA GPU, and [Conda](https://docs.conda.io/en/latest/miniconda.html). 
 
 Verify your CUDA driver:
 ```bash
@@ -28,12 +28,3 @@ python -c "from relbench.datasets import get_dataset; print('RelBench OK')"
 ```
 
 All three should succeed and the first should print `True`.
-
-### Updating
-
-If `environment.yml` changes, recreate from scratch:
-```bash
-conda deactivate
-conda env remove -n metasieve
-conda env create -f environment.yml
-```
