@@ -22,6 +22,6 @@ First run takes 10–20 minutes (downloads ~3 GB of PyTorch + CUDA libraries).
 
 ## MetaSieve Code 
 
-## MPS-GNN Code (configured for [Relbench](https://relbench.stanford.edu/) datasets)
+## MPS-GNN Code ([main-code](https://github.com/francescoferrini/MPS-GNN))
 
 ## RelGT Code ([main-code](https://github.com/snap-stanford/relgt/tree/main))
