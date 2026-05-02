@@ -19,16 +19,6 @@ conda activate metasieve
 ```
 First run takes 10–20 minutes (downloads ~3 GB of PyTorch + CUDA libraries).
 
-### Verify
-
-```bash
-python -c "import torch; print('CUDA:', torch.cuda.is_available())"
-python -c "import torch_scatter, torch_sparse, torch_cluster, pyg_lib; print('PyG OK')"
-python -c "from relbench.datasets import get_dataset; print('RelBench OK')"
-```
-
-All three should succeed and the first should print `True`.
-
 
 ## MetaSieve Code 
 

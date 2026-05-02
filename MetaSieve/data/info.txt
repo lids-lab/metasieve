@@ -1,1 +1,1 @@
-Make sure that the downloaded datasets are kept here
+Make sure that the dataset materialized cache (generated once by make_pkey_fkey_graph(...) and reused) are stored here
