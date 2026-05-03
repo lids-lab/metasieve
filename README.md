@@ -20,7 +20,9 @@ conda activate metasieve
 First run takes 10–20 minutes (downloads ~3 GB of PyTorch + CUDA libraries).
 
 
-## MetaSieve Code 
+## MetaSieve Code
+
+MetaSieve is the core contribution of this repo — an SQL-based metapath selection method for relational deep learning. Instructions for running the pipeline and training GNN models with the generated configs are in the [MetaSieve](./MetaSieve) folder.
 
 ## MPS-GNN Code
 The original MPS-GNN [paper](https://openreview.net/pdf?id=8Q4qxe9a9Z), [code](https://github.com/francescoferrini/MPS-GNN) (Ferrini et al., TMLR 2025) was designed to search for informative metapaths in small non-temporal relational databases (EICU, MONDIAL, ErgastF1).
