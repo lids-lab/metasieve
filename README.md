@@ -27,4 +27,5 @@ The original MPS-GNN [paper](https://openreview.net/pdf?id=8Q4qxe9a9Z), [code](h
 
 Relbench datasets are large **heterogeneous** and **temporal** graphs. In order to bridge this gap, the official MPS-GNN code was adapted to work with the Relbench datasets and tasks. The changes are detailed in the [MPS-GNN](./MPS-GNN) folder.
 
-## RelGT Code ([main-code](https://github.com/snap-stanford/relgt/tree/main))
+## RelGT Code
+The original [RelGT](https://github.com/snap-stanford/relgt/tree/main) (Relbench Graph Transformer) precomputes and caches subgraphs for all seed nodes before training. To evaluate the effect of the sampling configs produced by MetaSieve and MPS-GNN, RelGT needs to sample subgraphs on the fly — at training time, using random, MetaSieve, or MPS-GNN configs. The modifications needed to support this and details on running experiments are in the [RelGT](./RelGT) folder.
