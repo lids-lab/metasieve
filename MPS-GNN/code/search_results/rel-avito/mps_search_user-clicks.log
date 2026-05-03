@@ -1,0 +1,197 @@
+[RUN_START] 2026-03-04T21:54:42.434352
+DATASET_NAME=rel-avito
+TASK_NAME=user-clicks
+NUM_LAYERS=4
+num_neighbors=[32, 32, 32, 32]
+train_sample: n_pos=300, n_neg=420
+val_sample:   n_pos=80, n_neg=112
+SEARCH_L_MAX=3
+SEARCH_K=3
+SEARCH_BEAM_WIDTH=6
+SEARCH_SAMPLING_SIZE=1
+SEARCH_RANK_METRIC=auc_roc
+------------------------------------------------------------
+2026-03-04 21:54:42,553 - INFO - [MPS] rank_metric=auc_roc (used for beam pruning, ranking, and top-k combination checks)
+2026-03-04 21:54:42,588 - INFO - [MPS] #candidate relations (connected to targets): 3
+2026-03-04 22:15:43,022 - INFO - [MPS][hop=1] best relations (lower score loss is better):
+2026-03-04 22:15:43,024 - INFO -   rel=1    loss=5811.45 name=('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+2026-03-04 22:15:43,024 - INFO -   rel=13   loss=11861 name=('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+2026-03-04 22:15:43,024 - INFO -   rel=9    loss=26559.4 name=('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+2026-03-04 22:15:43,024 - INFO - [MPS][hop=1] worst relations:
+2026-03-04 22:15:43,024 - INFO -   rel=1    loss=5811.45 name=('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+2026-03-04 22:15:43,024 - INFO -   rel=13   loss=11861 name=('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+2026-03-04 22:15:43,024 - INFO -   rel=9    loss=26559.4 name=('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+2026-03-04 22:15:43,024 - INFO - [MPS][hop=1] evaluating top-3 seeds with mpgnn() on split=val
+2026-03-04 22:28:14,962 - INFO - [MPS][hop=2] extending mp=[1] | #candidates=2 | taking top-2
+2026-03-04 22:28:14,963 - INFO - [MPS][hop=2] best extensions for mp=[1]:
+2026-03-04 22:28:14,963 - INFO -   rel=0    loss=6884 name=('VisitStream', 'f2p_UserID', 'UserInfo')
+2026-03-04 22:28:14,963 - INFO -   rel=2    loss=33378.1 name=('VisitStream', 'f2p_AdID', 'AdsInfo')
+2026-03-04 22:28:14,963 - INFO - [MPS][hop=2] worst extensions for mp=[1]:
+2026-03-04 22:28:14,963 - INFO -   rel=0    loss=6884 name=('VisitStream', 'f2p_UserID', 'UserInfo')
+2026-03-04 22:28:14,963 - INFO -   rel=2    loss=33378.1 name=('VisitStream', 'f2p_AdID', 'AdsInfo')
+2026-03-04 22:36:39,254 - INFO - [MPS][hop=2] extending mp=[13] | #candidates=4 | taking top-3
+2026-03-04 22:36:39,255 - INFO - [MPS][hop=2] best extensions for mp=[13]:
+2026-03-04 22:36:39,255 - INFO -   rel=12   loss=629 name=('SearchInfo', 'f2p_UserID', 'UserInfo')
+2026-03-04 22:36:39,255 - INFO -   rel=14   loss=11878.6 name=('SearchInfo', 'f2p_LocationID', 'Location')
+2026-03-04 22:36:39,255 - INFO -   rel=5    loss=16126.1 name=('SearchInfo', 'rev_f2p_SearchID', 'SearchStream')
+2026-03-04 22:36:39,255 - INFO -   rel=16   loss=22818.7 name=('SearchInfo', 'f2p_CategoryID', 'Category')
+2026-03-04 22:36:39,255 - INFO - [MPS][hop=2] worst extensions for mp=[13]:
+2026-03-04 22:36:39,255 - INFO -   rel=12   loss=629 name=('SearchInfo', 'f2p_UserID', 'UserInfo')
+2026-03-04 22:36:39,255 - INFO -   rel=14   loss=11878.6 name=('SearchInfo', 'f2p_LocationID', 'Location')
+2026-03-04 22:36:39,255 - INFO -   rel=5    loss=16126.1 name=('SearchInfo', 'rev_f2p_SearchID', 'SearchStream')
+2026-03-04 22:36:39,255 - INFO -   rel=16   loss=22818.7 name=('SearchInfo', 'f2p_CategoryID', 'Category')
+2026-03-04 22:43:24,684 - INFO - [MPS][hop=2] extending mp=[9] | #candidates=2 | taking top-2
+2026-03-04 22:43:24,685 - INFO - [MPS][hop=2] best extensions for mp=[9]:
+2026-03-04 22:43:24,685 - INFO -   rel=10   loss=482 name=('PhoneRequestsStream', 'f2p_AdID', 'AdsInfo')
+2026-03-04 22:43:24,685 - INFO -   rel=8    loss=1475 name=('PhoneRequestsStream', 'f2p_UserID', 'UserInfo')
+2026-03-04 22:43:24,685 - INFO - [MPS][hop=2] worst extensions for mp=[9]:
+2026-03-04 22:43:24,685 - INFO -   rel=10   loss=482 name=('PhoneRequestsStream', 'f2p_AdID', 'AdsInfo')
+2026-03-04 22:43:24,685 - INFO -   rel=8    loss=1475 name=('PhoneRequestsStream', 'f2p_UserID', 'UserInfo')
+2026-03-04 22:45:55,550 - INFO - [MPS] beam prune -> frontier=6 (beam_width=6, by auc_roc)
+2026-03-04 22:57:21,825 - INFO - [MPS][hop=3] extending mp=[5, 13] | #candidates=2 | taking top-2
+2026-03-04 22:57:21,826 - INFO - [MPS][hop=3] best extensions for mp=[5, 13]:
+2026-03-04 22:57:21,826 - INFO -   rel=6    loss=11699 name=('SearchStream', 'f2p_AdID', 'AdsInfo')
+2026-03-04 22:57:21,826 - INFO -   rel=4    loss=14368 name=('SearchStream', 'f2p_SearchID', 'SearchInfo')
+2026-03-04 22:57:21,826 - INFO - [MPS][hop=3] worst extensions for mp=[5, 13]:
+2026-03-04 22:57:21,826 - INFO -   rel=6    loss=11699 name=('SearchStream', 'f2p_AdID', 'AdsInfo')
+2026-03-04 22:57:21,826 - INFO -   rel=4    loss=14368 name=('SearchStream', 'f2p_SearchID', 'SearchInfo')
+2026-03-04 23:05:24,319 - INFO - [MPS][hop=3] extending mp=[8, 9] | #candidates=3 | taking top-3
+2026-03-04 23:05:24,320 - INFO - [MPS][hop=3] best extensions for mp=[8, 9]:
+2026-03-04 23:05:24,320 - INFO -   rel=1    loss=2698 name=('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+2026-03-04 23:05:24,320 - INFO -   rel=9    loss=5636.02 name=('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+2026-03-04 23:05:24,320 - INFO -   rel=13   loss=5725 name=('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+2026-03-04 23:05:24,320 - INFO - [MPS][hop=3] worst extensions for mp=[8, 9]:
+2026-03-04 23:05:24,320 - INFO -   rel=1    loss=2698 name=('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+2026-03-04 23:05:24,320 - INFO -   rel=9    loss=5636.02 name=('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+2026-03-04 23:05:24,320 - INFO -   rel=13   loss=5725 name=('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+2026-03-04 23:16:44,409 - INFO - [MPS][hop=3] extending mp=[12, 13] | #candidates=3 | taking top-3
+2026-03-04 23:16:44,410 - INFO - [MPS][hop=3] best extensions for mp=[12, 13]:
+2026-03-04 23:16:44,410 - INFO -   rel=9    loss=5112.67 name=('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+2026-03-04 23:16:44,410 - INFO -   rel=13   loss=23732 name=('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+2026-03-04 23:16:44,410 - INFO -   rel=1    loss=24230 name=('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+2026-03-04 23:16:44,410 - INFO - [MPS][hop=3] worst extensions for mp=[12, 13]:
+2026-03-04 23:16:44,410 - INFO -   rel=9    loss=5112.67 name=('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+2026-03-04 23:16:44,410 - INFO -   rel=13   loss=23732 name=('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+2026-03-04 23:16:44,410 - INFO -   rel=1    loss=24230 name=('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+2026-03-04 23:28:03,881 - INFO - [MPS][hop=3] extending mp=[2, 1] | #candidates=5 | taking top-3
+2026-03-04 23:28:03,882 - INFO - [MPS][hop=3] best extensions for mp=[2, 1]:
+2026-03-04 23:28:03,882 - INFO -   rel=7    loss=26013 name=('AdsInfo', 'rev_f2p_AdID', 'SearchStream')
+2026-03-04 23:28:03,882 - INFO -   rel=18   loss=26892 name=('AdsInfo', 'f2p_LocationID', 'Location')
+2026-03-04 23:28:03,882 - INFO -   rel=20   loss=27064 name=('AdsInfo', 'f2p_CategoryID', 'Category')
+2026-03-04 23:28:03,882 - INFO -   rel=11   loss=27291 name=('AdsInfo', 'rev_f2p_AdID', 'PhoneRequestsStream')
+2026-03-04 23:28:03,882 - INFO -   rel=3    loss=28973 name=('AdsInfo', 'rev_f2p_AdID', 'VisitStream')
+2026-03-04 23:28:03,882 - INFO - [MPS][hop=3] worst extensions for mp=[2, 1]:
+2026-03-04 23:28:03,882 - INFO -   rel=7    loss=26013 name=('AdsInfo', 'rev_f2p_AdID', 'SearchStream')
+2026-03-04 23:28:03,882 - INFO -   rel=18   loss=26892 name=('AdsInfo', 'f2p_LocationID', 'Location')
+2026-03-04 23:28:03,882 - INFO -   rel=20   loss=27064 name=('AdsInfo', 'f2p_CategoryID', 'Category')
+2026-03-04 23:28:03,882 - INFO -   rel=11   loss=27291 name=('AdsInfo', 'rev_f2p_AdID', 'PhoneRequestsStream')
+2026-03-04 23:28:03,882 - INFO -   rel=3    loss=28973 name=('AdsInfo', 'rev_f2p_AdID', 'VisitStream')
+2026-03-04 23:37:13,183 - INFO - [MPS][hop=3] extending mp=[14, 13] | #candidates=2 | taking top-2
+2026-03-04 23:37:13,184 - INFO - [MPS][hop=3] best extensions for mp=[14, 13]:
+2026-03-04 23:37:13,184 - INFO -   rel=15   loss=318 name=('Location', 'rev_f2p_LocationID', 'SearchInfo')
+2026-03-04 23:37:13,184 - INFO -   rel=19   loss=519.008 name=('Location', 'rev_f2p_LocationID', 'AdsInfo')
+2026-03-04 23:37:13,184 - INFO - [MPS][hop=3] worst extensions for mp=[14, 13]:
+2026-03-04 23:37:13,184 - INFO -   rel=15   loss=318 name=('Location', 'rev_f2p_LocationID', 'SearchInfo')
+2026-03-04 23:37:13,184 - INFO -   rel=19   loss=519.008 name=('Location', 'rev_f2p_LocationID', 'AdsInfo')
+2026-03-04 23:46:08,511 - INFO - [MPS][hop=3] extending mp=[0, 1] | #candidates=3 | taking top-3
+2026-03-04 23:46:08,512 - INFO - [MPS][hop=3] best extensions for mp=[0, 1]:
+2026-03-04 23:46:08,512 - INFO -   rel=9    loss=12293 name=('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+2026-03-04 23:46:08,512 - INFO -   rel=13   loss=27501 name=('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+2026-03-04 23:46:08,512 - INFO -   rel=1    loss=33976 name=('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+2026-03-04 23:46:08,512 - INFO - [MPS][hop=3] worst extensions for mp=[0, 1]:
+2026-03-04 23:46:08,512 - INFO -   rel=9    loss=12293 name=('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+2026-03-04 23:46:08,512 - INFO -   rel=13   loss=27501 name=('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+2026-03-04 23:46:08,512 - INFO -   rel=1    loss=33976 name=('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+2026-03-04 23:49:22,926 - INFO - [MPS] beam prune -> frontier=6 (beam_width=6, by auc_roc)
+2026-03-04 23:59:09,446 - INFO - [MPS][hop=4] extending mp=[1, 8, 9] | #candidates=2 | taking top-2
+2026-03-04 23:59:09,447 - INFO - [MPS][hop=4] best extensions for mp=[1, 8, 9]:
+2026-03-04 23:59:09,447 - INFO -   rel=0    loss=3352 name=('VisitStream', 'f2p_UserID', 'UserInfo')
+2026-03-04 23:59:09,447 - INFO -   rel=2    loss=4111 name=('VisitStream', 'f2p_AdID', 'AdsInfo')
+2026-03-04 23:59:09,447 - INFO - [MPS][hop=4] worst extensions for mp=[1, 8, 9]:
+2026-03-04 23:59:09,447 - INFO -   rel=0    loss=3352 name=('VisitStream', 'f2p_UserID', 'UserInfo')
+2026-03-04 23:59:09,447 - INFO -   rel=2    loss=4111 name=('VisitStream', 'f2p_AdID', 'AdsInfo')
+2026-03-05 00:13:01,784 - INFO - [MPS][hop=4] extending mp=[13, 0, 1] | #candidates=4 | taking top-3
+2026-03-05 00:13:01,785 - INFO - [MPS][hop=4] best extensions for mp=[13, 0, 1]:
+2026-03-05 00:13:01,785 - INFO -   rel=5    loss=12237 name=('SearchInfo', 'rev_f2p_SearchID', 'SearchStream')
+2026-03-05 00:13:01,785 - INFO -   rel=12   loss=12301 name=('SearchInfo', 'f2p_UserID', 'UserInfo')
+2026-03-05 00:13:01,785 - INFO -   rel=16   loss=21747 name=('SearchInfo', 'f2p_CategoryID', 'Category')
+2026-03-05 00:13:01,785 - INFO -   rel=14   loss=21866 name=('SearchInfo', 'f2p_LocationID', 'Location')
+2026-03-05 00:13:01,785 - INFO - [MPS][hop=4] worst extensions for mp=[13, 0, 1]:
+2026-03-05 00:13:01,785 - INFO -   rel=5    loss=12237 name=('SearchInfo', 'rev_f2p_SearchID', 'SearchStream')
+2026-03-05 00:13:01,785 - INFO -   rel=12   loss=12301 name=('SearchInfo', 'f2p_UserID', 'UserInfo')
+2026-03-05 00:13:01,785 - INFO -   rel=16   loss=21747 name=('SearchInfo', 'f2p_CategoryID', 'Category')
+2026-03-05 00:13:01,785 - INFO -   rel=14   loss=21866 name=('SearchInfo', 'f2p_LocationID', 'Location')
+2026-03-05 00:25:40,187 - INFO - [MPS][hop=4] extending mp=[9, 0, 1] | #candidates=2 | taking top-2
+2026-03-05 00:25:40,188 - INFO - [MPS][hop=4] best extensions for mp=[9, 0, 1]:
+2026-03-05 00:25:40,188 - INFO -   rel=10   loss=5507 name=('PhoneRequestsStream', 'f2p_AdID', 'AdsInfo')
+2026-03-05 00:25:40,188 - INFO -   rel=8    loss=5556 name=('PhoneRequestsStream', 'f2p_UserID', 'UserInfo')
+2026-03-05 00:25:40,188 - INFO - [MPS][hop=4] worst extensions for mp=[9, 0, 1]:
+2026-03-05 00:25:40,188 - INFO -   rel=10   loss=5507 name=('PhoneRequestsStream', 'f2p_AdID', 'AdsInfo')
+2026-03-05 00:25:40,188 - INFO -   rel=8    loss=5556 name=('PhoneRequestsStream', 'f2p_UserID', 'UserInfo')
+2026-03-05 00:37:58,931 - INFO - [MPS][hop=4] extending mp=[7, 2, 1] | #candidates=2 | taking top-2
+2026-03-05 00:37:58,932 - INFO - [MPS][hop=4] best extensions for mp=[7, 2, 1]:
+2026-03-05 00:37:58,932 - INFO -   rel=6    loss=10097 name=('SearchStream', 'f2p_AdID', 'AdsInfo')
+2026-03-05 00:37:58,932 - INFO -   rel=4    loss=10234 name=('SearchStream', 'f2p_SearchID', 'SearchInfo')
+2026-03-05 00:37:58,932 - INFO - [MPS][hop=4] worst extensions for mp=[7, 2, 1]:
+2026-03-05 00:37:58,932 - INFO -   rel=6    loss=10097 name=('SearchStream', 'f2p_AdID', 'AdsInfo')
+2026-03-05 00:37:58,932 - INFO -   rel=4    loss=10234 name=('SearchStream', 'f2p_SearchID', 'SearchInfo')
+2026-03-05 00:53:49,295 - INFO - [MPS][hop=4] extending mp=[4, 5, 13] | #candidates=4 | taking top-3
+2026-03-05 00:53:49,295 - INFO - [MPS][hop=4] best extensions for mp=[4, 5, 13]:
+2026-03-05 00:53:49,296 - INFO -   rel=16   loss=12411 name=('SearchInfo', 'f2p_CategoryID', 'Category')
+2026-03-05 00:53:49,296 - INFO -   rel=14   loss=12764 name=('SearchInfo', 'f2p_LocationID', 'Location')
+2026-03-05 00:53:49,296 - INFO -   rel=5    loss=21962 name=('SearchInfo', 'rev_f2p_SearchID', 'SearchStream')
+2026-03-05 00:53:49,296 - INFO -   rel=12   loss=22248 name=('SearchInfo', 'f2p_UserID', 'UserInfo')
+2026-03-05 00:53:49,296 - INFO - [MPS][hop=4] worst extensions for mp=[4, 5, 13]:
+2026-03-05 00:53:49,296 - INFO -   rel=16   loss=12411 name=('SearchInfo', 'f2p_CategoryID', 'Category')
+2026-03-05 00:53:49,296 - INFO -   rel=14   loss=12764 name=('SearchInfo', 'f2p_LocationID', 'Location')
+2026-03-05 00:53:49,296 - INFO -   rel=5    loss=21962 name=('SearchInfo', 'rev_f2p_SearchID', 'SearchStream')
+2026-03-05 00:53:49,296 - INFO -   rel=12   loss=22248 name=('SearchInfo', 'f2p_UserID', 'UserInfo')
+2026-03-05 01:07:57,530 - INFO - [MPS][hop=4] extending mp=[1, 12, 13] | #candidates=2 | taking top-2
+2026-03-05 01:07:57,531 - INFO - [MPS][hop=4] best extensions for mp=[1, 12, 13]:
+2026-03-05 01:07:57,531 - INFO -   rel=2    loss=13710 name=('VisitStream', 'f2p_AdID', 'AdsInfo')
+2026-03-05 01:07:57,531 - INFO -   rel=0    loss=19263 name=('VisitStream', 'f2p_UserID', 'UserInfo')
+2026-03-05 01:07:57,531 - INFO - [MPS][hop=4] worst extensions for mp=[1, 12, 13]:
+2026-03-05 01:07:57,531 - INFO -   rel=2    loss=13710 name=('VisitStream', 'f2p_AdID', 'AdsInfo')
+2026-03-05 01:07:57,531 - INFO -   rel=0    loss=19263 name=('VisitStream', 'f2p_UserID', 'UserInfo')
+2026-03-05 01:09:26,102 - INFO - [MPS] beam prune -> frontier=6 (beam_width=6, by auc_roc)
+2026-03-05 01:09:26,103 - INFO - [MPS] ALL_METAPATHS_SORTED split=val sort_by=auc_roc total=40
+2026-03-05 01:09:26,103 - INFO - (path=[1, 8, 9], hop=3, sort_by=auc_roc) rank=1 auc_roc=0.627679
+2026-03-05 01:09:26,103 - INFO - (path=[4, 7, 2, 1], hop=4, sort_by=auc_roc) rank=2 auc_roc=0.618750
+2026-03-05 01:09:26,103 - INFO - (path=[5, 13], hop=2, sort_by=auc_roc) rank=3 auc_roc=0.617857
+2026-03-05 01:09:26,103 - INFO - (path=[13, 0, 1], hop=3, sort_by=auc_roc) rank=4 auc_roc=0.616071
+2026-03-05 01:09:26,103 - INFO - (path=[9, 0, 1], hop=3, sort_by=auc_roc) rank=5 auc_roc=0.615179
+2026-03-05 01:09:26,103 - INFO - (path=[16, 13, 0, 1], hop=4, sort_by=auc_roc) rank=6 auc_roc=0.613393
+2026-03-05 01:09:26,103 - INFO - (path=[7, 2, 1], hop=3, sort_by=auc_roc) rank=7 auc_roc=0.606250
+2026-03-05 01:09:26,103 - INFO - (path=[16, 4, 5, 13], hop=4, sort_by=auc_roc) rank=8 auc_roc=0.605357
+2026-03-05 01:09:26,103 - INFO - (path=[2, 1, 8, 9], hop=4, sort_by=auc_roc) rank=9 auc_roc=0.603571
+2026-03-05 01:09:26,103 - INFO - (path=[8, 9], hop=2, sort_by=auc_roc) rank=10 auc_roc=0.602679
+2026-03-05 01:09:26,103 - INFO - (path=[4, 5, 13], hop=3, sort_by=auc_roc) rank=11 auc_roc=0.601786
+2026-03-05 01:09:26,103 - INFO - (path=[8, 9, 0, 1], hop=4, sort_by=auc_roc) rank=12 auc_roc=0.601786
+2026-03-05 01:09:26,103 - INFO - (path=[6, 7, 2, 1], hop=4, sort_by=auc_roc) rank=13 auc_roc=0.600893
+2026-03-05 01:09:26,103 - INFO - (path=[5, 13, 0, 1], hop=4, sort_by=auc_roc) rank=14 auc_roc=0.600000
+2026-03-05 01:09:26,103 - INFO - (path=[5, 4, 5, 13], hop=4, sort_by=auc_roc) rank=15 auc_roc=0.597321
+2026-03-05 01:09:26,103 - INFO - (path=[12, 13], hop=2, sort_by=auc_roc) rank=16 auc_roc=0.592857
+2026-03-05 01:09:26,103 - INFO - (path=[2, 1], hop=2, sort_by=auc_roc) rank=17 auc_roc=0.591071
+2026-03-05 01:09:26,103 - INFO - (path=[0, 1, 8, 9], hop=4, sort_by=auc_roc) rank=18 auc_roc=0.590179
+2026-03-05 01:09:26,103 - INFO - (path=[14, 4, 5, 13], hop=4, sort_by=auc_roc) rank=19 auc_roc=0.590179
+2026-03-05 01:09:26,103 - INFO - (path=[1, 12, 13], hop=3, sort_by=auc_roc) rank=20 auc_roc=0.589286
+2026-03-05 01:09:26,103 - INFO - (path=[0, 1, 12, 13], hop=4, sort_by=auc_roc) rank=21 auc_roc=0.588393
+2026-03-05 01:09:26,103 - INFO - (path=[6, 5, 13], hop=3, sort_by=auc_roc) rank=22 auc_roc=0.585714
+2026-03-05 01:09:26,103 - INFO - (path=[14, 13], hop=2, sort_by=auc_roc) rank=23 auc_roc=0.583929
+2026-03-05 01:09:26,103 - INFO - (path=[9, 12, 13], hop=3, sort_by=auc_roc) rank=24 auc_roc=0.583036
+2026-03-05 01:09:26,103 - INFO - (path=[0, 1], hop=2, sort_by=auc_roc) rank=25 auc_roc=0.582143
+2026-03-05 01:09:26,103 - INFO - (path=[18, 2, 1], hop=3, sort_by=auc_roc) rank=26 auc_roc=0.580357
+2026-03-05 01:09:26,103 - INFO - (path=[20, 2, 1], hop=3, sort_by=auc_roc) rank=27 auc_roc=0.578571
+2026-03-05 01:09:26,103 - INFO - (path=[12, 13, 0, 1], hop=4, sort_by=auc_roc) rank=28 auc_roc=0.575893
+2026-03-05 01:09:26,103 - INFO - (path=[15, 14, 13], hop=3, sort_by=auc_roc) rank=29 auc_roc=0.575893
+2026-03-05 01:09:26,103 - INFO - (path=[10, 9, 0, 1], hop=4, sort_by=auc_roc) rank=30 auc_roc=0.573214
+2026-03-05 01:09:26,103 - INFO - (path=[13], hop=1, sort_by=auc_roc) rank=31 auc_roc=0.572321
+2026-03-05 01:09:26,103 - INFO - (path=[9], hop=1, sort_by=auc_roc) rank=32 auc_roc=0.572321
+2026-03-05 01:09:26,103 - INFO - (path=[2, 1, 12, 13], hop=4, sort_by=auc_roc) rank=33 auc_roc=0.572321
+2026-03-05 01:09:26,103 - INFO - (path=[19, 14, 13], hop=3, sort_by=auc_roc) rank=34 auc_roc=0.571429
+2026-03-05 01:09:26,103 - INFO - (path=[13, 8, 9], hop=3, sort_by=auc_roc) rank=35 auc_roc=0.568750
+2026-03-05 01:09:26,103 - INFO - (path=[13, 12, 13], hop=3, sort_by=auc_roc) rank=36 auc_roc=0.563393
+2026-03-05 01:09:26,103 - INFO - (path=[1], hop=1, sort_by=auc_roc) rank=37 auc_roc=0.560714
+2026-03-05 01:09:26,103 - INFO - (path=[9, 8, 9], hop=3, sort_by=auc_roc) rank=38 auc_roc=0.560714
+2026-03-05 01:09:26,103 - INFO - (path=[1, 0, 1], hop=3, sort_by=auc_roc) rank=39 auc_roc=0.560714
+2026-03-05 01:09:26,103 - INFO - (path=[10, 9], hop=2, sort_by=auc_roc) rank=40 auc_roc=0.554464

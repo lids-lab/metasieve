@@ -1,0 +1,218 @@
+[RUN_START] 2026-03-04T21:43:48.912122
+DATASET_NAME=rel-f1
+TASK_NAME=driver-top3
+NUM_LAYERS=4
+num_neighbors=[32, 32, 32, 32]
+train_sample: n_pos=200, n_neg=300
+val_sample:   n_pos=50, n_neg=80
+SEARCH_L_MAX=3
+SEARCH_K=3
+SEARCH_BEAM_WIDTH=6
+SEARCH_SAMPLING_SIZE=1
+SEARCH_RANK_METRIC=auc_roc
+------------------------------------------------------------
+2026-03-04 21:43:48,922 - INFO - [MPS] rank_metric=auc_roc (used for beam pruning, ranking, and top-k combination checks)
+2026-03-04 21:43:48,974 - INFO - [MPS] #candidate relations (connected to targets): 3
+2026-03-04 22:00:25,127 - INFO - [MPS][hop=1] best relations (lower score loss is better):
+2026-03-04 22:00:25,135 - INFO -   rel=3    loss=0.880016 name=('drivers', 'rev_f2p_driverId', 'standings')
+2026-03-04 22:00:25,135 - INFO -   rel=15   loss=0.936675 name=('drivers', 'rev_f2p_driverId', 'results')
+2026-03-04 22:00:25,136 - INFO -   rel=9    loss=25.484 name=('drivers', 'rev_f2p_driverId', 'qualifying')
+2026-03-04 22:00:25,136 - INFO - [MPS][hop=1] worst relations:
+2026-03-04 22:00:25,136 - INFO -   rel=3    loss=0.880016 name=('drivers', 'rev_f2p_driverId', 'standings')
+2026-03-04 22:00:25,136 - INFO -   rel=15   loss=0.936675 name=('drivers', 'rev_f2p_driverId', 'results')
+2026-03-04 22:00:25,136 - INFO -   rel=9    loss=25.484 name=('drivers', 'rev_f2p_driverId', 'qualifying')
+2026-03-04 22:00:25,136 - INFO - [MPS][hop=1] evaluating top-3 seeds with mpgnn() on split=val
+2026-03-04 22:17:29,473 - INFO - [MPS][hop=2] extending mp=[3] | #candidates=2 | taking top-2
+2026-03-04 22:17:29,474 - INFO - [MPS][hop=2] best extensions for mp=[3]:
+2026-03-04 22:17:29,474 - INFO -   rel=2    loss=343 name=('standings', 'f2p_driverId', 'drivers')
+2026-03-04 22:17:29,474 - INFO -   rel=0    loss=36954 name=('standings', 'f2p_raceId', 'races')
+2026-03-04 22:17:29,474 - INFO - [MPS][hop=2] worst extensions for mp=[3]:
+2026-03-04 22:17:29,474 - INFO -   rel=2    loss=343 name=('standings', 'f2p_driverId', 'drivers')
+2026-03-04 22:17:29,474 - INFO -   rel=0    loss=36954 name=('standings', 'f2p_raceId', 'races')
+2026-03-04 22:28:15,998 - INFO - [MPS][hop=2] extending mp=[15] | #candidates=3 | taking top-3
+2026-03-04 22:28:15,999 - INFO - [MPS][hop=2] best extensions for mp=[15]:
+2026-03-04 22:28:15,999 - INFO -   rel=16   loss=11516.5 name=('results', 'f2p_constructorId', 'constructors')
+2026-03-04 22:28:15,999 - INFO -   rel=14   loss=13925 name=('results', 'f2p_driverId', 'drivers')
+2026-03-04 22:28:15,999 - INFO -   rel=12   loss=24318 name=('results', 'f2p_raceId', 'races')
+2026-03-04 22:28:15,999 - INFO - [MPS][hop=2] worst extensions for mp=[15]:
+2026-03-04 22:28:15,999 - INFO -   rel=16   loss=11516.5 name=('results', 'f2p_constructorId', 'constructors')
+2026-03-04 22:28:15,999 - INFO -   rel=14   loss=13925 name=('results', 'f2p_driverId', 'drivers')
+2026-03-04 22:28:15,999 - INFO -   rel=12   loss=24318 name=('results', 'f2p_raceId', 'races')
+2026-03-04 22:49:57,859 - INFO - [MPS][hop=2] extending mp=[9] | #candidates=3 | taking top-3
+2026-03-04 22:49:57,860 - INFO - [MPS][hop=2] best extensions for mp=[9]:
+2026-03-04 22:49:57,860 - INFO -   rel=6    loss=519.987 name=('qualifying', 'f2p_raceId', 'races')
+2026-03-04 22:49:57,860 - INFO -   rel=8    loss=1508 name=('qualifying', 'f2p_driverId', 'drivers')
+2026-03-04 22:49:57,860 - INFO -   rel=10   loss=6524.6 name=('qualifying', 'f2p_constructorId', 'constructors')
+2026-03-04 22:49:57,860 - INFO - [MPS][hop=2] worst extensions for mp=[9]:
+2026-03-04 22:49:57,860 - INFO -   rel=6    loss=519.987 name=('qualifying', 'f2p_raceId', 'races')
+2026-03-04 22:49:57,860 - INFO -   rel=8    loss=1508 name=('qualifying', 'f2p_driverId', 'drivers')
+2026-03-04 22:49:57,860 - INFO -   rel=10   loss=6524.6 name=('qualifying', 'f2p_constructorId', 'constructors')
+2026-03-04 22:51:47,688 - INFO - [MPS] beam prune -> frontier=6 (beam_width=6, by auc_roc)
+2026-03-04 23:09:26,232 - INFO - [MPS][hop=3] extending mp=[16, 15] | #candidates=4 | taking top-3
+2026-03-04 23:09:26,232 - INFO - [MPS][hop=3] best extensions for mp=[16, 15]:
+2026-03-04 23:09:26,232 - INFO -   rel=17   loss=4505 name=('constructors', 'rev_f2p_constructorId', 'results')
+2026-03-04 23:09:26,232 - INFO -   rel=11   loss=11580 name=('constructors', 'rev_f2p_constructorId', 'qualifying')
+2026-03-04 23:09:26,232 - INFO -   rel=25   loss=18348.5 name=('constructors', 'rev_f2p_constructorId', 'constructor_standings')
+2026-03-04 23:09:26,233 - INFO -   rel=21   loss=26931.3 name=('constructors', 'rev_f2p_constructorId', 'constructor_results')
+2026-03-04 23:09:26,233 - INFO - [MPS][hop=3] worst extensions for mp=[16, 15]:
+2026-03-04 23:09:26,233 - INFO -   rel=17   loss=4505 name=('constructors', 'rev_f2p_constructorId', 'results')
+2026-03-04 23:09:26,233 - INFO -   rel=11   loss=11580 name=('constructors', 'rev_f2p_constructorId', 'qualifying')
+2026-03-04 23:09:26,233 - INFO -   rel=25   loss=18348.5 name=('constructors', 'rev_f2p_constructorId', 'constructor_standings')
+2026-03-04 23:09:26,233 - INFO -   rel=21   loss=26931.3 name=('constructors', 'rev_f2p_constructorId', 'constructor_results')
+2026-03-04 23:42:30,152 - INFO - [MPS][hop=3] extending mp=[0, 3] | #candidates=6 | taking top-3
+2026-03-04 23:42:30,153 - INFO - [MPS][hop=3] best extensions for mp=[0, 3]:
+2026-03-04 23:42:30,153 - INFO -   rel=4    loss=2530 name=('races', 'f2p_circuitId', 'circuits')
+2026-03-04 23:42:30,153 - INFO -   rel=7    loss=6884 name=('races', 'rev_f2p_raceId', 'qualifying')
+2026-03-04 23:42:30,153 - INFO -   rel=1    loss=28091 name=('races', 'rev_f2p_raceId', 'standings')
+2026-03-04 23:42:30,153 - INFO -   rel=13   loss=29589 name=('races', 'rev_f2p_raceId', 'results')
+2026-03-04 23:42:30,153 - INFO -   rel=19   loss=30439 name=('races', 'rev_f2p_raceId', 'constructor_results')
+2026-03-04 23:42:30,153 - INFO -   rel=23   loss=33630 name=('races', 'rev_f2p_raceId', 'constructor_standings')
+2026-03-04 23:42:30,153 - INFO - [MPS][hop=3] worst extensions for mp=[0, 3]:
+2026-03-04 23:42:30,153 - INFO -   rel=4    loss=2530 name=('races', 'f2p_circuitId', 'circuits')
+2026-03-04 23:42:30,153 - INFO -   rel=7    loss=6884 name=('races', 'rev_f2p_raceId', 'qualifying')
+2026-03-04 23:42:30,153 - INFO -   rel=1    loss=28091 name=('races', 'rev_f2p_raceId', 'standings')
+2026-03-04 23:42:30,153 - INFO -   rel=13   loss=29589 name=('races', 'rev_f2p_raceId', 'results')
+2026-03-04 23:42:30,153 - INFO -   rel=19   loss=30439 name=('races', 'rev_f2p_raceId', 'constructor_results')
+2026-03-04 23:42:30,153 - INFO -   rel=23   loss=33630 name=('races', 'rev_f2p_raceId', 'constructor_standings')
+2026-03-05 00:13:00,746 - INFO - [MPS][hop=3] extending mp=[12, 15] | #candidates=6 | taking top-3
+2026-03-05 00:13:00,747 - INFO - [MPS][hop=3] best extensions for mp=[12, 15]:
+2026-03-05 00:13:00,747 - INFO -   rel=4    loss=2939 name=('races', 'f2p_circuitId', 'circuits')
+2026-03-05 00:13:00,747 - INFO -   rel=23   loss=3208 name=('races', 'rev_f2p_raceId', 'constructor_standings')
+2026-03-05 00:13:00,748 - INFO -   rel=13   loss=9100.21 name=('races', 'rev_f2p_raceId', 'results')
+2026-03-05 00:13:00,748 - INFO -   rel=7    loss=19569 name=('races', 'rev_f2p_raceId', 'qualifying')
+2026-03-05 00:13:00,748 - INFO -   rel=19   loss=21348 name=('races', 'rev_f2p_raceId', 'constructor_results')
+2026-03-05 00:13:00,748 - INFO -   rel=1    loss=27234 name=('races', 'rev_f2p_raceId', 'standings')
+2026-03-05 00:13:00,748 - INFO - [MPS][hop=3] worst extensions for mp=[12, 15]:
+2026-03-05 00:13:00,748 - INFO -   rel=4    loss=2939 name=('races', 'f2p_circuitId', 'circuits')
+2026-03-05 00:13:00,748 - INFO -   rel=23   loss=3208 name=('races', 'rev_f2p_raceId', 'constructor_standings')
+2026-03-05 00:13:00,748 - INFO -   rel=13   loss=9100.21 name=('races', 'rev_f2p_raceId', 'results')
+2026-03-05 00:13:00,748 - INFO -   rel=7    loss=19569 name=('races', 'rev_f2p_raceId', 'qualifying')
+2026-03-05 00:13:00,748 - INFO -   rel=19   loss=21348 name=('races', 'rev_f2p_raceId', 'constructor_results')
+2026-03-05 00:13:00,748 - INFO -   rel=1    loss=27234 name=('races', 'rev_f2p_raceId', 'standings')
+2026-03-05 00:35:14,945 - INFO - [MPS][hop=3] extending mp=[14, 15] | #candidates=3 | taking top-3
+2026-03-05 00:35:14,945 - INFO - [MPS][hop=3] best extensions for mp=[14, 15]:
+2026-03-05 00:35:14,946 - INFO -   rel=9    loss=205 name=('drivers', 'rev_f2p_driverId', 'qualifying')
+2026-03-05 00:35:14,946 - INFO -   rel=15   loss=2581 name=('drivers', 'rev_f2p_driverId', 'results')
+2026-03-05 00:35:14,946 - INFO -   rel=3    loss=11870.8 name=('drivers', 'rev_f2p_driverId', 'standings')
+2026-03-05 00:35:14,946 - INFO - [MPS][hop=3] worst extensions for mp=[14, 15]:
+2026-03-05 00:35:14,946 - INFO -   rel=9    loss=205 name=('drivers', 'rev_f2p_driverId', 'qualifying')
+2026-03-05 00:35:14,946 - INFO -   rel=15   loss=2581 name=('drivers', 'rev_f2p_driverId', 'results')
+2026-03-05 00:35:14,946 - INFO -   rel=3    loss=11870.8 name=('drivers', 'rev_f2p_driverId', 'standings')
+2026-03-05 00:56:32,531 - INFO - [MPS][hop=3] extending mp=[10, 9] | #candidates=4 | taking top-3
+2026-03-05 00:56:32,532 - INFO - [MPS][hop=3] best extensions for mp=[10, 9]:
+2026-03-05 00:56:32,532 - INFO -   rel=21   loss=263 name=('constructors', 'rev_f2p_constructorId', 'constructor_results')
+2026-03-05 00:56:32,532 - INFO -   rel=25   loss=399 name=('constructors', 'rev_f2p_constructorId', 'constructor_standings')
+2026-03-05 00:56:32,532 - INFO -   rel=11   loss=4450.24 name=('constructors', 'rev_f2p_constructorId', 'qualifying')
+2026-03-05 00:56:32,532 - INFO -   rel=17   loss=5103.78 name=('constructors', 'rev_f2p_constructorId', 'results')
+2026-03-05 00:56:32,532 - INFO - [MPS][hop=3] worst extensions for mp=[10, 9]:
+2026-03-05 00:56:32,532 - INFO -   rel=21   loss=263 name=('constructors', 'rev_f2p_constructorId', 'constructor_results')
+2026-03-05 00:56:32,532 - INFO -   rel=25   loss=399 name=('constructors', 'rev_f2p_constructorId', 'constructor_standings')
+2026-03-05 00:56:32,532 - INFO -   rel=11   loss=4450.24 name=('constructors', 'rev_f2p_constructorId', 'qualifying')
+2026-03-05 00:56:32,532 - INFO -   rel=17   loss=5103.78 name=('constructors', 'rev_f2p_constructorId', 'results')
+2026-03-05 01:24:19,051 - INFO - [MPS][hop=3] extending mp=[6, 9] | #candidates=6 | taking top-3
+2026-03-05 01:24:19,052 - INFO - [MPS][hop=3] best extensions for mp=[6, 9]:
+2026-03-05 01:24:19,052 - INFO -   rel=4    loss=1945 name=('races', 'f2p_circuitId', 'circuits')
+2026-03-05 01:24:19,052 - INFO -   rel=7    loss=2397 name=('races', 'rev_f2p_raceId', 'qualifying')
+2026-03-05 01:24:19,052 - INFO -   rel=23   loss=4741 name=('races', 'rev_f2p_raceId', 'constructor_standings')
+2026-03-05 01:24:19,052 - INFO -   rel=13   loss=9617 name=('races', 'rev_f2p_raceId', 'results')
+2026-03-05 01:24:19,052 - INFO -   rel=1    loss=16946.2 name=('races', 'rev_f2p_raceId', 'standings')
+2026-03-05 01:24:19,052 - INFO -   rel=19   loss=17896.9 name=('races', 'rev_f2p_raceId', 'constructor_results')
+2026-03-05 01:24:19,052 - INFO - [MPS][hop=3] worst extensions for mp=[6, 9]:
+2026-03-05 01:24:19,052 - INFO -   rel=4    loss=1945 name=('races', 'f2p_circuitId', 'circuits')
+2026-03-05 01:24:19,052 - INFO -   rel=7    loss=2397 name=('races', 'rev_f2p_raceId', 'qualifying')
+2026-03-05 01:24:19,052 - INFO -   rel=23   loss=4741 name=('races', 'rev_f2p_raceId', 'constructor_standings')
+2026-03-05 01:24:19,052 - INFO -   rel=13   loss=9617 name=('races', 'rev_f2p_raceId', 'results')
+2026-03-05 01:24:19,052 - INFO -   rel=1    loss=16946.2 name=('races', 'rev_f2p_raceId', 'standings')
+2026-03-05 01:24:19,052 - INFO -   rel=19   loss=17896.9 name=('races', 'rev_f2p_raceId', 'constructor_results')
+2026-03-05 01:27:20,557 - INFO - [MPS] beam prune -> frontier=6 (beam_width=6, by auc_roc)
+2026-03-05 01:51:30,816 - INFO - [MPS][hop=4] extending mp=[25, 16, 15] | #candidates=2 | taking top-2
+2026-03-05 01:51:30,816 - INFO - [MPS][hop=4] best extensions for mp=[25, 16, 15]:
+2026-03-05 01:51:30,816 - INFO -   rel=24   loss=12744 name=('constructor_standings', 'f2p_constructorId', 'constructors')
+2026-03-05 01:51:30,816 - INFO -   rel=22   loss=22706 name=('constructor_standings', 'f2p_raceId', 'races')
+2026-03-05 01:51:30,816 - INFO - [MPS][hop=4] worst extensions for mp=[25, 16, 15]:
+2026-03-05 01:51:30,817 - INFO -   rel=24   loss=12744 name=('constructor_standings', 'f2p_constructorId', 'constructors')
+2026-03-05 01:51:30,817 - INFO -   rel=22   loss=22706 name=('constructor_standings', 'f2p_raceId', 'races')
+2026-03-05 02:20:52,130 - INFO - [MPS][hop=4] extending mp=[4, 0, 3] | #candidates=1 | taking top-1
+2026-03-05 02:20:52,131 - INFO - [MPS][hop=4] best extensions for mp=[4, 0, 3]:
+2026-03-05 02:20:52,131 - INFO -   rel=5    loss=13319.1 name=('circuits', 'rev_f2p_circuitId', 'races')
+2026-03-05 02:20:52,131 - INFO - [MPS][hop=4] worst extensions for mp=[4, 0, 3]:
+2026-03-05 02:20:52,131 - INFO -   rel=5    loss=13319.1 name=('circuits', 'rev_f2p_circuitId', 'races')
+2026-03-05 02:45:05,548 - INFO - [MPS][hop=4] extending mp=[11, 16, 15] | #candidates=3 | taking top-3
+2026-03-05 02:45:05,548 - INFO - [MPS][hop=4] best extensions for mp=[11, 16, 15]:
+2026-03-05 02:45:05,548 - INFO -   rel=10   loss=11381 name=('qualifying', 'f2p_constructorId', 'constructors')
+2026-03-05 02:45:05,548 - INFO -   rel=6    loss=12212 name=('qualifying', 'f2p_raceId', 'races')
+2026-03-05 02:45:05,548 - INFO -   rel=8    loss=19047 name=('qualifying', 'f2p_driverId', 'drivers')
+2026-03-05 02:45:05,548 - INFO - [MPS][hop=4] worst extensions for mp=[11, 16, 15]:
+2026-03-05 02:45:05,548 - INFO -   rel=10   loss=11381 name=('qualifying', 'f2p_constructorId', 'constructors')
+2026-03-05 02:45:05,548 - INFO -   rel=6    loss=12212 name=('qualifying', 'f2p_raceId', 'races')
+2026-03-05 02:45:05,548 - INFO -   rel=8    loss=19047 name=('qualifying', 'f2p_driverId', 'drivers')
+2026-03-05 03:12:19,473 - INFO - [MPS][hop=4] extending mp=[3, 14, 15] | #candidates=2 | taking top-2
+2026-03-05 03:12:19,474 - INFO - [MPS][hop=4] best extensions for mp=[3, 14, 15]:
+2026-03-05 03:12:19,474 - INFO -   rel=0    loss=21709 name=('standings', 'f2p_raceId', 'races')
+2026-03-05 03:12:19,474 - INFO -   rel=2    loss=46790 name=('standings', 'f2p_driverId', 'drivers')
+2026-03-05 03:12:19,474 - INFO - [MPS][hop=4] worst extensions for mp=[3, 14, 15]:
+2026-03-05 03:12:19,474 - INFO -   rel=0    loss=21709 name=('standings', 'f2p_raceId', 'races')
+2026-03-05 03:12:19,474 - INFO -   rel=2    loss=46790 name=('standings', 'f2p_driverId', 'drivers')
+2026-03-05 03:39:11,590 - INFO - [MPS][hop=4] extending mp=[17, 16, 15] | #candidates=3 | taking top-3
+2026-03-05 03:39:11,590 - INFO - [MPS][hop=4] best extensions for mp=[17, 16, 15]:
+2026-03-05 03:39:11,590 - INFO -   rel=16   loss=10871 name=('results', 'f2p_constructorId', 'constructors')
+2026-03-05 03:39:11,590 - INFO -   rel=12   loss=11262 name=('results', 'f2p_raceId', 'races')
+2026-03-05 03:39:11,590 - INFO -   rel=14   loss=11423 name=('results', 'f2p_driverId', 'drivers')
+2026-03-05 03:39:11,590 - INFO - [MPS][hop=4] worst extensions for mp=[17, 16, 15]:
+2026-03-05 03:39:11,590 - INFO -   rel=16   loss=10871 name=('results', 'f2p_constructorId', 'constructors')
+2026-03-05 03:39:11,590 - INFO -   rel=12   loss=11262 name=('results', 'f2p_raceId', 'races')
+2026-03-05 03:39:11,590 - INFO -   rel=14   loss=11423 name=('results', 'f2p_driverId', 'drivers')
+2026-03-05 04:07:17,727 - INFO - [MPS][hop=4] extending mp=[11, 10, 9] | #candidates=3 | taking top-3
+2026-03-05 04:07:17,727 - INFO - [MPS][hop=4] best extensions for mp=[11, 10, 9]:
+2026-03-05 04:07:17,727 - INFO -   rel=6    loss=3493 name=('qualifying', 'f2p_raceId', 'races')
+2026-03-05 04:07:17,727 - INFO -   rel=8    loss=3514 name=('qualifying', 'f2p_driverId', 'drivers')
+2026-03-05 04:07:17,727 - INFO -   rel=10   loss=11723 name=('qualifying', 'f2p_constructorId', 'constructors')
+2026-03-05 04:07:17,727 - INFO - [MPS][hop=4] worst extensions for mp=[11, 10, 9]:
+2026-03-05 04:07:17,727 - INFO -   rel=6    loss=3493 name=('qualifying', 'f2p_raceId', 'races')
+2026-03-05 04:07:17,727 - INFO -   rel=8    loss=3514 name=('qualifying', 'f2p_driverId', 'drivers')
+2026-03-05 04:07:17,727 - INFO -   rel=10   loss=11723 name=('qualifying', 'f2p_constructorId', 'constructors')
+2026-03-05 04:10:36,739 - INFO - [MPS] beam prune -> frontier=6 (beam_width=6, by auc_roc)
+2026-03-05 04:10:36,739 - INFO - [MPS] ALL_METAPATHS_SORTED split=val sort_by=auc_roc total=43
+2026-03-05 04:10:36,739 - INFO - (path=[25, 16, 15], hop=3, sort_by=auc_roc) rank=1 auc_roc=0.807500
+2026-03-05 04:10:36,740 - INFO - (path=[22, 25, 16, 15], hop=4, sort_by=auc_roc) rank=2 auc_roc=0.773750
+2026-03-05 04:10:36,740 - INFO - (path=[12, 17, 16, 15], hop=4, sort_by=auc_roc) rank=3 auc_roc=0.750000
+2026-03-05 04:10:36,740 - INFO - (path=[24, 25, 16, 15], hop=4, sort_by=auc_roc) rank=4 auc_roc=0.747500
+2026-03-05 04:10:36,740 - INFO - (path=[4, 0, 3], hop=3, sort_by=auc_roc) rank=5 auc_roc=0.745000
+2026-03-05 04:10:36,740 - INFO - (path=[11, 16, 15], hop=3, sort_by=auc_roc) rank=6 auc_roc=0.743750
+2026-03-05 04:10:36,740 - INFO - (path=[16, 15], hop=2, sort_by=auc_roc) rank=7 auc_roc=0.740000
+2026-03-05 04:10:36,740 - INFO - (path=[8, 11, 16, 15], hop=4, sort_by=auc_roc) rank=8 auc_roc=0.740000
+2026-03-05 04:10:36,740 - INFO - (path=[3, 14, 15], hop=3, sort_by=auc_roc) rank=9 auc_roc=0.736250
+2026-03-05 04:10:36,740 - INFO - (path=[16, 17, 16, 15], hop=4, sort_by=auc_roc) rank=10 auc_roc=0.735000
+2026-03-05 04:10:36,740 - INFO - (path=[17, 16, 15], hop=3, sort_by=auc_roc) rank=11 auc_roc=0.732500
+2026-03-05 04:10:36,740 - INFO - (path=[10, 11, 16, 15], hop=4, sort_by=auc_roc) rank=12 auc_roc=0.732500
+2026-03-05 04:10:36,740 - INFO - (path=[0, 3, 14, 15], hop=4, sort_by=auc_roc) rank=13 auc_roc=0.732500
+2026-03-05 04:10:36,740 - INFO - (path=[11, 10, 9], hop=3, sort_by=auc_roc) rank=14 auc_roc=0.730000
+2026-03-05 04:10:36,740 - INFO - (path=[1, 0, 3], hop=3, sort_by=auc_roc) rank=15 auc_roc=0.730000
+2026-03-05 04:10:36,740 - INFO - (path=[7, 0, 3], hop=3, sort_by=auc_roc) rank=16 auc_roc=0.728750
+2026-03-05 04:10:36,740 - INFO - (path=[0, 3], hop=2, sort_by=auc_roc) rank=17 auc_roc=0.728750
+2026-03-05 04:10:36,740 - INFO - (path=[4, 6, 9], hop=3, sort_by=auc_roc) rank=18 auc_roc=0.727500
+2026-03-05 04:10:36,740 - INFO - (path=[23, 12, 15], hop=3, sort_by=auc_roc) rank=19 auc_roc=0.726250
+2026-03-05 04:10:36,740 - INFO - (path=[7, 6, 9], hop=3, sort_by=auc_roc) rank=20 auc_roc=0.726250
+2026-03-05 04:10:36,740 - INFO - (path=[6, 11, 16, 15], hop=4, sort_by=auc_roc) rank=21 auc_roc=0.726250
+2026-03-05 04:10:36,740 - INFO - (path=[9, 14, 15], hop=3, sort_by=auc_roc) rank=22 auc_roc=0.723750
+2026-03-05 04:10:36,740 - INFO - (path=[10, 11, 10, 9], hop=4, sort_by=auc_roc) rank=23 auc_roc=0.721250
+2026-03-05 04:10:36,740 - INFO - (path=[14, 17, 16, 15], hop=4, sort_by=auc_roc) rank=24 auc_roc=0.721250
+2026-03-05 04:10:36,740 - INFO - (path=[12, 15], hop=2, sort_by=auc_roc) rank=25 auc_roc=0.720000
+2026-03-05 04:10:36,740 - INFO - (path=[13, 12, 15], hop=3, sort_by=auc_roc) rank=26 auc_roc=0.720000
+2026-03-05 04:10:36,740 - INFO - (path=[15, 14, 15], hop=3, sort_by=auc_roc) rank=27 auc_roc=0.717500
+2026-03-05 04:10:36,740 - INFO - (path=[6, 11, 10, 9], hop=4, sort_by=auc_roc) rank=28 auc_roc=0.713750
+2026-03-05 04:10:36,740 - INFO - (path=[5, 4, 0, 3], hop=4, sort_by=auc_roc) rank=29 auc_roc=0.711250
+2026-03-05 04:10:36,740 - INFO - (path=[15], hop=1, sort_by=auc_roc) rank=30 auc_roc=0.707500
+2026-03-05 04:10:36,740 - INFO - (path=[25, 10, 9], hop=3, sort_by=auc_roc) rank=31 auc_roc=0.706250
+2026-03-05 04:10:36,740 - INFO - (path=[4, 12, 15], hop=3, sort_by=auc_roc) rank=32 auc_roc=0.702500
+2026-03-05 04:10:36,740 - INFO - (path=[3], hop=1, sort_by=auc_roc) rank=33 auc_roc=0.700000
+2026-03-05 04:10:36,740 - INFO - (path=[23, 6, 9], hop=3, sort_by=auc_roc) rank=34 auc_roc=0.696250
+2026-03-05 04:10:36,740 - INFO - (path=[2, 3, 14, 15], hop=4, sort_by=auc_roc) rank=35 auc_roc=0.685000
+2026-03-05 04:10:36,740 - INFO - (path=[14, 15], hop=2, sort_by=auc_roc) rank=36 auc_roc=0.682500
+2026-03-05 04:10:36,740 - INFO - (path=[10, 9], hop=2, sort_by=auc_roc) rank=37 auc_roc=0.678750
+2026-03-05 04:10:36,740 - INFO - (path=[6, 9], hop=2, sort_by=auc_roc) rank=38 auc_roc=0.675000
+2026-03-05 04:10:36,740 - INFO - (path=[21, 10, 9], hop=3, sort_by=auc_roc) rank=39 auc_roc=0.673750
+2026-03-05 04:10:36,740 - INFO - (path=[8, 9], hop=2, sort_by=auc_roc) rank=40 auc_roc=0.672500
+2026-03-05 04:10:36,740 - INFO - (path=[9], hop=1, sort_by=auc_roc) rank=41 auc_roc=0.670000
+2026-03-05 04:10:36,740 - INFO - (path=[2, 3], hop=2, sort_by=auc_roc) rank=42 auc_roc=0.663750
+2026-03-05 04:10:36,740 - INFO - (path=[8, 11, 10, 9], hop=4, sort_by=auc_roc) rank=43 auc_roc=0.661250

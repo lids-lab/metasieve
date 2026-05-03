@@ -12,7 +12,7 @@ export WANDB_DISABLED=true
 # LOG_FILE="${RUN_NAME}.log"   
 # torchrun --standalone --nnodes=1 --nproc_per_node=1 main_node_ddp_v2.py \
 #   --dataset rel-stack \
-#   --cache_dir /home/fsk2739/relgt/data \
+#   --cache_dir ./data \
 #   --task user-badge \
 #   --sampling_backend neighborloader \
 #   --batch_size 512 \
@@ -32,11 +32,11 @@ RUN_NAME="user_badge_pruning_3_hops_k_50"
 LOG_FILE="${RUN_NAME}.log"   
 torchrun --standalone --nnodes=1 --nproc_per_node=1 main_node_ddp_v2.py \
   --dataset rel-stack \
-  --cache_dir /home/fsk2739/relgt/data \
+  --cache_dir ./data \
   --task user-badge \
   --sampling_backend neighborloader \
   --batch_size 512 \
-  --nl_num_neighbors "@pruning_configs/rel-stack/user-badge/user_badge_pruned_3hops.json" \
+  --nl_num_neighbors "@pruning_configs/rel-stack/user-badge/user_badge_pruned_3hops_0.1.json" \
   --num_neighbors 50 \
   --num_workers 8 \
   --epochs 10 \
@@ -53,7 +53,7 @@ torchrun --standalone --nnodes=1 --nproc_per_node=1 main_node_ddp_v2.py \
 # LOG_FILE="${RUN_NAME}.log"   
 # torchrun --standalone --nnodes=1 --nproc_per_node=1 main_node_ddp_v2.py \
 #   --dataset rel-stack \
-#   --cache_dir /home/fsk2739/relgt/data \
+#   --cache_dir ./data \
 #   --task user-badge \
 #   --sampling_backend neighborloader \
 #   --batch_size 512 \

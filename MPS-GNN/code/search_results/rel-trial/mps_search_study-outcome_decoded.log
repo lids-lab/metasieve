@@ -1,0 +1,276 @@
+rank=1  auc_roc=0.653571  hop=3  sort_by=auc_roc  path=[25, 24, 25]
+  decoded (logged order):
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+    24 ('designs', 'f2p_nct_id', 'studies')
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+  decoded (forward order = reverse(path)): [25, 24, 25]
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+    24 ('designs', 'f2p_nct_id', 'studies')
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+
+rank=2  auc_roc=0.636607  hop=4  sort_by=auc_roc  path=[16, 19, 18, 17]
+  decoded (logged order):
+    16 ('facilities_studies', 'f2p_nct_id', 'studies')
+    19 ('facilities', 'rev_f2p_facility_id', 'facilities_studies')
+    18 ('facilities_studies', 'f2p_facility_id', 'facilities')
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+  decoded (forward order = reverse(path)): [17, 18, 19, 16]
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+    18 ('facilities_studies', 'f2p_facility_id', 'facilities')
+    19 ('facilities', 'rev_f2p_facility_id', 'facilities_studies')
+    16 ('facilities_studies', 'f2p_nct_id', 'studies')
+
+rank=3  auc_roc=0.636607  hop=4  sort_by=auc_roc  path=[14, 13, 16, 17]
+  decoded (logged order):
+    14 ('sponsors_studies', 'f2p_sponsor_id', 'sponsors')
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+    16 ('facilities_studies', 'f2p_nct_id', 'studies')
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+  decoded (forward order = reverse(path)): [17, 16, 13, 14]
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+    16 ('facilities_studies', 'f2p_nct_id', 'studies')
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+    14 ('sponsors_studies', 'f2p_sponsor_id', 'sponsors')
+
+rank=4  auc_roc=0.635714  hop=3  sort_by=auc_roc  path=[15, 14, 13]
+  decoded (logged order):
+    15 ('sponsors', 'rev_f2p_sponsor_id', 'sponsors_studies')
+    14 ('sponsors_studies', 'f2p_sponsor_id', 'sponsors')
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+  decoded (forward order = reverse(path)): [13, 14, 15]
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+    14 ('sponsors_studies', 'f2p_sponsor_id', 'sponsors')
+    15 ('sponsors', 'rev_f2p_sponsor_id', 'sponsors_studies')
+
+rank=5  auc_roc=0.633929  hop=4  sort_by=auc_roc  path=[24, 25, 16, 17]
+  decoded (logged order):
+    24 ('designs', 'f2p_nct_id', 'studies')
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+    16 ('facilities_studies', 'f2p_nct_id', 'studies')
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+  decoded (forward order = reverse(path)): [17, 16, 25, 24]
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+    16 ('facilities_studies', 'f2p_nct_id', 'studies')
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+    24 ('designs', 'f2p_nct_id', 'studies')
+
+rank=6  auc_roc=0.629464  hop=2  sort_by=auc_roc  path=[16, 17]
+  decoded (logged order):
+    16 ('facilities_studies', 'f2p_nct_id', 'studies')
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+  decoded (forward order = reverse(path)): [17, 16]
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+    16 ('facilities_studies', 'f2p_nct_id', 'studies')
+
+rank=7  auc_roc=0.627679  hop=2  sort_by=auc_roc  path=[24, 25]
+  decoded (logged order):
+    24 ('designs', 'f2p_nct_id', 'studies')
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+  decoded (forward order = reverse(path)): [25, 24]
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+    24 ('designs', 'f2p_nct_id', 'studies')
+
+rank=8  auc_roc=0.623214  hop=3  sort_by=auc_roc  path=[25, 16, 17]
+  decoded (logged order):
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+    16 ('facilities_studies', 'f2p_nct_id', 'studies')
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+  decoded (forward order = reverse(path)): [17, 16, 25]
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+    16 ('facilities_studies', 'f2p_nct_id', 'studies')
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+
+rank=9  auc_roc=0.619643  hop=2  sort_by=auc_roc  path=[18, 17]
+  decoded (logged order):
+    18 ('facilities_studies', 'f2p_facility_id', 'facilities')
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+  decoded (forward order = reverse(path)): [17, 18]
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+    18 ('facilities_studies', 'f2p_facility_id', 'facilities')
+
+rank=10  auc_roc=0.618750  hop=2  sort_by=auc_roc  path=[14, 13]
+  decoded (logged order):
+    14 ('sponsors_studies', 'f2p_sponsor_id', 'sponsors')
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+  decoded (forward order = reverse(path)): [13, 14]
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+    14 ('sponsors_studies', 'f2p_sponsor_id', 'sponsors')
+
+rank=11  auc_roc=0.616964  hop=3  sort_by=auc_roc  path=[23, 24, 25]
+  decoded (logged order):
+    23 ('studies', 'rev_f2p_nct_id', 'eligibilities')
+    24 ('designs', 'f2p_nct_id', 'studies')
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+  decoded (forward order = reverse(path)): [25, 24, 23]
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+    24 ('designs', 'f2p_nct_id', 'studies')
+    23 ('studies', 'rev_f2p_nct_id', 'eligibilities')
+
+rank=12  auc_roc=0.616071  hop=1  sort_by=auc_roc  path=[17]
+  decoded (logged order):
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+  decoded (forward order = reverse(path)): [17]
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+
+rank=13  auc_roc=0.615179  hop=4  sort_by=auc_roc  path=[14, 15, 14, 13]
+  decoded (logged order):
+    14 ('sponsors_studies', 'f2p_sponsor_id', 'sponsors')
+    15 ('sponsors', 'rev_f2p_sponsor_id', 'sponsors_studies')
+    14 ('sponsors_studies', 'f2p_sponsor_id', 'sponsors')
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+  decoded (forward order = reverse(path)): [13, 14, 15, 14]
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+    14 ('sponsors_studies', 'f2p_sponsor_id', 'sponsors')
+    15 ('sponsors', 'rev_f2p_sponsor_id', 'sponsors_studies')
+    14 ('sponsors_studies', 'f2p_sponsor_id', 'sponsors')
+
+rank=14  auc_roc=0.612500  hop=3  sort_by=auc_roc  path=[19, 18, 17]
+  decoded (logged order):
+    19 ('facilities', 'rev_f2p_facility_id', 'facilities_studies')
+    18 ('facilities_studies', 'f2p_facility_id', 'facilities')
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+  decoded (forward order = reverse(path)): [17, 18, 19]
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+    18 ('facilities_studies', 'f2p_facility_id', 'facilities')
+    19 ('facilities', 'rev_f2p_facility_id', 'facilities_studies')
+
+rank=15  auc_roc=0.611607  hop=3  sort_by=auc_roc  path=[13, 16, 17]
+  decoded (logged order):
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+    16 ('facilities_studies', 'f2p_nct_id', 'studies')
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+  decoded (forward order = reverse(path)): [17, 16, 13]
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+    16 ('facilities_studies', 'f2p_nct_id', 'studies')
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+
+rank=16  auc_roc=0.607143  hop=3  sort_by=auc_roc  path=[1, 16, 17]
+  decoded (logged order):
+    1 ('studies', 'rev_f2p_nct_id', 'conditions_studies')
+    16 ('facilities_studies', 'f2p_nct_id', 'studies')
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+  decoded (forward order = reverse(path)): [17, 16, 1]
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+    16 ('facilities_studies', 'f2p_nct_id', 'studies')
+    1 ('studies', 'rev_f2p_nct_id', 'conditions_studies')
+
+rank=17  auc_roc=0.603571  hop=4  sort_by=auc_roc  path=[22, 23, 24, 25]
+  decoded (logged order):
+    22 ('eligibilities', 'f2p_nct_id', 'studies')
+    23 ('studies', 'rev_f2p_nct_id', 'eligibilities')
+    24 ('designs', 'f2p_nct_id', 'studies')
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+  decoded (forward order = reverse(path)): [25, 24, 23, 22]
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+    24 ('designs', 'f2p_nct_id', 'studies')
+    23 ('studies', 'rev_f2p_nct_id', 'eligibilities')
+    22 ('eligibilities', 'f2p_nct_id', 'studies')
+
+rank=18  auc_roc=0.600893  hop=1  sort_by=auc_roc  path=[13]
+  decoded (logged order):
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+  decoded (forward order = reverse(path)): [13]
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+
+rank=19  auc_roc=0.600893  hop=1  sort_by=auc_roc  path=[25]
+  decoded (logged order):
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+  decoded (forward order = reverse(path)): [25]
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+
+rank=20  auc_roc=0.599107  hop=4  sort_by=auc_roc  path=[24, 25, 24, 25]
+  decoded (logged order):
+    24 ('designs', 'f2p_nct_id', 'studies')
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+    24 ('designs', 'f2p_nct_id', 'studies')
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+  decoded (forward order = reverse(path)): [25, 24, 25, 24]
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+    24 ('designs', 'f2p_nct_id', 'studies')
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+    24 ('designs', 'f2p_nct_id', 'studies')
+
+rank=21  auc_roc=0.597321  hop=3  sort_by=auc_roc  path=[1, 24, 25]
+  decoded (logged order):
+    1 ('studies', 'rev_f2p_nct_id', 'conditions_studies')
+    24 ('designs', 'f2p_nct_id', 'studies')
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+  decoded (forward order = reverse(path)): [25, 24, 1]
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+    24 ('designs', 'f2p_nct_id', 'studies')
+    1 ('studies', 'rev_f2p_nct_id', 'conditions_studies')
+
+rank=22  auc_roc=0.597321  hop=3  sort_by=auc_roc  path=[13, 12, 13]
+  decoded (logged order):
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+    12 ('sponsors_studies', 'f2p_nct_id', 'studies')
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+  decoded (forward order = reverse(path)): [13, 12, 13]
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+    12 ('sponsors_studies', 'f2p_nct_id', 'studies')
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+
+rank=23  auc_roc=0.593750  hop=4  sort_by=auc_roc  path=[18, 19, 18, 17]
+  decoded (logged order):
+    18 ('facilities_studies', 'f2p_facility_id', 'facilities')
+    19 ('facilities', 'rev_f2p_facility_id', 'facilities_studies')
+    18 ('facilities_studies', 'f2p_facility_id', 'facilities')
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+  decoded (forward order = reverse(path)): [17, 18, 19, 18]
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+    18 ('facilities_studies', 'f2p_facility_id', 'facilities')
+    19 ('facilities', 'rev_f2p_facility_id', 'facilities_studies')
+    18 ('facilities_studies', 'f2p_facility_id', 'facilities')
+
+rank=24  auc_roc=0.586607  hop=4  sort_by=auc_roc  path=[12, 13, 16, 17]
+  decoded (logged order):
+    12 ('sponsors_studies', 'f2p_nct_id', 'studies')
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+    16 ('facilities_studies', 'f2p_nct_id', 'studies')
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+  decoded (forward order = reverse(path)): [17, 16, 13, 12]
+    17 ('studies', 'rev_f2p_nct_id', 'facilities_studies')
+    16 ('facilities_studies', 'f2p_nct_id', 'studies')
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+    12 ('sponsors_studies', 'f2p_nct_id', 'studies')
+
+rank=25  auc_roc=0.583036  hop=3  sort_by=auc_roc  path=[25, 12, 13]
+  decoded (logged order):
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+    12 ('sponsors_studies', 'f2p_nct_id', 'studies')
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+  decoded (forward order = reverse(path)): [13, 12, 25]
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+    12 ('sponsors_studies', 'f2p_nct_id', 'studies')
+    25 ('studies', 'rev_f2p_nct_id', 'designs')
+
+rank=26  auc_roc=0.581250  hop=3  sort_by=auc_roc  path=[23, 12, 13]
+  decoded (logged order):
+    23 ('studies', 'rev_f2p_nct_id', 'eligibilities')
+    12 ('sponsors_studies', 'f2p_nct_id', 'studies')
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+  decoded (forward order = reverse(path)): [13, 12, 23]
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+    12 ('sponsors_studies', 'f2p_nct_id', 'studies')
+    23 ('studies', 'rev_f2p_nct_id', 'eligibilities')
+
+rank=27  auc_roc=0.572321  hop=2  sort_by=auc_roc  path=[12, 13]
+  decoded (logged order):
+    12 ('sponsors_studies', 'f2p_nct_id', 'studies')
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+  decoded (forward order = reverse(path)): [13, 12]
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+    12 ('sponsors_studies', 'f2p_nct_id', 'studies')
+
+rank=28  auc_roc=0.562500  hop=4  sort_by=auc_roc  path=[12, 15, 14, 13]
+  decoded (logged order):
+    12 ('sponsors_studies', 'f2p_nct_id', 'studies')
+    15 ('sponsors', 'rev_f2p_sponsor_id', 'sponsors_studies')
+    14 ('sponsors_studies', 'f2p_sponsor_id', 'sponsors')
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+  decoded (forward order = reverse(path)): [13, 14, 15, 12]
+    13 ('studies', 'rev_f2p_nct_id', 'sponsors_studies')
+    14 ('sponsors_studies', 'f2p_sponsor_id', 'sponsors')
+    15 ('sponsors', 'rev_f2p_sponsor_id', 'sponsors_studies')
+    12 ('sponsors_studies', 'f2p_nct_id', 'studies')
+

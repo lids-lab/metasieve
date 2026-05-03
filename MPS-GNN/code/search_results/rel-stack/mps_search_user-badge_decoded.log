@@ -1,0 +1,404 @@
+rank=1  auc_roc=0.791071  hop=4  sort_by=auc_roc  path=[3, 1, 18, 19]
+  decoded (logged order):
+    3 ('posts', 'rev_f2p_ParentId', 'posts')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    18 ('badges', 'f2p_UserId', 'users')
+    19 ('users', 'rev_f2p_UserId', 'badges')
+  decoded (forward order = reverse(path)): [19, 18, 1, 3]
+    19 ('users', 'rev_f2p_UserId', 'badges')
+    18 ('badges', 'f2p_UserId', 'users')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    3 ('posts', 'rev_f2p_ParentId', 'posts')
+
+rank=2  auc_roc=0.790179  hop=4  sort_by=auc_roc  path=[5, 1, 18, 19]
+  decoded (logged order):
+    5 ('posts', 'rev_f2p_AcceptedAnswerId', 'posts')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    18 ('badges', 'f2p_UserId', 'users')
+    19 ('users', 'rev_f2p_UserId', 'badges')
+  decoded (forward order = reverse(path)): [19, 18, 1, 5]
+    19 ('users', 'rev_f2p_UserId', 'badges')
+    18 ('badges', 'f2p_UserId', 'users')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    5 ('posts', 'rev_f2p_AcceptedAnswerId', 'posts')
+
+rank=3  auc_roc=0.777679  hop=3  sort_by=auc_roc  path=[12, 11, 1]
+  decoded (logged order):
+    12 ('postHistory', 'f2p_UserId', 'users')
+    11 ('posts', 'rev_f2p_PostId', 'postHistory')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+  decoded (forward order = reverse(path)): [1, 11, 12]
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    11 ('posts', 'rev_f2p_PostId', 'postHistory')
+    12 ('postHistory', 'f2p_UserId', 'users')
+
+rank=4  auc_roc=0.776786  hop=3  sort_by=auc_roc  path=[15, 3, 1]
+  decoded (logged order):
+    15 ('posts', 'rev_f2p_PostId', 'votes')
+    3 ('posts', 'rev_f2p_ParentId', 'posts')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+  decoded (forward order = reverse(path)): [1, 3, 15]
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    3 ('posts', 'rev_f2p_ParentId', 'posts')
+    15 ('posts', 'rev_f2p_PostId', 'votes')
+
+rank=5  auc_roc=0.775000  hop=4  sort_by=auc_roc  path=[4, 1, 18, 19]
+  decoded (logged order):
+    4 ('posts', 'f2p_AcceptedAnswerId', 'posts')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    18 ('badges', 'f2p_UserId', 'users')
+    19 ('users', 'rev_f2p_UserId', 'badges')
+  decoded (forward order = reverse(path)): [19, 18, 1, 4]
+    19 ('users', 'rev_f2p_UserId', 'badges')
+    18 ('badges', 'f2p_UserId', 'users')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    4 ('posts', 'f2p_AcceptedAnswerId', 'posts')
+
+rank=6  auc_roc=0.774107  hop=2  sort_by=auc_roc  path=[12, 13]
+  decoded (logged order):
+    12 ('postHistory', 'f2p_UserId', 'users')
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+  decoded (forward order = reverse(path)): [13, 12]
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+    12 ('postHistory', 'f2p_UserId', 'users')
+
+rank=7  auc_roc=0.773214  hop=3  sort_by=auc_roc  path=[13, 12, 13]
+  decoded (logged order):
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+    12 ('postHistory', 'f2p_UserId', 'users')
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+  decoded (forward order = reverse(path)): [13, 12, 13]
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+    12 ('postHistory', 'f2p_UserId', 'users')
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+
+rank=8  auc_roc=0.773214  hop=4  sort_by=auc_roc  path=[23, 1, 0, 1]
+  decoded (logged order):
+    23 ('posts', 'rev_f2p_RelatedPostId', 'postLinks')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    0 ('posts', 'f2p_OwnerUserId', 'users')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+  decoded (forward order = reverse(path)): [1, 0, 1, 23]
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    0 ('posts', 'f2p_OwnerUserId', 'users')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    23 ('posts', 'rev_f2p_RelatedPostId', 'postLinks')
+
+rank=9  auc_roc=0.772321  hop=4  sort_by=auc_roc  path=[15, 1, 0, 1]
+  decoded (logged order):
+    15 ('posts', 'rev_f2p_PostId', 'votes')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    0 ('posts', 'f2p_OwnerUserId', 'users')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+  decoded (forward order = reverse(path)): [1, 0, 1, 15]
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    0 ('posts', 'f2p_OwnerUserId', 'users')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    15 ('posts', 'rev_f2p_PostId', 'votes')
+
+rank=10  auc_roc=0.771429  hop=4  sort_by=auc_roc  path=[13, 12, 11, 1]
+  decoded (logged order):
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+    12 ('postHistory', 'f2p_UserId', 'users')
+    11 ('posts', 'rev_f2p_PostId', 'postHistory')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+  decoded (forward order = reverse(path)): [1, 11, 12, 13]
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    11 ('posts', 'rev_f2p_PostId', 'postHistory')
+    12 ('postHistory', 'f2p_UserId', 'users')
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+
+rank=11  auc_roc=0.770536  hop=1  sort_by=auc_roc  path=[1]
+  decoded (logged order):
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+  decoded (forward order = reverse(path)): [1]
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+
+rank=12  auc_roc=0.770536  hop=3  sort_by=auc_roc  path=[1, 18, 19]
+  decoded (logged order):
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    18 ('badges', 'f2p_UserId', 'users')
+    19 ('users', 'rev_f2p_UserId', 'badges')
+  decoded (forward order = reverse(path)): [19, 18, 1]
+    19 ('users', 'rev_f2p_UserId', 'badges')
+    18 ('badges', 'f2p_UserId', 'users')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+
+rank=13  auc_roc=0.769643  hop=3  sort_by=auc_roc  path=[7, 18, 19]
+  decoded (logged order):
+    7 ('users', 'rev_f2p_UserId', 'comments')
+    18 ('badges', 'f2p_UserId', 'users')
+    19 ('users', 'rev_f2p_UserId', 'badges')
+  decoded (forward order = reverse(path)): [19, 18, 7]
+    19 ('users', 'rev_f2p_UserId', 'badges')
+    18 ('badges', 'f2p_UserId', 'users')
+    7 ('users', 'rev_f2p_UserId', 'comments')
+
+rank=14  auc_roc=0.769643  hop=3  sort_by=auc_roc  path=[1, 0, 1]
+  decoded (logged order):
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    0 ('posts', 'f2p_OwnerUserId', 'users')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+  decoded (forward order = reverse(path)): [1, 0, 1]
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    0 ('posts', 'f2p_OwnerUserId', 'users')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+
+rank=15  auc_roc=0.768750  hop=3  sort_by=auc_roc  path=[2, 3, 1]
+  decoded (logged order):
+    2 ('posts', 'f2p_ParentId', 'posts')
+    3 ('posts', 'rev_f2p_ParentId', 'posts')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+  decoded (forward order = reverse(path)): [1, 3, 2]
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    3 ('posts', 'rev_f2p_ParentId', 'posts')
+    2 ('posts', 'f2p_ParentId', 'posts')
+
+rank=16  auc_roc=0.767857  hop=1  sort_by=auc_roc  path=[13]
+  decoded (logged order):
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+  decoded (forward order = reverse(path)): [13]
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+
+rank=17  auc_roc=0.767857  hop=2  sort_by=auc_roc  path=[10, 13]
+  decoded (logged order):
+    10 ('postHistory', 'f2p_PostId', 'posts')
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+  decoded (forward order = reverse(path)): [13, 10]
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+    10 ('postHistory', 'f2p_PostId', 'posts')
+
+rank=18  auc_roc=0.767857  hop=3  sort_by=auc_roc  path=[0, 10, 13]
+  decoded (logged order):
+    0 ('posts', 'f2p_OwnerUserId', 'users')
+    10 ('postHistory', 'f2p_PostId', 'posts')
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+  decoded (forward order = reverse(path)): [13, 10, 0]
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+    10 ('postHistory', 'f2p_PostId', 'posts')
+    0 ('posts', 'f2p_OwnerUserId', 'users')
+
+rank=19  auc_roc=0.767857  hop=3  sort_by=auc_roc  path=[17, 12, 13]
+  decoded (logged order):
+    17 ('users', 'rev_f2p_UserId', 'votes')
+    12 ('postHistory', 'f2p_UserId', 'users')
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+  decoded (forward order = reverse(path)): [13, 12, 17]
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+    12 ('postHistory', 'f2p_UserId', 'users')
+    17 ('users', 'rev_f2p_UserId', 'votes')
+
+rank=20  auc_roc=0.766964  hop=4  sort_by=auc_roc  path=[12, 13, 12, 13]
+  decoded (logged order):
+    12 ('postHistory', 'f2p_UserId', 'users')
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+    12 ('postHistory', 'f2p_UserId', 'users')
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+  decoded (forward order = reverse(path)): [13, 12, 13, 12]
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+    12 ('postHistory', 'f2p_UserId', 'users')
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+    12 ('postHistory', 'f2p_UserId', 'users')
+
+rank=21  auc_roc=0.766071  hop=3  sort_by=auc_roc  path=[10, 11, 1]
+  decoded (logged order):
+    10 ('postHistory', 'f2p_PostId', 'posts')
+    11 ('posts', 'rev_f2p_PostId', 'postHistory')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+  decoded (forward order = reverse(path)): [1, 11, 10]
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    11 ('posts', 'rev_f2p_PostId', 'postHistory')
+    10 ('postHistory', 'f2p_PostId', 'posts')
+
+rank=22  auc_roc=0.763393  hop=3  sort_by=auc_roc  path=[19, 12, 13]
+  decoded (logged order):
+    19 ('users', 'rev_f2p_UserId', 'badges')
+    12 ('postHistory', 'f2p_UserId', 'users')
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+  decoded (forward order = reverse(path)): [13, 12, 19]
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+    12 ('postHistory', 'f2p_UserId', 'users')
+    19 ('users', 'rev_f2p_UserId', 'badges')
+
+rank=23  auc_roc=0.762500  hop=3  sort_by=auc_roc  path=[21, 10, 13]
+  decoded (logged order):
+    21 ('posts', 'rev_f2p_PostId', 'postLinks')
+    10 ('postHistory', 'f2p_PostId', 'posts')
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+  decoded (forward order = reverse(path)): [13, 10, 21]
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+    10 ('postHistory', 'f2p_PostId', 'posts')
+    21 ('posts', 'rev_f2p_PostId', 'postLinks')
+
+rank=24  auc_roc=0.761607  hop=4  sort_by=auc_roc  path=[17, 12, 11, 1]
+  decoded (logged order):
+    17 ('users', 'rev_f2p_UserId', 'votes')
+    12 ('postHistory', 'f2p_UserId', 'users')
+    11 ('posts', 'rev_f2p_PostId', 'postHistory')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+  decoded (forward order = reverse(path)): [1, 11, 12, 17]
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    11 ('posts', 'rev_f2p_PostId', 'postHistory')
+    12 ('postHistory', 'f2p_UserId', 'users')
+    17 ('users', 'rev_f2p_UserId', 'votes')
+
+rank=25  auc_roc=0.760714  hop=4  sort_by=auc_roc  path=[14, 15, 3, 1]
+  decoded (logged order):
+    14 ('votes', 'f2p_PostId', 'posts')
+    15 ('posts', 'rev_f2p_PostId', 'votes')
+    3 ('posts', 'rev_f2p_ParentId', 'posts')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+  decoded (forward order = reverse(path)): [1, 3, 15, 14]
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    3 ('posts', 'rev_f2p_ParentId', 'posts')
+    15 ('posts', 'rev_f2p_PostId', 'votes')
+    14 ('votes', 'f2p_PostId', 'posts')
+
+rank=26  auc_roc=0.759821  hop=3  sort_by=auc_roc  path=[11, 3, 1]
+  decoded (logged order):
+    11 ('posts', 'rev_f2p_PostId', 'postHistory')
+    3 ('posts', 'rev_f2p_ParentId', 'posts')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+  decoded (forward order = reverse(path)): [1, 3, 11]
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    3 ('posts', 'rev_f2p_ParentId', 'posts')
+    11 ('posts', 'rev_f2p_PostId', 'postHistory')
+
+rank=27  auc_roc=0.759821  hop=4  sort_by=auc_roc  path=[5, 1, 0, 1]
+  decoded (logged order):
+    5 ('posts', 'rev_f2p_AcceptedAnswerId', 'posts')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    0 ('posts', 'f2p_OwnerUserId', 'users')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+  decoded (forward order = reverse(path)): [1, 0, 1, 5]
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    0 ('posts', 'f2p_OwnerUserId', 'users')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    5 ('posts', 'rev_f2p_AcceptedAnswerId', 'posts')
+
+rank=28  auc_roc=0.758929  hop=2  sort_by=auc_roc  path=[11, 1]
+  decoded (logged order):
+    11 ('posts', 'rev_f2p_PostId', 'postHistory')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+  decoded (forward order = reverse(path)): [1, 11]
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    11 ('posts', 'rev_f2p_PostId', 'postHistory')
+
+rank=29  auc_roc=0.758929  hop=3  sort_by=auc_roc  path=[13, 0, 1]
+  decoded (logged order):
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+    0 ('posts', 'f2p_OwnerUserId', 'users')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+  decoded (forward order = reverse(path)): [1, 0, 13]
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    0 ('posts', 'f2p_OwnerUserId', 'users')
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+
+rank=30  auc_roc=0.758036  hop=2  sort_by=auc_roc  path=[3, 1]
+  decoded (logged order):
+    3 ('posts', 'rev_f2p_ParentId', 'posts')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+  decoded (forward order = reverse(path)): [1, 3]
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    3 ('posts', 'rev_f2p_ParentId', 'posts')
+
+rank=31  auc_roc=0.757143  hop=1  sort_by=auc_roc  path=[19]
+  decoded (logged order):
+    19 ('users', 'rev_f2p_UserId', 'badges')
+  decoded (forward order = reverse(path)): [19]
+    19 ('users', 'rev_f2p_UserId', 'badges')
+
+rank=32  auc_roc=0.757143  hop=2  sort_by=auc_roc  path=[0, 1]
+  decoded (logged order):
+    0 ('posts', 'f2p_OwnerUserId', 'users')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+  decoded (forward order = reverse(path)): [1, 0]
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    0 ('posts', 'f2p_OwnerUserId', 'users')
+
+rank=33  auc_roc=0.755357  hop=4  sort_by=auc_roc  path=[7, 12, 11, 1]
+  decoded (logged order):
+    7 ('users', 'rev_f2p_UserId', 'comments')
+    12 ('postHistory', 'f2p_UserId', 'users')
+    11 ('posts', 'rev_f2p_PostId', 'postHistory')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+  decoded (forward order = reverse(path)): [1, 11, 12, 7]
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    11 ('posts', 'rev_f2p_PostId', 'postHistory')
+    12 ('postHistory', 'f2p_UserId', 'users')
+    7 ('users', 'rev_f2p_UserId', 'comments')
+
+rank=34  auc_roc=0.748214  hop=4  sort_by=auc_roc  path=[6, 7, 18, 19]
+  decoded (logged order):
+    6 ('comments', 'f2p_UserId', 'users')
+    7 ('users', 'rev_f2p_UserId', 'comments')
+    18 ('badges', 'f2p_UserId', 'users')
+    19 ('users', 'rev_f2p_UserId', 'badges')
+  decoded (forward order = reverse(path)): [19, 18, 7, 6]
+    19 ('users', 'rev_f2p_UserId', 'badges')
+    18 ('badges', 'f2p_UserId', 'users')
+    7 ('users', 'rev_f2p_UserId', 'comments')
+    6 ('comments', 'f2p_UserId', 'users')
+
+rank=35  auc_roc=0.742857  hop=2  sort_by=auc_roc  path=[18, 19]
+  decoded (logged order):
+    18 ('badges', 'f2p_UserId', 'users')
+    19 ('users', 'rev_f2p_UserId', 'badges')
+  decoded (forward order = reverse(path)): [19, 18]
+    19 ('users', 'rev_f2p_UserId', 'badges')
+    18 ('badges', 'f2p_UserId', 'users')
+
+rank=36  auc_roc=0.740179  hop=4  sort_by=auc_roc  path=[10, 13, 12, 13]
+  decoded (logged order):
+    10 ('postHistory', 'f2p_PostId', 'posts')
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+    12 ('postHistory', 'f2p_UserId', 'users')
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+  decoded (forward order = reverse(path)): [13, 12, 13, 10]
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+    12 ('postHistory', 'f2p_UserId', 'users')
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+    10 ('postHistory', 'f2p_PostId', 'posts')
+
+rank=37  auc_roc=0.738393  hop=3  sort_by=auc_roc  path=[7, 0, 1]
+  decoded (logged order):
+    7 ('users', 'rev_f2p_UserId', 'comments')
+    0 ('posts', 'f2p_OwnerUserId', 'users')
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+  decoded (forward order = reverse(path)): [1, 0, 7]
+    1 ('users', 'rev_f2p_OwnerUserId', 'posts')
+    0 ('posts', 'f2p_OwnerUserId', 'users')
+    7 ('users', 'rev_f2p_UserId', 'comments')
+
+rank=38  auc_roc=0.735714  hop=3  sort_by=auc_roc  path=[9, 10, 13]
+  decoded (logged order):
+    9 ('posts', 'rev_f2p_PostId', 'comments')
+    10 ('postHistory', 'f2p_PostId', 'posts')
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+  decoded (forward order = reverse(path)): [13, 10, 9]
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+    10 ('postHistory', 'f2p_PostId', 'posts')
+    9 ('posts', 'rev_f2p_PostId', 'comments')
+
+rank=39  auc_roc=0.729464  hop=4  sort_by=auc_roc  path=[8, 7, 18, 19]
+  decoded (logged order):
+    8 ('comments', 'f2p_PostId', 'posts')
+    7 ('users', 'rev_f2p_UserId', 'comments')
+    18 ('badges', 'f2p_UserId', 'users')
+    19 ('users', 'rev_f2p_UserId', 'badges')
+  decoded (forward order = reverse(path)): [19, 18, 7, 8]
+    19 ('users', 'rev_f2p_UserId', 'badges')
+    18 ('badges', 'f2p_UserId', 'users')
+    7 ('users', 'rev_f2p_UserId', 'comments')
+    8 ('comments', 'f2p_PostId', 'posts')
+
+rank=40  auc_roc=0.716071  hop=3  sort_by=auc_roc  path=[13, 18, 19]
+  decoded (logged order):
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+    18 ('badges', 'f2p_UserId', 'users')
+    19 ('users', 'rev_f2p_UserId', 'badges')
+  decoded (forward order = reverse(path)): [19, 18, 13]
+    19 ('users', 'rev_f2p_UserId', 'badges')
+    18 ('badges', 'f2p_UserId', 'users')
+    13 ('users', 'rev_f2p_UserId', 'postHistory')
+

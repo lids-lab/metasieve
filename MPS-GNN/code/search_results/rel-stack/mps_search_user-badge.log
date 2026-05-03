@@ -1,0 +1,270 @@
+[RUN_START] 2026-03-04T16:53:18.639521
+DATASET_NAME=rel-stack
+TASK_NAME=user-badge
+NUM_LAYERS=4
+num_neighbors=[32, 32, 32, 32]
+train_sample: n_pos=300, n_neg=420
+val_sample:   n_pos=80, n_neg=112
+SEARCH_L_MAX=3
+SEARCH_K=3
+SEARCH_BEAM_WIDTH=6
+SEARCH_SAMPLING_SIZE=1
+SEARCH_RANK_METRIC=auc_roc
+------------------------------------------------------------
+2026-03-04 16:53:18,678 - INFO - [MPS] rank_metric=auc_roc (used for beam pruning, ranking, and top-k combination checks)
+2026-03-04 16:53:18,728 - INFO - [MPS] #candidate relations (connected to targets): 5
+2026-03-04 17:26:49,976 - INFO - [MPS][hop=1] best relations (lower score loss is better):
+2026-03-04 17:26:49,977 - INFO -   rel=19   loss=1204.53 name=('users', 'rev_f2p_UserId', 'badges')
+2026-03-04 17:26:49,977 - INFO -   rel=1    loss=2962.74 name=('users', 'rev_f2p_OwnerUserId', 'posts')
+2026-03-04 17:26:49,977 - INFO -   rel=13   loss=3566.59 name=('users', 'rev_f2p_UserId', 'postHistory')
+2026-03-04 17:26:49,977 - INFO -   rel=7    loss=9398.68 name=('users', 'rev_f2p_UserId', 'comments')
+2026-03-04 17:26:49,977 - INFO -   rel=17   loss=29553.8 name=('users', 'rev_f2p_UserId', 'votes')
+2026-03-04 17:26:49,977 - INFO - [MPS][hop=1] worst relations:
+2026-03-04 17:26:49,977 - INFO -   rel=19   loss=1204.53 name=('users', 'rev_f2p_UserId', 'badges')
+2026-03-04 17:26:49,977 - INFO -   rel=1    loss=2962.74 name=('users', 'rev_f2p_OwnerUserId', 'posts')
+2026-03-04 17:26:49,977 - INFO -   rel=13   loss=3566.59 name=('users', 'rev_f2p_UserId', 'postHistory')
+2026-03-04 17:26:49,977 - INFO -   rel=7    loss=9398.68 name=('users', 'rev_f2p_UserId', 'comments')
+2026-03-04 17:26:49,977 - INFO -   rel=17   loss=29553.8 name=('users', 'rev_f2p_UserId', 'votes')
+2026-03-04 17:26:49,977 - INFO - [MPS][hop=1] evaluating top-3 seeds with mpgnn() on split=val
+2026-03-04 17:28:38,118 - INFO - [MPS][hop=2] extending mp=[19] | #candidates=1 | taking top-1
+2026-03-04 17:28:38,123 - INFO - [MPS][hop=2] best extensions for mp=[19]:
+2026-03-04 17:28:38,123 - INFO -   rel=18   loss=221 name=('badges', 'f2p_UserId', 'users')
+2026-03-04 17:28:38,123 - INFO - [MPS][hop=2] worst extensions for mp=[19]:
+2026-03-04 17:28:38,123 - INFO -   rel=18   loss=221 name=('badges', 'f2p_UserId', 'users')
+2026-03-04 17:42:30,621 - INFO - [MPS][hop=2] extending mp=[1] | #candidates=10 | taking top-3
+2026-03-04 17:42:30,621 - INFO - [MPS][hop=2] best extensions for mp=[1]:
+2026-03-04 17:42:30,621 - INFO -   rel=11   loss=410 name=('posts', 'rev_f2p_PostId', 'postHistory')
+2026-03-04 17:42:30,621 - INFO -   rel=0    loss=1287 name=('posts', 'f2p_OwnerUserId', 'users')
+2026-03-04 17:42:30,621 - INFO -   rel=3    loss=1726.78 name=('posts', 'rev_f2p_ParentId', 'posts')
+2026-03-04 17:42:30,621 - INFO -   rel=15   loss=2171.16 name=('posts', 'rev_f2p_PostId', 'votes')
+2026-03-04 17:42:30,621 - INFO -   rel=4    loss=6454.39 name=('posts', 'f2p_AcceptedAnswerId', 'posts')
+2026-03-04 17:42:30,621 - INFO -   rel=2    loss=7420.32 name=('posts', 'f2p_ParentId', 'posts')
+2026-03-04 17:42:30,621 - INFO -   rel=21   loss=7430.04 name=('posts', 'rev_f2p_PostId', 'postLinks')
+2026-03-04 17:42:30,621 - INFO -   rel=23   loss=8263.82 name=('posts', 'rev_f2p_RelatedPostId', 'postLinks')
+2026-03-04 17:42:30,621 - INFO -   rel=5    loss=10075.2 name=('posts', 'rev_f2p_AcceptedAnswerId', 'posts')
+2026-03-04 17:42:30,621 - INFO -   rel=9    loss=23570.1 name=('posts', 'rev_f2p_PostId', 'comments')
+2026-03-04 17:42:30,621 - INFO - [MPS][hop=2] worst extensions for mp=[1]:
+2026-03-04 17:42:30,621 - INFO -   rel=11   loss=410 name=('posts', 'rev_f2p_PostId', 'postHistory')
+2026-03-04 17:42:30,621 - INFO -   rel=0    loss=1287 name=('posts', 'f2p_OwnerUserId', 'users')
+2026-03-04 17:42:30,621 - INFO -   rel=3    loss=1726.78 name=('posts', 'rev_f2p_ParentId', 'posts')
+2026-03-04 17:42:30,621 - INFO -   rel=15   loss=2171.16 name=('posts', 'rev_f2p_PostId', 'votes')
+2026-03-04 17:42:30,621 - INFO -   rel=4    loss=6454.39 name=('posts', 'f2p_AcceptedAnswerId', 'posts')
+2026-03-04 17:42:30,621 - INFO -   rel=2    loss=7420.32 name=('posts', 'f2p_ParentId', 'posts')
+2026-03-04 17:42:30,621 - INFO -   rel=21   loss=7430.04 name=('posts', 'rev_f2p_PostId', 'postLinks')
+2026-03-04 17:42:30,621 - INFO -   rel=23   loss=8263.82 name=('posts', 'rev_f2p_RelatedPostId', 'postLinks')
+2026-03-04 17:42:30,621 - INFO -   rel=5    loss=10075.2 name=('posts', 'rev_f2p_AcceptedAnswerId', 'posts')
+2026-03-04 17:42:30,621 - INFO -   rel=9    loss=23570.1 name=('posts', 'rev_f2p_PostId', 'comments')
+2026-03-04 17:48:37,920 - INFO - [MPS][hop=2] extending mp=[13] | #candidates=2 | taking top-2
+2026-03-04 17:48:37,920 - INFO - [MPS][hop=2] best extensions for mp=[13]:
+2026-03-04 17:48:37,920 - INFO -   rel=10   loss=220 name=('postHistory', 'f2p_PostId', 'posts')
+2026-03-04 17:48:37,920 - INFO -   rel=12   loss=2027 name=('postHistory', 'f2p_UserId', 'users')
+2026-03-04 17:48:37,920 - INFO - [MPS][hop=2] worst extensions for mp=[13]:
+2026-03-04 17:48:37,920 - INFO -   rel=10   loss=220 name=('postHistory', 'f2p_PostId', 'posts')
+2026-03-04 17:48:37,921 - INFO -   rel=12   loss=2027 name=('postHistory', 'f2p_UserId', 'users')
+2026-03-04 17:56:25,436 - INFO - [MPS][hop=3] extending mp=[18, 19] | #candidates=5 | taking top-3
+2026-03-04 17:56:25,436 - INFO - [MPS][hop=3] best extensions for mp=[18, 19]:
+2026-03-04 17:56:25,436 - INFO -   rel=1    loss=3020.05 name=('users', 'rev_f2p_OwnerUserId', 'posts')
+2026-03-04 17:56:25,436 - INFO -   rel=13   loss=3824.34 name=('users', 'rev_f2p_UserId', 'postHistory')
+2026-03-04 17:56:25,436 - INFO -   rel=7    loss=10928.7 name=('users', 'rev_f2p_UserId', 'comments')
+2026-03-04 17:56:25,436 - INFO -   rel=17   loss=20538.2 name=('users', 'rev_f2p_UserId', 'votes')
+2026-03-04 17:56:25,436 - INFO -   rel=19   loss=27105.4 name=('users', 'rev_f2p_UserId', 'badges')
+2026-03-04 17:56:25,436 - INFO - [MPS][hop=3] worst extensions for mp=[18, 19]:
+2026-03-04 17:56:25,436 - INFO -   rel=1    loss=3020.05 name=('users', 'rev_f2p_OwnerUserId', 'posts')
+2026-03-04 17:56:25,437 - INFO -   rel=13   loss=3824.34 name=('users', 'rev_f2p_UserId', 'postHistory')
+2026-03-04 17:56:25,437 - INFO -   rel=7    loss=10928.7 name=('users', 'rev_f2p_UserId', 'comments')
+2026-03-04 17:56:25,437 - INFO -   rel=17   loss=20538.2 name=('users', 'rev_f2p_UserId', 'votes')
+2026-03-04 17:56:25,437 - INFO -   rel=19   loss=27105.4 name=('users', 'rev_f2p_UserId', 'badges')
+2026-03-04 18:02:29,854 - INFO - [MPS][hop=3] extending mp=[11, 1] | #candidates=2 | taking top-2
+2026-03-04 18:02:29,855 - INFO - [MPS][hop=3] best extensions for mp=[11, 1]:
+2026-03-04 18:02:29,855 - INFO -   rel=10   loss=5320 name=('postHistory', 'f2p_PostId', 'posts')
+2026-03-04 18:02:29,855 - INFO -   rel=12   loss=27985.2 name=('postHistory', 'f2p_UserId', 'users')
+2026-03-04 18:02:29,855 - INFO - [MPS][hop=3] worst extensions for mp=[11, 1]:
+2026-03-04 18:02:29,855 - INFO -   rel=10   loss=5320 name=('postHistory', 'f2p_PostId', 'posts')
+2026-03-04 18:02:29,855 - INFO -   rel=12   loss=27985.2 name=('postHistory', 'f2p_UserId', 'users')
+2026-03-04 18:06:16,826 - INFO - [MPS][hop=3] extending mp=[0, 1] | #candidates=5 | taking top-3
+2026-03-04 18:06:16,826 - INFO - [MPS][hop=3] best extensions for mp=[0, 1]:
+2026-03-04 18:06:16,826 - INFO -   rel=13   loss=641 name=('users', 'rev_f2p_UserId', 'postHistory')
+2026-03-04 18:06:16,826 - INFO -   rel=1    loss=1255 name=('users', 'rev_f2p_OwnerUserId', 'posts')
+2026-03-04 18:06:16,826 - INFO -   rel=7    loss=4495.78 name=('users', 'rev_f2p_UserId', 'comments')
+2026-03-04 18:06:16,826 - INFO -   rel=17   loss=9170.06 name=('users', 'rev_f2p_UserId', 'votes')
+2026-03-04 18:06:16,826 - INFO -   rel=19   loss=16932.5 name=('users', 'rev_f2p_UserId', 'badges')
+2026-03-04 18:06:16,826 - INFO - [MPS][hop=3] worst extensions for mp=[0, 1]:
+2026-03-04 18:06:16,826 - INFO -   rel=13   loss=641 name=('users', 'rev_f2p_UserId', 'postHistory')
+2026-03-04 18:06:16,826 - INFO -   rel=1    loss=1255 name=('users', 'rev_f2p_OwnerUserId', 'posts')
+2026-03-04 18:06:16,826 - INFO -   rel=7    loss=4495.78 name=('users', 'rev_f2p_UserId', 'comments')
+2026-03-04 18:06:16,826 - INFO -   rel=17   loss=9170.06 name=('users', 'rev_f2p_UserId', 'votes')
+2026-03-04 18:06:16,826 - INFO -   rel=19   loss=16932.5 name=('users', 'rev_f2p_UserId', 'badges')
+2026-03-04 18:12:32,480 - INFO - [MPS][hop=3] extending mp=[3, 1] | #candidates=7 | taking top-3
+2026-03-04 18:12:32,480 - INFO - [MPS][hop=3] best extensions for mp=[3, 1]:
+2026-03-04 18:12:32,480 - INFO -   rel=2    loss=181 name=('posts', 'f2p_ParentId', 'posts')
+2026-03-04 18:12:32,480 - INFO -   rel=11   loss=398 name=('posts', 'rev_f2p_PostId', 'postHistory')
+2026-03-04 18:12:32,480 - INFO -   rel=15   loss=638 name=('posts', 'rev_f2p_PostId', 'votes')
+2026-03-04 18:12:32,480 - INFO -   rel=5    loss=3382.04 name=('posts', 'rev_f2p_AcceptedAnswerId', 'posts')
+2026-03-04 18:12:32,480 - INFO -   rel=0    loss=5044.09 name=('posts', 'f2p_OwnerUserId', 'users')
+2026-03-04 18:12:32,480 - INFO -   rel=23   loss=6889.14 name=('posts', 'rev_f2p_RelatedPostId', 'postLinks')
+2026-03-04 18:12:32,480 - INFO -   rel=9    loss=13581.3 name=('posts', 'rev_f2p_PostId', 'comments')
+2026-03-04 18:12:32,480 - INFO - [MPS][hop=3] worst extensions for mp=[3, 1]:
+2026-03-04 18:12:32,480 - INFO -   rel=2    loss=181 name=('posts', 'f2p_ParentId', 'posts')
+2026-03-04 18:12:32,480 - INFO -   rel=11   loss=398 name=('posts', 'rev_f2p_PostId', 'postHistory')
+2026-03-04 18:12:32,480 - INFO -   rel=15   loss=638 name=('posts', 'rev_f2p_PostId', 'votes')
+2026-03-04 18:12:32,480 - INFO -   rel=5    loss=3382.04 name=('posts', 'rev_f2p_AcceptedAnswerId', 'posts')
+2026-03-04 18:12:32,480 - INFO -   rel=0    loss=5044.09 name=('posts', 'f2p_OwnerUserId', 'users')
+2026-03-04 18:12:32,480 - INFO -   rel=23   loss=6889.14 name=('posts', 'rev_f2p_RelatedPostId', 'postLinks')
+2026-03-04 18:12:32,480 - INFO -   rel=9    loss=13581.3 name=('posts', 'rev_f2p_PostId', 'comments')
+2026-03-04 18:20:10,601 - INFO - [MPS][hop=3] extending mp=[10, 13] | #candidates=10 | taking top-3
+2026-03-04 18:20:10,602 - INFO - [MPS][hop=3] best extensions for mp=[10, 13]:
+2026-03-04 18:20:10,602 - INFO -   rel=0    loss=4757 name=('posts', 'f2p_OwnerUserId', 'users')
+2026-03-04 18:20:10,602 - INFO -   rel=9    loss=5481 name=('posts', 'rev_f2p_PostId', 'comments')
+2026-03-04 18:20:10,602 - INFO -   rel=21   loss=9012.26 name=('posts', 'rev_f2p_PostId', 'postLinks')
+2026-03-04 18:20:10,602 - INFO -   rel=23   loss=9967.96 name=('posts', 'rev_f2p_RelatedPostId', 'postLinks')
+2026-03-04 18:20:10,602 - INFO -   rel=2    loss=12105.3 name=('posts', 'f2p_ParentId', 'posts')
+2026-03-04 18:20:10,602 - INFO -   rel=3    loss=13745.7 name=('posts', 'rev_f2p_ParentId', 'posts')
+2026-03-04 18:20:10,602 - INFO -   rel=11   loss=18102 name=('posts', 'rev_f2p_PostId', 'postHistory')
+2026-03-04 18:20:10,602 - INFO -   rel=15   loss=23683.8 name=('posts', 'rev_f2p_PostId', 'votes')
+2026-03-04 18:20:10,602 - INFO -   rel=4    loss=24259.9 name=('posts', 'f2p_AcceptedAnswerId', 'posts')
+2026-03-04 18:20:10,602 - INFO -   rel=5    loss=25299.9 name=('posts', 'rev_f2p_AcceptedAnswerId', 'posts')
+2026-03-04 18:20:10,602 - INFO - [MPS][hop=3] worst extensions for mp=[10, 13]:
+2026-03-04 18:20:10,602 - INFO -   rel=0    loss=4757 name=('posts', 'f2p_OwnerUserId', 'users')
+2026-03-04 18:20:10,602 - INFO -   rel=9    loss=5481 name=('posts', 'rev_f2p_PostId', 'comments')
+2026-03-04 18:20:10,602 - INFO -   rel=21   loss=9012.26 name=('posts', 'rev_f2p_PostId', 'postLinks')
+2026-03-04 18:20:10,602 - INFO -   rel=23   loss=9967.96 name=('posts', 'rev_f2p_RelatedPostId', 'postLinks')
+2026-03-04 18:20:10,602 - INFO -   rel=2    loss=12105.3 name=('posts', 'f2p_ParentId', 'posts')
+2026-03-04 18:20:10,602 - INFO -   rel=3    loss=13745.7 name=('posts', 'rev_f2p_ParentId', 'posts')
+2026-03-04 18:20:10,602 - INFO -   rel=11   loss=18102 name=('posts', 'rev_f2p_PostId', 'postHistory')
+2026-03-04 18:20:10,602 - INFO -   rel=15   loss=23683.8 name=('posts', 'rev_f2p_PostId', 'votes')
+2026-03-04 18:20:10,602 - INFO -   rel=4    loss=24259.9 name=('posts', 'f2p_AcceptedAnswerId', 'posts')
+2026-03-04 18:20:10,602 - INFO -   rel=5    loss=25299.9 name=('posts', 'rev_f2p_AcceptedAnswerId', 'posts')
+2026-03-04 18:23:16,403 - INFO - [MPS][hop=3] extending mp=[12, 13] | #candidates=5 | taking top-3
+2026-03-04 18:23:16,404 - INFO - [MPS][hop=3] best extensions for mp=[12, 13]:
+2026-03-04 18:23:16,404 - INFO -   rel=19   loss=899 name=('users', 'rev_f2p_UserId', 'badges')
+2026-03-04 18:23:16,404 - INFO -   rel=17   loss=10239.2 name=('users', 'rev_f2p_UserId', 'votes')
+2026-03-04 18:23:16,404 - INFO -   rel=13   loss=15021 name=('users', 'rev_f2p_UserId', 'postHistory')
+2026-03-04 18:23:16,404 - INFO -   rel=1    loss=16355.9 name=('users', 'rev_f2p_OwnerUserId', 'posts')
+2026-03-04 18:23:16,404 - INFO -   rel=7    loss=30254.8 name=('users', 'rev_f2p_UserId', 'comments')
+2026-03-04 18:23:16,404 - INFO - [MPS][hop=3] worst extensions for mp=[12, 13]:
+2026-03-04 18:23:16,404 - INFO -   rel=19   loss=899 name=('users', 'rev_f2p_UserId', 'badges')
+2026-03-04 18:23:16,404 - INFO -   rel=17   loss=10239.2 name=('users', 'rev_f2p_UserId', 'votes')
+2026-03-04 18:23:16,404 - INFO -   rel=13   loss=15021 name=('users', 'rev_f2p_UserId', 'postHistory')
+2026-03-04 18:23:16,404 - INFO -   rel=1    loss=16355.9 name=('users', 'rev_f2p_OwnerUserId', 'posts')
+2026-03-04 18:23:16,404 - INFO -   rel=7    loss=30254.8 name=('users', 'rev_f2p_UserId', 'comments')
+2026-03-04 18:24:00,691 - INFO - [MPS] beam prune -> frontier=6 (beam_width=6, by auc_roc)
+2026-03-04 18:27:00,627 - INFO - [MPS][hop=4] extending mp=[12, 11, 1] | #candidates=5 | taking top-3
+2026-03-04 18:27:00,628 - INFO - [MPS][hop=4] best extensions for mp=[12, 11, 1]:
+2026-03-04 18:27:00,628 - INFO -   rel=7    loss=7456.81 name=('users', 'rev_f2p_UserId', 'comments')
+2026-03-04 18:27:00,628 - INFO -   rel=17   loss=11295.9 name=('users', 'rev_f2p_UserId', 'votes')
+2026-03-04 18:27:00,628 - INFO -   rel=13   loss=14121 name=('users', 'rev_f2p_UserId', 'postHistory')
+2026-03-04 18:27:00,628 - INFO -   rel=1    loss=15170.1 name=('users', 'rev_f2p_OwnerUserId', 'posts')
+2026-03-04 18:27:00,628 - INFO -   rel=19   loss=18027.1 name=('users', 'rev_f2p_UserId', 'badges')
+2026-03-04 18:27:00,628 - INFO - [MPS][hop=4] worst extensions for mp=[12, 11, 1]:
+2026-03-04 18:27:00,628 - INFO -   rel=7    loss=7456.81 name=('users', 'rev_f2p_UserId', 'comments')
+2026-03-04 18:27:00,628 - INFO -   rel=17   loss=11295.9 name=('users', 'rev_f2p_UserId', 'votes')
+2026-03-04 18:27:00,628 - INFO -   rel=13   loss=14121 name=('users', 'rev_f2p_UserId', 'postHistory')
+2026-03-04 18:27:00,628 - INFO -   rel=1    loss=15170.1 name=('users', 'rev_f2p_OwnerUserId', 'posts')
+2026-03-04 18:27:00,628 - INFO -   rel=19   loss=18027.1 name=('users', 'rev_f2p_UserId', 'badges')
+2026-03-04 18:29:32,842 - INFO - [MPS][hop=4] extending mp=[15, 3, 1] | #candidates=1 | taking top-1
+2026-03-04 18:29:32,842 - INFO - [MPS][hop=4] best extensions for mp=[15, 3, 1]:
+2026-03-04 18:29:32,843 - INFO -   rel=14   loss=11696 name=('votes', 'f2p_PostId', 'posts')
+2026-03-04 18:29:32,843 - INFO - [MPS][hop=4] worst extensions for mp=[15, 3, 1]:
+2026-03-04 18:29:32,843 - INFO -   rel=14   loss=11696 name=('votes', 'f2p_PostId', 'posts')
+2026-03-04 18:33:05,470 - INFO - [MPS][hop=4] extending mp=[13, 12, 13] | #candidates=2 | taking top-2
+2026-03-04 18:33:05,470 - INFO - [MPS][hop=4] best extensions for mp=[13, 12, 13]:
+2026-03-04 18:33:05,470 - INFO -   rel=10   loss=12295 name=('postHistory', 'f2p_PostId', 'posts')
+2026-03-04 18:33:05,470 - INFO -   rel=12   loss=26389 name=('postHistory', 'f2p_UserId', 'users')
+2026-03-04 18:33:05,470 - INFO - [MPS][hop=4] worst extensions for mp=[13, 12, 13]:
+2026-03-04 18:33:05,470 - INFO -   rel=10   loss=12295 name=('postHistory', 'f2p_PostId', 'posts')
+2026-03-04 18:33:05,470 - INFO -   rel=12   loss=26389 name=('postHistory', 'f2p_UserId', 'users')
+2026-03-04 18:36:49,000 - INFO - [MPS][hop=4] extending mp=[1, 18, 19] | #candidates=10 | taking top-3
+2026-03-04 18:36:49,000 - INFO - [MPS][hop=4] best extensions for mp=[1, 18, 19]:
+2026-03-04 18:36:49,000 - INFO -   rel=5    loss=8975 name=('posts', 'rev_f2p_AcceptedAnswerId', 'posts')
+2026-03-04 18:36:49,001 - INFO -   rel=3    loss=9300 name=('posts', 'rev_f2p_ParentId', 'posts')
+2026-03-04 18:36:49,001 - INFO -   rel=4    loss=9482.37 name=('posts', 'f2p_AcceptedAnswerId', 'posts')
+2026-03-04 18:36:49,001 - INFO -   rel=21   loss=9611 name=('posts', 'rev_f2p_PostId', 'postLinks')
+2026-03-04 18:36:49,001 - INFO -   rel=11   loss=11392 name=('posts', 'rev_f2p_PostId', 'postHistory')
+2026-03-04 18:36:49,001 - INFO -   rel=0    loss=12394 name=('posts', 'f2p_OwnerUserId', 'users')
+2026-03-04 18:36:49,001 - INFO -   rel=9    loss=21944 name=('posts', 'rev_f2p_PostId', 'comments')
+2026-03-04 18:36:49,001 - INFO -   rel=23   loss=23009 name=('posts', 'rev_f2p_RelatedPostId', 'postLinks')
+2026-03-04 18:36:49,001 - INFO -   rel=2    loss=23327 name=('posts', 'f2p_ParentId', 'posts')
+2026-03-04 18:36:49,001 - INFO -   rel=15   loss=23761 name=('posts', 'rev_f2p_PostId', 'votes')
+2026-03-04 18:36:49,001 - INFO - [MPS][hop=4] worst extensions for mp=[1, 18, 19]:
+2026-03-04 18:36:49,001 - INFO -   rel=5    loss=8975 name=('posts', 'rev_f2p_AcceptedAnswerId', 'posts')
+2026-03-04 18:36:49,001 - INFO -   rel=3    loss=9300 name=('posts', 'rev_f2p_ParentId', 'posts')
+2026-03-04 18:36:49,001 - INFO -   rel=4    loss=9482.37 name=('posts', 'f2p_AcceptedAnswerId', 'posts')
+2026-03-04 18:36:49,001 - INFO -   rel=21   loss=9611 name=('posts', 'rev_f2p_PostId', 'postLinks')
+2026-03-04 18:36:49,001 - INFO -   rel=11   loss=11392 name=('posts', 'rev_f2p_PostId', 'postHistory')
+2026-03-04 18:36:49,001 - INFO -   rel=0    loss=12394 name=('posts', 'f2p_OwnerUserId', 'users')
+2026-03-04 18:36:49,001 - INFO -   rel=9    loss=21944 name=('posts', 'rev_f2p_PostId', 'comments')
+2026-03-04 18:36:49,001 - INFO -   rel=23   loss=23009 name=('posts', 'rev_f2p_RelatedPostId', 'postLinks')
+2026-03-04 18:36:49,001 - INFO -   rel=2    loss=23327 name=('posts', 'f2p_ParentId', 'posts')
+2026-03-04 18:36:49,001 - INFO -   rel=15   loss=23761 name=('posts', 'rev_f2p_PostId', 'votes')
+2026-03-04 18:39:25,505 - INFO - [MPS][hop=4] extending mp=[7, 18, 19] | #candidates=2 | taking top-2
+2026-03-04 18:39:25,506 - INFO - [MPS][hop=4] best extensions for mp=[7, 18, 19]:
+2026-03-04 18:39:25,506 - INFO -   rel=8    loss=10764 name=('comments', 'f2p_PostId', 'posts')
+2026-03-04 18:39:25,506 - INFO -   rel=6    loss=12126 name=('comments', 'f2p_UserId', 'users')
+2026-03-04 18:39:25,506 - INFO - [MPS][hop=4] worst extensions for mp=[7, 18, 19]:
+2026-03-04 18:39:25,506 - INFO -   rel=8    loss=10764 name=('comments', 'f2p_PostId', 'posts')
+2026-03-04 18:39:25,506 - INFO -   rel=6    loss=12126 name=('comments', 'f2p_UserId', 'users')
+2026-03-04 18:43:11,485 - INFO - [MPS][hop=4] extending mp=[1, 0, 1] | #candidates=10 | taking top-3
+2026-03-04 18:43:11,485 - INFO - [MPS][hop=4] best extensions for mp=[1, 0, 1]:
+2026-03-04 18:43:11,485 - INFO -   rel=15   loss=7799 name=('posts', 'rev_f2p_PostId', 'votes')
+2026-03-04 18:43:11,485 - INFO -   rel=5    loss=10782.2 name=('posts', 'rev_f2p_AcceptedAnswerId', 'posts')
+2026-03-04 18:43:11,485 - INFO -   rel=23   loss=10870 name=('posts', 'rev_f2p_RelatedPostId', 'postLinks')
+2026-03-04 18:43:11,485 - INFO -   rel=21   loss=11428 name=('posts', 'rev_f2p_PostId', 'postLinks')
+2026-03-04 18:43:11,485 - INFO -   rel=3    loss=12076.7 name=('posts', 'rev_f2p_ParentId', 'posts')
+2026-03-04 18:43:11,485 - INFO -   rel=4    loss=12403 name=('posts', 'f2p_AcceptedAnswerId', 'posts')
+2026-03-04 18:43:11,485 - INFO -   rel=9    loss=22374.1 name=('posts', 'rev_f2p_PostId', 'comments')
+2026-03-04 18:43:11,486 - INFO -   rel=11   loss=27379 name=('posts', 'rev_f2p_PostId', 'postHistory')
+2026-03-04 18:43:11,486 - INFO -   rel=2    loss=27525.2 name=('posts', 'f2p_ParentId', 'posts')
+2026-03-04 18:43:11,486 - INFO -   rel=0    loss=28152 name=('posts', 'f2p_OwnerUserId', 'users')
+2026-03-04 18:43:11,486 - INFO - [MPS][hop=4] worst extensions for mp=[1, 0, 1]:
+2026-03-04 18:43:11,486 - INFO -   rel=15   loss=7799 name=('posts', 'rev_f2p_PostId', 'votes')
+2026-03-04 18:43:11,486 - INFO -   rel=5    loss=10782.2 name=('posts', 'rev_f2p_AcceptedAnswerId', 'posts')
+2026-03-04 18:43:11,486 - INFO -   rel=23   loss=10870 name=('posts', 'rev_f2p_RelatedPostId', 'postLinks')
+2026-03-04 18:43:11,486 - INFO -   rel=21   loss=11428 name=('posts', 'rev_f2p_PostId', 'postLinks')
+2026-03-04 18:43:11,486 - INFO -   rel=3    loss=12076.7 name=('posts', 'rev_f2p_ParentId', 'posts')
+2026-03-04 18:43:11,486 - INFO -   rel=4    loss=12403 name=('posts', 'f2p_AcceptedAnswerId', 'posts')
+2026-03-04 18:43:11,486 - INFO -   rel=9    loss=22374.1 name=('posts', 'rev_f2p_PostId', 'comments')
+2026-03-04 18:43:11,486 - INFO -   rel=11   loss=27379 name=('posts', 'rev_f2p_PostId', 'postHistory')
+2026-03-04 18:43:11,486 - INFO -   rel=2    loss=27525.2 name=('posts', 'f2p_ParentId', 'posts')
+2026-03-04 18:43:11,486 - INFO -   rel=0    loss=28152 name=('posts', 'f2p_OwnerUserId', 'users')
+2026-03-04 18:44:19,418 - INFO - [MPS] beam prune -> frontier=6 (beam_width=6, by auc_roc)
+2026-03-04 18:44:19,419 - INFO - [MPS] ALL_METAPATHS_SORTED split=val sort_by=auc_roc total=40
+2026-03-04 18:44:19,419 - INFO - (path=[3, 1, 18, 19], hop=4, sort_by=auc_roc) rank=1 auc_roc=0.791071
+2026-03-04 18:44:19,419 - INFO - (path=[5, 1, 18, 19], hop=4, sort_by=auc_roc) rank=2 auc_roc=0.790179
+2026-03-04 18:44:19,419 - INFO - (path=[12, 11, 1], hop=3, sort_by=auc_roc) rank=3 auc_roc=0.777679
+2026-03-04 18:44:19,419 - INFO - (path=[15, 3, 1], hop=3, sort_by=auc_roc) rank=4 auc_roc=0.776786
+2026-03-04 18:44:19,419 - INFO - (path=[4, 1, 18, 19], hop=4, sort_by=auc_roc) rank=5 auc_roc=0.775000
+2026-03-04 18:44:19,419 - INFO - (path=[12, 13], hop=2, sort_by=auc_roc) rank=6 auc_roc=0.774107
+2026-03-04 18:44:19,419 - INFO - (path=[13, 12, 13], hop=3, sort_by=auc_roc) rank=7 auc_roc=0.773214
+2026-03-04 18:44:19,419 - INFO - (path=[23, 1, 0, 1], hop=4, sort_by=auc_roc) rank=8 auc_roc=0.773214
+2026-03-04 18:44:19,419 - INFO - (path=[15, 1, 0, 1], hop=4, sort_by=auc_roc) rank=9 auc_roc=0.772321
+2026-03-04 18:44:19,419 - INFO - (path=[13, 12, 11, 1], hop=4, sort_by=auc_roc) rank=10 auc_roc=0.771429
+2026-03-04 18:44:19,419 - INFO - (path=[1], hop=1, sort_by=auc_roc) rank=11 auc_roc=0.770536
+2026-03-04 18:44:19,419 - INFO - (path=[1, 18, 19], hop=3, sort_by=auc_roc) rank=12 auc_roc=0.770536
+2026-03-04 18:44:19,419 - INFO - (path=[7, 18, 19], hop=3, sort_by=auc_roc) rank=13 auc_roc=0.769643
+2026-03-04 18:44:19,419 - INFO - (path=[1, 0, 1], hop=3, sort_by=auc_roc) rank=14 auc_roc=0.769643
+2026-03-04 18:44:19,419 - INFO - (path=[2, 3, 1], hop=3, sort_by=auc_roc) rank=15 auc_roc=0.768750
+2026-03-04 18:44:19,419 - INFO - (path=[13], hop=1, sort_by=auc_roc) rank=16 auc_roc=0.767857
+2026-03-04 18:44:19,419 - INFO - (path=[10, 13], hop=2, sort_by=auc_roc) rank=17 auc_roc=0.767857
+2026-03-04 18:44:19,419 - INFO - (path=[0, 10, 13], hop=3, sort_by=auc_roc) rank=18 auc_roc=0.767857
+2026-03-04 18:44:19,419 - INFO - (path=[17, 12, 13], hop=3, sort_by=auc_roc) rank=19 auc_roc=0.767857
+2026-03-04 18:44:19,419 - INFO - (path=[12, 13, 12, 13], hop=4, sort_by=auc_roc) rank=20 auc_roc=0.766964
+2026-03-04 18:44:19,419 - INFO - (path=[10, 11, 1], hop=3, sort_by=auc_roc) rank=21 auc_roc=0.766071
+2026-03-04 18:44:19,419 - INFO - (path=[19, 12, 13], hop=3, sort_by=auc_roc) rank=22 auc_roc=0.763393
+2026-03-04 18:44:19,419 - INFO - (path=[21, 10, 13], hop=3, sort_by=auc_roc) rank=23 auc_roc=0.762500
+2026-03-04 18:44:19,419 - INFO - (path=[17, 12, 11, 1], hop=4, sort_by=auc_roc) rank=24 auc_roc=0.761607
+2026-03-04 18:44:19,419 - INFO - (path=[14, 15, 3, 1], hop=4, sort_by=auc_roc) rank=25 auc_roc=0.760714
+2026-03-04 18:44:19,419 - INFO - (path=[11, 3, 1], hop=3, sort_by=auc_roc) rank=26 auc_roc=0.759821
+2026-03-04 18:44:19,419 - INFO - (path=[5, 1, 0, 1], hop=4, sort_by=auc_roc) rank=27 auc_roc=0.759821
+2026-03-04 18:44:19,419 - INFO - (path=[11, 1], hop=2, sort_by=auc_roc) rank=28 auc_roc=0.758929
+2026-03-04 18:44:19,419 - INFO - (path=[13, 0, 1], hop=3, sort_by=auc_roc) rank=29 auc_roc=0.758929
+2026-03-04 18:44:19,419 - INFO - (path=[3, 1], hop=2, sort_by=auc_roc) rank=30 auc_roc=0.758036
+2026-03-04 18:44:19,419 - INFO - (path=[19], hop=1, sort_by=auc_roc) rank=31 auc_roc=0.757143
+2026-03-04 18:44:19,419 - INFO - (path=[0, 1], hop=2, sort_by=auc_roc) rank=32 auc_roc=0.757143
+2026-03-04 18:44:19,419 - INFO - (path=[7, 12, 11, 1], hop=4, sort_by=auc_roc) rank=33 auc_roc=0.755357
+2026-03-04 18:44:19,419 - INFO - (path=[6, 7, 18, 19], hop=4, sort_by=auc_roc) rank=34 auc_roc=0.748214
+2026-03-04 18:44:19,419 - INFO - (path=[18, 19], hop=2, sort_by=auc_roc) rank=35 auc_roc=0.742857
+2026-03-04 18:44:19,419 - INFO - (path=[10, 13, 12, 13], hop=4, sort_by=auc_roc) rank=36 auc_roc=0.740179
+2026-03-04 18:44:19,419 - INFO - (path=[7, 0, 1], hop=3, sort_by=auc_roc) rank=37 auc_roc=0.738393
+2026-03-04 18:44:19,419 - INFO - (path=[9, 10, 13], hop=3, sort_by=auc_roc) rank=38 auc_roc=0.735714
+2026-03-04 18:44:19,419 - INFO - (path=[8, 7, 18, 19], hop=4, sort_by=auc_roc) rank=39 auc_roc=0.729464
+2026-03-04 18:44:19,419 - INFO - (path=[13, 18, 19], hop=3, sort_by=auc_roc) rank=40 auc_roc=0.716071

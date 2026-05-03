@@ -1,0 +1,354 @@
+rank=1  auc_roc=0.708333  hop=3  sort_by=auc_roc  path=[17, 8, 9]
+  decoded (logged order):
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    8 ('beer_upcs', 'f2p_beer_id', 'beers')
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+  decoded (forward order = reverse(path)): [9, 8, 17]
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+    8 ('beer_upcs', 'f2p_beer_id', 'beers')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+
+rank=2  auc_roc=0.691667  hop=3  sort_by=auc_roc  path=[9, 8, 9]
+  decoded (logged order):
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+    8 ('beer_upcs', 'f2p_beer_id', 'beers')
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+  decoded (forward order = reverse(path)): [9, 8, 9]
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+    8 ('beer_upcs', 'f2p_beer_id', 'beers')
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+
+rank=3  auc_roc=0.691667  hop=4  sort_by=auc_roc  path=[14, 17, 8, 9]
+  decoded (logged order):
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    8 ('beer_upcs', 'f2p_beer_id', 'beers')
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+  decoded (forward order = reverse(path)): [9, 8, 17, 14]
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+    8 ('beer_upcs', 'f2p_beer_id', 'beers')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+
+rank=4  auc_roc=0.691667  hop=4  sort_by=auc_roc  path=[8, 9, 8, 9]
+  decoded (logged order):
+    8 ('beer_upcs', 'f2p_beer_id', 'beers')
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+    8 ('beer_upcs', 'f2p_beer_id', 'beers')
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+  decoded (forward order = reverse(path)): [9, 8, 9, 8]
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+    8 ('beer_upcs', 'f2p_beer_id', 'beers')
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+    8 ('beer_upcs', 'f2p_beer_id', 'beers')
+
+rank=5  auc_roc=0.683333  hop=3  sort_by=auc_roc  path=[33, 14, 17]
+  decoded (logged order):
+    33 ('users', 'rev_f2p_user_id', 'availability')
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+  decoded (forward order = reverse(path)): [17, 14, 33]
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+    33 ('users', 'rev_f2p_user_id', 'availability')
+
+rank=6  auc_roc=0.683333  hop=4  sort_by=auc_roc  path=[16, 17, 8, 9]
+  decoded (logged order):
+    16 ('beer_ratings', 'f2p_beer_id', 'beers')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    8 ('beer_upcs', 'f2p_beer_id', 'beers')
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+  decoded (forward order = reverse(path)): [9, 8, 17, 16]
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+    8 ('beer_upcs', 'f2p_beer_id', 'beers')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    16 ('beer_ratings', 'f2p_beer_id', 'beers')
+
+rank=7  auc_roc=0.675000  hop=2  sort_by=auc_roc  path=[14, 17]
+  decoded (logged order):
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+  decoded (forward order = reverse(path)): [17, 14]
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+
+rank=8  auc_roc=0.675000  hop=1  sort_by=auc_roc  path=[9]
+  decoded (logged order):
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+  decoded (forward order = reverse(path)): [9]
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+
+rank=9  auc_roc=0.666667  hop=1  sort_by=auc_roc  path=[17]
+  decoded (logged order):
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+  decoded (forward order = reverse(path)): [17]
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+
+rank=10  auc_roc=0.658333  hop=4  sort_by=auc_roc  path=[16, 15, 14, 17]
+  decoded (logged order):
+    16 ('beer_ratings', 'f2p_beer_id', 'beers')
+    15 ('users', 'rev_f2p_user_id', 'beer_ratings')
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+  decoded (forward order = reverse(path)): [17, 14, 15, 16]
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+    15 ('users', 'rev_f2p_user_id', 'beer_ratings')
+    16 ('beer_ratings', 'f2p_beer_id', 'beers')
+
+rank=11  auc_roc=0.650000  hop=4  sort_by=auc_roc  path=[8, 9, 5, 4]
+  decoded (logged order):
+    8 ('beer_upcs', 'f2p_beer_id', 'beers')
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+    5 ('brewers', 'rev_f2p_brewer_id', 'beers')
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+  decoded (forward order = reverse(path)): [4, 5, 9, 8]
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+    5 ('brewers', 'rev_f2p_brewer_id', 'beers')
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+    8 ('beer_upcs', 'f2p_beer_id', 'beers')
+
+rank=12  auc_roc=0.650000  hop=4  sort_by=auc_roc  path=[0, 3, 14, 17]
+  decoded (logged order):
+    0 ('place_ratings', 'f2p_place_id', 'places')
+    3 ('users', 'rev_f2p_user_id', 'place_ratings')
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+  decoded (forward order = reverse(path)): [17, 14, 3, 0]
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+    3 ('users', 'rev_f2p_user_id', 'place_ratings')
+    0 ('place_ratings', 'f2p_place_id', 'places')
+
+rank=13  auc_roc=0.650000  hop=4  sort_by=auc_roc  path=[2, 3, 14, 17]
+  decoded (logged order):
+    2 ('place_ratings', 'f2p_user_id', 'users')
+    3 ('users', 'rev_f2p_user_id', 'place_ratings')
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+  decoded (forward order = reverse(path)): [17, 14, 3, 2]
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+    3 ('users', 'rev_f2p_user_id', 'place_ratings')
+    2 ('place_ratings', 'f2p_user_id', 'users')
+
+rank=14  auc_roc=0.650000  hop=2  sort_by=auc_roc  path=[16, 17]
+  decoded (logged order):
+    16 ('beer_ratings', 'f2p_beer_id', 'beers')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+  decoded (forward order = reverse(path)): [17, 16]
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    16 ('beer_ratings', 'f2p_beer_id', 'beers')
+
+rank=15  auc_roc=0.650000  hop=3  sort_by=auc_roc  path=[15, 14, 17]
+  decoded (logged order):
+    15 ('users', 'rev_f2p_user_id', 'beer_ratings')
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+  decoded (forward order = reverse(path)): [17, 14, 15]
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+    15 ('users', 'rev_f2p_user_id', 'beer_ratings')
+
+rank=16  auc_roc=0.650000  hop=4  sort_by=auc_roc  path=[30, 33, 14, 17]
+  decoded (logged order):
+    30 ('availability', 'f2p_country_id', 'countries')
+    33 ('users', 'rev_f2p_user_id', 'availability')
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+  decoded (forward order = reverse(path)): [17, 14, 33, 30]
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+    33 ('users', 'rev_f2p_user_id', 'availability')
+    30 ('availability', 'f2p_country_id', 'countries')
+
+rank=17  auc_roc=0.641667  hop=2  sort_by=auc_roc  path=[38, 4]
+  decoded (logged order):
+    38 ('brewers', 'f2p_state_id', 'states')
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+  decoded (forward order = reverse(path)): [4, 38]
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+    38 ('brewers', 'f2p_state_id', 'states')
+
+rank=18  auc_roc=0.641667  hop=2  sort_by=auc_roc  path=[8, 9]
+  decoded (logged order):
+    8 ('beer_upcs', 'f2p_beer_id', 'beers')
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+  decoded (forward order = reverse(path)): [9, 8]
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+    8 ('beer_upcs', 'f2p_beer_id', 'beers')
+
+rank=19  auc_roc=0.641667  hop=3  sort_by=auc_roc  path=[3, 14, 17]
+  decoded (logged order):
+    3 ('users', 'rev_f2p_user_id', 'place_ratings')
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+  decoded (forward order = reverse(path)): [17, 14, 3]
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+    3 ('users', 'rev_f2p_user_id', 'place_ratings')
+
+rank=20  auc_roc=0.641667  hop=3  sort_by=auc_roc  path=[9, 5, 4]
+  decoded (logged order):
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+    5 ('brewers', 'rev_f2p_brewer_id', 'beers')
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+  decoded (forward order = reverse(path)): [4, 5, 9]
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+    5 ('brewers', 'rev_f2p_brewer_id', 'beers')
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+
+rank=21  auc_roc=0.641667  hop=3  sort_by=auc_roc  path=[4, 8, 9]
+  decoded (logged order):
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+    8 ('beer_upcs', 'f2p_beer_id', 'beers')
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+  decoded (forward order = reverse(path)): [9, 8, 4]
+    9 ('beers', 'rev_f2p_beer_id', 'beer_upcs')
+    8 ('beer_upcs', 'f2p_beer_id', 'beers')
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+
+rank=22  auc_roc=0.641667  hop=4  sort_by=auc_roc  path=[14, 15, 14, 17]
+  decoded (logged order):
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+    15 ('users', 'rev_f2p_user_id', 'beer_ratings')
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+  decoded (forward order = reverse(path)): [17, 14, 15, 14]
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+    15 ('users', 'rev_f2p_user_id', 'beer_ratings')
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+
+rank=23  auc_roc=0.633333  hop=3  sort_by=auc_roc  path=[4, 16, 17]
+  decoded (logged order):
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+    16 ('beer_ratings', 'f2p_beer_id', 'beers')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+  decoded (forward order = reverse(path)): [17, 16, 4]
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    16 ('beer_ratings', 'f2p_beer_id', 'beers')
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+
+rank=24  auc_roc=0.633333  hop=3  sort_by=auc_roc  path=[17, 16, 17]
+  decoded (logged order):
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    16 ('beer_ratings', 'f2p_beer_id', 'beers')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+  decoded (forward order = reverse(path)): [17, 16, 17]
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    16 ('beer_ratings', 'f2p_beer_id', 'beers')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+
+rank=25  auc_roc=0.633333  hop=3  sort_by=auc_roc  path=[28, 18, 17]
+  decoded (logged order):
+    28 ('availability', 'f2p_place_id', 'places')
+    18 ('beer_ratings', 'f2p_availability_id', 'availability')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+  decoded (forward order = reverse(path)): [17, 18, 28]
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    18 ('beer_ratings', 'f2p_availability_id', 'availability')
+    28 ('availability', 'f2p_place_id', 'places')
+
+rank=26  auc_roc=0.633333  hop=3  sort_by=auc_roc  path=[27, 5, 4]
+  decoded (logged order):
+    27 ('beers', 'rev_f2p_beer_id', 'availability')
+    5 ('brewers', 'rev_f2p_brewer_id', 'beers')
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+  decoded (forward order = reverse(path)): [4, 5, 27]
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+    5 ('brewers', 'rev_f2p_brewer_id', 'beers')
+    27 ('beers', 'rev_f2p_beer_id', 'availability')
+
+rank=27  auc_roc=0.633333  hop=4  sort_by=auc_roc  path=[32, 33, 14, 17]
+  decoded (logged order):
+    32 ('availability', 'f2p_user_id', 'users')
+    33 ('users', 'rev_f2p_user_id', 'availability')
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+  decoded (forward order = reverse(path)): [17, 14, 33, 32]
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    14 ('beer_ratings', 'f2p_user_id', 'users')
+    33 ('users', 'rev_f2p_user_id', 'availability')
+    32 ('availability', 'f2p_user_id', 'users')
+
+rank=28  auc_roc=0.625000  hop=1  sort_by=auc_roc  path=[4]
+  decoded (logged order):
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+  decoded (forward order = reverse(path)): [4]
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+
+rank=29  auc_roc=0.625000  hop=2  sort_by=auc_roc  path=[18, 17]
+  decoded (logged order):
+    18 ('beer_ratings', 'f2p_availability_id', 'availability')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+  decoded (forward order = reverse(path)): [17, 18]
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    18 ('beer_ratings', 'f2p_availability_id', 'availability')
+
+rank=30  auc_roc=0.625000  hop=3  sort_by=auc_roc  path=[19, 18, 17]
+  decoded (logged order):
+    19 ('availability', 'rev_f2p_availability_id', 'beer_ratings')
+    18 ('beer_ratings', 'f2p_availability_id', 'availability')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+  decoded (forward order = reverse(path)): [17, 18, 19]
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    18 ('beer_ratings', 'f2p_availability_id', 'availability')
+    19 ('availability', 'rev_f2p_availability_id', 'beer_ratings')
+
+rank=31  auc_roc=0.616667  hop=3  sort_by=auc_roc  path=[13, 5, 4]
+  decoded (logged order):
+    13 ('beers', 'rev_f2p_beer_id', 'favorites')
+    5 ('brewers', 'rev_f2p_brewer_id', 'beers')
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+  decoded (forward order = reverse(path)): [4, 5, 13]
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+    5 ('brewers', 'rev_f2p_brewer_id', 'beers')
+    13 ('beers', 'rev_f2p_beer_id', 'favorites')
+
+rank=32  auc_roc=0.608333  hop=3  sort_by=auc_roc  path=[27, 16, 17]
+  decoded (logged order):
+    27 ('beers', 'rev_f2p_beer_id', 'availability')
+    16 ('beer_ratings', 'f2p_beer_id', 'beers')
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+  decoded (forward order = reverse(path)): [17, 16, 27]
+    17 ('beers', 'rev_f2p_beer_id', 'beer_ratings')
+    16 ('beer_ratings', 'f2p_beer_id', 'beers')
+    27 ('beers', 'rev_f2p_beer_id', 'availability')
+
+rank=33  auc_roc=0.608333  hop=3  sort_by=auc_roc  path=[21, 38, 4]
+  decoded (logged order):
+    21 ('states', 'rev_f2p_state_id', 'places')
+    38 ('brewers', 'f2p_state_id', 'states')
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+  decoded (forward order = reverse(path)): [4, 38, 21]
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+    38 ('brewers', 'f2p_state_id', 'states')
+    21 ('states', 'rev_f2p_state_id', 'places')
+
+rank=34  auc_roc=0.600000  hop=2  sort_by=auc_roc  path=[5, 4]
+  decoded (logged order):
+    5 ('brewers', 'rev_f2p_brewer_id', 'beers')
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+  decoded (forward order = reverse(path)): [4, 5]
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+    5 ('brewers', 'rev_f2p_brewer_id', 'beers')
+
+rank=35  auc_roc=0.600000  hop=2  sort_by=auc_roc  path=[36, 4]
+  decoded (logged order):
+    36 ('brewers', 'f2p_country_id', 'countries')
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+  decoded (forward order = reverse(path)): [4, 36]
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+    36 ('brewers', 'f2p_country_id', 'countries')
+
+rank=36  auc_roc=0.591667  hop=3  sort_by=auc_roc  path=[39, 38, 4]
+  decoded (logged order):
+    39 ('states', 'rev_f2p_state_id', 'brewers')
+    38 ('brewers', 'f2p_state_id', 'states')
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+  decoded (forward order = reverse(path)): [4, 38, 39]
+    4 ('beers', 'f2p_brewer_id', 'brewers')
+    38 ('brewers', 'f2p_state_id', 'states')
+    39 ('states', 'rev_f2p_state_id', 'brewers')
+

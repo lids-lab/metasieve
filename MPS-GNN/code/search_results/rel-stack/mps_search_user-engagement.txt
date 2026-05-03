@@ -1,0 +1,40 @@
+2026-03-04 20:30:44,968 - INFO - (path=[15, 8, 9, 1], hop=4, sort_by=auc_roc) rank=1 auc_roc=0.822321
+2026-03-04 20:30:44,968 - INFO - (path=[13, 12, 13], hop=3, sort_by=auc_roc) rank=2 auc_roc=0.816071
+2026-03-04 20:30:44,968 - INFO - (path=[9, 1], hop=2, sort_by=auc_roc) rank=3 auc_roc=0.809821
+2026-03-04 20:30:44,968 - INFO - (path=[1], hop=1, sort_by=auc_roc) rank=4 auc_roc=0.804464
+2026-03-04 20:30:44,968 - INFO - (path=[11, 1], hop=2, sort_by=auc_roc) rank=5 auc_roc=0.803571
+2026-03-04 20:30:44,968 - INFO - (path=[12, 11, 10, 13], hop=4, sort_by=auc_roc) rank=6 auc_roc=0.803571
+2026-03-04 20:30:44,968 - INFO - (path=[10, 13, 12, 13], hop=4, sort_by=auc_roc) rank=7 auc_roc=0.801786
+2026-03-04 20:30:44,968 - INFO - (path=[1, 18, 19], hop=3, sort_by=auc_roc) rank=8 auc_roc=0.800893
+2026-03-04 20:30:44,968 - INFO - (path=[11, 10, 13], hop=3, sort_by=auc_roc) rank=9 auc_roc=0.800893
+2026-03-04 20:30:44,968 - INFO - (path=[23, 1, 12, 13], hop=4, sort_by=auc_roc) rank=10 auc_roc=0.800893
+2026-03-04 20:30:44,968 - INFO - (path=[4, 1, 12, 13], hop=4, sort_by=auc_roc) rank=11 auc_roc=0.800893
+2026-03-04 20:30:44,968 - INFO - (path=[21, 1, 12, 13], hop=4, sort_by=auc_roc) rank=12 auc_roc=0.800000
+2026-03-04 20:30:44,968 - INFO - (path=[9, 1, 18, 19], hop=4, sort_by=auc_roc) rank=13 auc_roc=0.799107
+2026-03-04 20:30:44,968 - INFO - (path=[5, 14, 15, 1], hop=4, sort_by=auc_roc) rank=14 auc_roc=0.798214
+2026-03-04 20:30:44,968 - INFO - (path=[2, 8, 9, 1], hop=4, sort_by=auc_roc) rank=15 auc_roc=0.798214
+2026-03-04 20:30:44,968 - INFO - (path=[15, 1], hop=2, sort_by=auc_roc) rank=16 auc_roc=0.797321
+2026-03-04 20:30:44,968 - INFO - (path=[14, 15, 1], hop=3, sort_by=auc_roc) rank=17 auc_roc=0.797321
+2026-03-04 20:30:44,968 - INFO - (path=[1, 12, 13], hop=3, sort_by=auc_roc) rank=18 auc_roc=0.796429
+2026-03-04 20:30:44,968 - INFO - (path=[12, 13], hop=2, sort_by=auc_roc) rank=19 auc_roc=0.795536
+2026-03-04 20:30:44,968 - INFO - (path=[8, 9, 1], hop=3, sort_by=auc_roc) rank=20 auc_roc=0.794643
+2026-03-04 20:30:44,968 - INFO - (path=[6, 9, 1], hop=3, sort_by=auc_roc) rank=21 auc_roc=0.793750
+2026-03-04 20:30:44,968 - INFO - (path=[9, 10, 13], hop=3, sort_by=auc_roc) rank=22 auc_roc=0.793750
+2026-03-04 20:30:44,968 - INFO - (path=[0, 8, 9, 1], hop=4, sort_by=auc_roc) rank=23 auc_roc=0.793750
+2026-03-04 20:30:44,968 - INFO - (path=[19, 12, 13], hop=3, sort_by=auc_roc) rank=24 auc_roc=0.791964
+2026-03-04 20:30:44,968 - INFO - (path=[13], hop=1, sort_by=auc_roc) rank=25 auc_roc=0.791964
+2026-03-04 20:30:44,968 - INFO - (path=[4, 1, 18, 19], hop=4, sort_by=auc_roc) rank=26 auc_roc=0.791071
+2026-03-04 20:30:44,968 - INFO - (path=[12, 13, 12, 13], hop=4, sort_by=auc_roc) rank=27 auc_roc=0.790179
+2026-03-04 20:30:44,968 - INFO - (path=[12, 11, 1], hop=3, sort_by=auc_roc) rank=28 auc_roc=0.789286
+2026-03-04 20:30:44,968 - INFO - (path=[15, 10, 13], hop=3, sort_by=auc_roc) rank=29 auc_roc=0.788393
+2026-03-04 20:30:44,968 - INFO - (path=[23, 1, 18, 19], hop=4, sort_by=auc_roc) rank=30 auc_roc=0.785714
+2026-03-04 20:30:44,968 - INFO - (path=[10, 13], hop=2, sort_by=auc_roc) rank=31 auc_roc=0.780357
+2026-03-04 20:30:44,968 - INFO - (path=[4, 14, 15, 1], hop=4, sort_by=auc_roc) rank=32 auc_roc=0.780357
+2026-03-04 20:30:44,968 - INFO - (path=[10, 11, 10, 13], hop=4, sort_by=auc_roc) rank=33 auc_roc=0.779464
+2026-03-04 20:30:44,968 - INFO - (path=[16, 15, 1], hop=3, sort_by=auc_roc) rank=34 auc_roc=0.778571
+2026-03-04 20:30:44,968 - INFO - (path=[10, 11, 1], hop=3, sort_by=auc_roc) rank=35 auc_roc=0.775000
+2026-03-04 20:30:44,968 - INFO - (path=[7, 18, 19], hop=3, sort_by=auc_roc) rank=36 auc_roc=0.769643
+2026-03-04 20:30:44,968 - INFO - (path=[21, 14, 15, 1], hop=4, sort_by=auc_roc) rank=37 auc_roc=0.765179
+2026-03-04 20:30:44,968 - INFO - (path=[18, 19], hop=2, sort_by=auc_roc) rank=38 auc_roc=0.631250
+2026-03-04 20:30:44,968 - INFO - (path=[19], hop=1, sort_by=auc_roc) rank=39 auc_roc=0.618750
+2026-03-04 20:30:44,968 - INFO - (path=[19, 18, 19], hop=3, sort_by=auc_roc) rank=40 auc_roc=0.612500

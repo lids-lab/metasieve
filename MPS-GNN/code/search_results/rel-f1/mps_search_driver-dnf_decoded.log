@@ -1,0 +1,430 @@
+rank=1  auc_roc=0.704464  hop=1  sort_by=auc_roc  path=[9]
+  decoded (logged order):
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+
+rank=2  auc_roc=0.687500  hop=3  sort_by=auc_roc  path=[25, 10, 9]
+  decoded (logged order):
+    25 ('constructors', 'rev_f2p_constructorId', 'constructor_standings')
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 10, 25]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+    25 ('constructors', 'rev_f2p_constructorId', 'constructor_standings')
+
+rank=3  auc_roc=0.686607  hop=3  sort_by=auc_roc  path=[17, 10, 9]
+  decoded (logged order):
+    17 ('constructors', 'rev_f2p_constructorId', 'results')
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 10, 17]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+    17 ('constructors', 'rev_f2p_constructorId', 'results')
+
+rank=4  auc_roc=0.681250  hop=4  sort_by=auc_roc  path=[2, 3, 8, 9]
+  decoded (logged order):
+    2 ('standings', 'f2p_driverId', 'drivers')
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+    8 ('qualifying', 'f2p_driverId', 'drivers')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 8, 3, 2]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    8 ('qualifying', 'f2p_driverId', 'drivers')
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+    2 ('standings', 'f2p_driverId', 'drivers')
+
+rank=5  auc_roc=0.680357  hop=4  sort_by=auc_roc  path=[20, 21, 10, 9]
+  decoded (logged order):
+    20 ('constructor_results', 'f2p_constructorId', 'constructors')
+    21 ('constructors', 'rev_f2p_constructorId', 'constructor_results')
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 10, 21, 20]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+    21 ('constructors', 'rev_f2p_constructorId', 'constructor_results')
+    20 ('constructor_results', 'f2p_constructorId', 'constructors')
+
+rank=6  auc_roc=0.678571  hop=4  sort_by=auc_roc  path=[16, 17, 10, 9]
+  decoded (logged order):
+    16 ('results', 'f2p_constructorId', 'constructors')
+    17 ('constructors', 'rev_f2p_constructorId', 'results')
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 10, 17, 16]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+    17 ('constructors', 'rev_f2p_constructorId', 'results')
+    16 ('results', 'f2p_constructorId', 'constructors')
+
+rank=7  auc_roc=0.676786  hop=3  sort_by=auc_roc  path=[21, 10, 9]
+  decoded (logged order):
+    21 ('constructors', 'rev_f2p_constructorId', 'constructor_results')
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 10, 21]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+    21 ('constructors', 'rev_f2p_constructorId', 'constructor_results')
+
+rank=8  auc_roc=0.673214  hop=2  sort_by=auc_roc  path=[10, 9]
+  decoded (logged order):
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 10]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+
+rank=9  auc_roc=0.673214  hop=4  sort_by=auc_roc  path=[24, 25, 10, 9]
+  decoded (logged order):
+    24 ('constructor_standings', 'f2p_constructorId', 'constructors')
+    25 ('constructors', 'rev_f2p_constructorId', 'constructor_standings')
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 10, 25, 24]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+    25 ('constructors', 'rev_f2p_constructorId', 'constructor_standings')
+    24 ('constructor_standings', 'f2p_constructorId', 'constructors')
+
+rank=10  auc_roc=0.671429  hop=4  sort_by=auc_roc  path=[10, 9, 14, 15]
+  decoded (logged order):
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    14 ('results', 'f2p_driverId', 'drivers')
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+  decoded (forward order = reverse(path)): [15, 14, 9, 10]
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+    14 ('results', 'f2p_driverId', 'drivers')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+
+rank=11  auc_roc=0.666071  hop=4  sort_by=auc_roc  path=[22, 23, 6, 9]
+  decoded (logged order):
+    22 ('constructor_standings', 'f2p_raceId', 'races')
+    23 ('races', 'rev_f2p_raceId', 'constructor_standings')
+    6 ('qualifying', 'f2p_raceId', 'races')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 6, 23, 22]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    6 ('qualifying', 'f2p_raceId', 'races')
+    23 ('races', 'rev_f2p_raceId', 'constructor_standings')
+    22 ('constructor_standings', 'f2p_raceId', 'races')
+
+rank=12  auc_roc=0.662500  hop=3  sort_by=auc_roc  path=[23, 6, 9]
+  decoded (logged order):
+    23 ('races', 'rev_f2p_raceId', 'constructor_standings')
+    6 ('qualifying', 'f2p_raceId', 'races')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 6, 23]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    6 ('qualifying', 'f2p_raceId', 'races')
+    23 ('races', 'rev_f2p_raceId', 'constructor_standings')
+
+rank=13  auc_roc=0.661607  hop=3  sort_by=auc_roc  path=[3, 8, 9]
+  decoded (logged order):
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+    8 ('qualifying', 'f2p_driverId', 'drivers')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 8, 3]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    8 ('qualifying', 'f2p_driverId', 'drivers')
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+
+rank=14  auc_roc=0.659821  hop=4  sort_by=auc_roc  path=[22, 25, 10, 9]
+  decoded (logged order):
+    22 ('constructor_standings', 'f2p_raceId', 'races')
+    25 ('constructors', 'rev_f2p_constructorId', 'constructor_standings')
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 10, 25, 22]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+    25 ('constructors', 'rev_f2p_constructorId', 'constructor_standings')
+    22 ('constructor_standings', 'f2p_raceId', 'races')
+
+rank=15  auc_roc=0.659821  hop=3  sort_by=auc_roc  path=[9, 14, 15]
+  decoded (logged order):
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    14 ('results', 'f2p_driverId', 'drivers')
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+  decoded (forward order = reverse(path)): [15, 14, 9]
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+    14 ('results', 'f2p_driverId', 'drivers')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+
+rank=16  auc_roc=0.657143  hop=4  sort_by=auc_roc  path=[18, 21, 10, 9]
+  decoded (logged order):
+    18 ('constructor_results', 'f2p_raceId', 'races')
+    21 ('constructors', 'rev_f2p_constructorId', 'constructor_results')
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 10, 21, 18]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+    21 ('constructors', 'rev_f2p_constructorId', 'constructor_results')
+    18 ('constructor_results', 'f2p_raceId', 'races')
+
+rank=17  auc_roc=0.656250  hop=2  sort_by=auc_roc  path=[0, 3]
+  decoded (logged order):
+    0 ('standings', 'f2p_raceId', 'races')
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+  decoded (forward order = reverse(path)): [3, 0]
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+    0 ('standings', 'f2p_raceId', 'races')
+
+rank=18  auc_roc=0.656250  hop=4  sort_by=auc_roc  path=[14, 17, 10, 9]
+  decoded (logged order):
+    14 ('results', 'f2p_driverId', 'drivers')
+    17 ('constructors', 'rev_f2p_constructorId', 'results')
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 10, 17, 14]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+    17 ('constructors', 'rev_f2p_constructorId', 'results')
+    14 ('results', 'f2p_driverId', 'drivers')
+
+rank=19  auc_roc=0.655357  hop=3  sort_by=auc_roc  path=[13, 0, 3]
+  decoded (logged order):
+    13 ('races', 'rev_f2p_raceId', 'results')
+    0 ('standings', 'f2p_raceId', 'races')
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+  decoded (forward order = reverse(path)): [3, 0, 13]
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+    0 ('standings', 'f2p_raceId', 'races')
+    13 ('races', 'rev_f2p_raceId', 'results')
+
+rank=20  auc_roc=0.655357  hop=3  sort_by=auc_roc  path=[3, 2, 3]
+  decoded (logged order):
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+    2 ('standings', 'f2p_driverId', 'drivers')
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+  decoded (forward order = reverse(path)): [3, 2, 3]
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+    2 ('standings', 'f2p_driverId', 'drivers')
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+
+rank=21  auc_roc=0.655357  hop=3  sort_by=auc_roc  path=[9, 8, 9]
+  decoded (logged order):
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    8 ('qualifying', 'f2p_driverId', 'drivers')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 8, 9]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    8 ('qualifying', 'f2p_driverId', 'drivers')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+
+rank=22  auc_roc=0.652679  hop=4  sort_by=auc_roc  path=[24, 23, 6, 9]
+  decoded (logged order):
+    24 ('constructor_standings', 'f2p_constructorId', 'constructors')
+    23 ('races', 'rev_f2p_raceId', 'constructor_standings')
+    6 ('qualifying', 'f2p_raceId', 'races')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 6, 23, 24]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    6 ('qualifying', 'f2p_raceId', 'races')
+    23 ('races', 'rev_f2p_raceId', 'constructor_standings')
+    24 ('constructor_standings', 'f2p_constructorId', 'constructors')
+
+rank=23  auc_roc=0.652679  hop=4  sort_by=auc_roc  path=[0, 3, 8, 9]
+  decoded (logged order):
+    0 ('standings', 'f2p_raceId', 'races')
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+    8 ('qualifying', 'f2p_driverId', 'drivers')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 8, 3, 0]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    8 ('qualifying', 'f2p_driverId', 'drivers')
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+    0 ('standings', 'f2p_raceId', 'races')
+
+rank=24  auc_roc=0.648214  hop=2  sort_by=auc_roc  path=[8, 9]
+  decoded (logged order):
+    8 ('qualifying', 'f2p_driverId', 'drivers')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 8]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    8 ('qualifying', 'f2p_driverId', 'drivers')
+
+rank=25  auc_roc=0.647321  hop=3  sort_by=auc_roc  path=[9, 2, 3]
+  decoded (logged order):
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    2 ('standings', 'f2p_driverId', 'drivers')
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+  decoded (forward order = reverse(path)): [3, 2, 9]
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+    2 ('standings', 'f2p_driverId', 'drivers')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+
+rank=26  auc_roc=0.647321  hop=3  sort_by=auc_roc  path=[15, 2, 3]
+  decoded (logged order):
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+    2 ('standings', 'f2p_driverId', 'drivers')
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+  decoded (forward order = reverse(path)): [3, 2, 15]
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+    2 ('standings', 'f2p_driverId', 'drivers')
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+
+rank=27  auc_roc=0.645536  hop=3  sort_by=auc_roc  path=[19, 6, 9]
+  decoded (logged order):
+    19 ('races', 'rev_f2p_raceId', 'constructor_results')
+    6 ('qualifying', 'f2p_raceId', 'races')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 6, 19]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    6 ('qualifying', 'f2p_raceId', 'races')
+    19 ('races', 'rev_f2p_raceId', 'constructor_results')
+
+rank=28  auc_roc=0.644643  hop=4  sort_by=auc_roc  path=[12, 17, 10, 9]
+  decoded (logged order):
+    12 ('results', 'f2p_raceId', 'races')
+    17 ('constructors', 'rev_f2p_constructorId', 'results')
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 10, 17, 12]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    10 ('qualifying', 'f2p_constructorId', 'constructors')
+    17 ('constructors', 'rev_f2p_constructorId', 'results')
+    12 ('results', 'f2p_raceId', 'races')
+
+rank=29  auc_roc=0.643750  hop=2  sort_by=auc_roc  path=[6, 9]
+  decoded (logged order):
+    6 ('qualifying', 'f2p_raceId', 'races')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 6]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    6 ('qualifying', 'f2p_raceId', 'races')
+
+rank=30  auc_roc=0.642857  hop=3  sort_by=auc_roc  path=[3, 14, 15]
+  decoded (logged order):
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+    14 ('results', 'f2p_driverId', 'drivers')
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+  decoded (forward order = reverse(path)): [15, 14, 3]
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+    14 ('results', 'f2p_driverId', 'drivers')
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+
+rank=31  auc_roc=0.641071  hop=3  sort_by=auc_roc  path=[13, 6, 9]
+  decoded (logged order):
+    13 ('races', 'rev_f2p_raceId', 'results')
+    6 ('qualifying', 'f2p_raceId', 'races')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 6, 13]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    6 ('qualifying', 'f2p_raceId', 'races')
+    13 ('races', 'rev_f2p_raceId', 'results')
+
+rank=32  auc_roc=0.641071  hop=2  sort_by=auc_roc  path=[14, 15]
+  decoded (logged order):
+    14 ('results', 'f2p_driverId', 'drivers')
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+  decoded (forward order = reverse(path)): [15, 14]
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+    14 ('results', 'f2p_driverId', 'drivers')
+
+rank=33  auc_roc=0.638393  hop=3  sort_by=auc_roc  path=[15, 8, 9]
+  decoded (logged order):
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+    8 ('qualifying', 'f2p_driverId', 'drivers')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+  decoded (forward order = reverse(path)): [9, 8, 15]
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    8 ('qualifying', 'f2p_driverId', 'drivers')
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+
+rank=34  auc_roc=0.636607  hop=4  sort_by=auc_roc  path=[8, 9, 14, 15]
+  decoded (logged order):
+    8 ('qualifying', 'f2p_driverId', 'drivers')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    14 ('results', 'f2p_driverId', 'drivers')
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+  decoded (forward order = reverse(path)): [15, 14, 9, 8]
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+    14 ('results', 'f2p_driverId', 'drivers')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    8 ('qualifying', 'f2p_driverId', 'drivers')
+
+rank=35  auc_roc=0.635714  hop=4  sort_by=auc_roc  path=[6, 9, 14, 15]
+  decoded (logged order):
+    6 ('qualifying', 'f2p_raceId', 'races')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    14 ('results', 'f2p_driverId', 'drivers')
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+  decoded (forward order = reverse(path)): [15, 14, 9, 6]
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+    14 ('results', 'f2p_driverId', 'drivers')
+    9 ('drivers', 'rev_f2p_driverId', 'qualifying')
+    6 ('qualifying', 'f2p_raceId', 'races')
+
+rank=36  auc_roc=0.633036  hop=1  sort_by=auc_roc  path=[3]
+  decoded (logged order):
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+  decoded (forward order = reverse(path)): [3]
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+
+rank=37  auc_roc=0.628571  hop=2  sort_by=auc_roc  path=[2, 3]
+  decoded (logged order):
+    2 ('standings', 'f2p_driverId', 'drivers')
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+  decoded (forward order = reverse(path)): [3, 2]
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+    2 ('standings', 'f2p_driverId', 'drivers')
+
+rank=38  auc_roc=0.626786  hop=3  sort_by=auc_roc  path=[4, 0, 3]
+  decoded (logged order):
+    4 ('races', 'f2p_circuitId', 'circuits')
+    0 ('standings', 'f2p_raceId', 'races')
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+  decoded (forward order = reverse(path)): [3, 0, 4]
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+    0 ('standings', 'f2p_raceId', 'races')
+    4 ('races', 'f2p_circuitId', 'circuits')
+
+rank=39  auc_roc=0.615179  hop=1  sort_by=auc_roc  path=[15]
+  decoded (logged order):
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+  decoded (forward order = reverse(path)): [15]
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+
+rank=40  auc_roc=0.608036  hop=3  sort_by=auc_roc  path=[7, 0, 3]
+  decoded (logged order):
+    7 ('races', 'rev_f2p_raceId', 'qualifying')
+    0 ('standings', 'f2p_raceId', 'races')
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+  decoded (forward order = reverse(path)): [3, 0, 7]
+    3 ('drivers', 'rev_f2p_driverId', 'standings')
+    0 ('standings', 'f2p_raceId', 'races')
+    7 ('races', 'rev_f2p_raceId', 'qualifying')
+
+rank=41  auc_roc=0.598214  hop=3  sort_by=auc_roc  path=[15, 14, 15]
+  decoded (logged order):
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+    14 ('results', 'f2p_driverId', 'drivers')
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+  decoded (forward order = reverse(path)): [15, 14, 15]
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+    14 ('results', 'f2p_driverId', 'drivers')
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+
+rank=42  auc_roc=0.590179  hop=2  sort_by=auc_roc  path=[12, 15]
+  decoded (logged order):
+    12 ('results', 'f2p_raceId', 'races')
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+  decoded (forward order = reverse(path)): [15, 12]
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+    12 ('results', 'f2p_raceId', 'races')
+
+rank=43  auc_roc=0.588393  hop=2  sort_by=auc_roc  path=[16, 15]
+  decoded (logged order):
+    16 ('results', 'f2p_constructorId', 'constructors')
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+  decoded (forward order = reverse(path)): [15, 16]
+    15 ('drivers', 'rev_f2p_driverId', 'results')
+    16 ('results', 'f2p_constructorId', 'constructors')
+

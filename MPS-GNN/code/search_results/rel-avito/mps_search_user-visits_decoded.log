@@ -1,0 +1,404 @@
+rank=1  auc_roc=0.694444  hop=3  sort_by=auc_roc  path=[1, 12, 13]
+  decoded (logged order):
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+    12 ('SearchInfo', 'f2p_UserID', 'UserInfo')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+  decoded (forward order = reverse(path)): [13, 12, 1]
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    12 ('SearchInfo', 'f2p_UserID', 'UserInfo')
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+
+rank=2  auc_roc=0.672222  hop=4  sort_by=auc_roc  path=[10, 9, 0, 1]
+  decoded (logged order):
+    10 ('PhoneRequestsStream', 'f2p_AdID', 'AdsInfo')
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+    0 ('VisitStream', 'f2p_UserID', 'UserInfo')
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+  decoded (forward order = reverse(path)): [1, 0, 9, 10]
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+    0 ('VisitStream', 'f2p_UserID', 'UserInfo')
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+    10 ('PhoneRequestsStream', 'f2p_AdID', 'AdsInfo')
+
+rank=3  auc_roc=0.672222  hop=4  sort_by=auc_roc  path=[8, 9, 0, 1]
+  decoded (logged order):
+    8 ('PhoneRequestsStream', 'f2p_UserID', 'UserInfo')
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+    0 ('VisitStream', 'f2p_UserID', 'UserInfo')
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+  decoded (forward order = reverse(path)): [1, 0, 9, 8]
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+    0 ('VisitStream', 'f2p_UserID', 'UserInfo')
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+    8 ('PhoneRequestsStream', 'f2p_UserID', 'UserInfo')
+
+rank=4  auc_roc=0.672222  hop=4  sort_by=auc_roc  path=[14, 13, 0, 1]
+  decoded (logged order):
+    14 ('SearchInfo', 'f2p_LocationID', 'Location')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    0 ('VisitStream', 'f2p_UserID', 'UserInfo')
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+  decoded (forward order = reverse(path)): [1, 0, 13, 14]
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+    0 ('VisitStream', 'f2p_UserID', 'UserInfo')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    14 ('SearchInfo', 'f2p_LocationID', 'Location')
+
+rank=5  auc_roc=0.666667  hop=4  sort_by=auc_roc  path=[0, 1, 12, 13]
+  decoded (logged order):
+    0 ('VisitStream', 'f2p_UserID', 'UserInfo')
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+    12 ('SearchInfo', 'f2p_UserID', 'UserInfo')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+  decoded (forward order = reverse(path)): [13, 12, 1, 0]
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    12 ('SearchInfo', 'f2p_UserID', 'UserInfo')
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+    0 ('VisitStream', 'f2p_UserID', 'UserInfo')
+
+rank=6  auc_roc=0.661111  hop=3  sort_by=auc_roc  path=[9, 0, 1]
+  decoded (logged order):
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+    0 ('VisitStream', 'f2p_UserID', 'UserInfo')
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+  decoded (forward order = reverse(path)): [1, 0, 9]
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+    0 ('VisitStream', 'f2p_UserID', 'UserInfo')
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+
+rank=7  auc_roc=0.661111  hop=2  sort_by=auc_roc  path=[0, 1]
+  decoded (logged order):
+    0 ('VisitStream', 'f2p_UserID', 'UserInfo')
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+  decoded (forward order = reverse(path)): [1, 0]
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+    0 ('VisitStream', 'f2p_UserID', 'UserInfo')
+
+rank=8  auc_roc=0.661111  hop=4  sort_by=auc_roc  path=[5, 13, 0, 1]
+  decoded (logged order):
+    5 ('SearchInfo', 'rev_f2p_SearchID', 'SearchStream')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    0 ('VisitStream', 'f2p_UserID', 'UserInfo')
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+  decoded (forward order = reverse(path)): [1, 0, 13, 5]
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+    0 ('VisitStream', 'f2p_UserID', 'UserInfo')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    5 ('SearchInfo', 'rev_f2p_SearchID', 'SearchStream')
+
+rank=9  auc_roc=0.655556  hop=3  sort_by=auc_roc  path=[13, 8, 9]
+  decoded (logged order):
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    8 ('PhoneRequestsStream', 'f2p_UserID', 'UserInfo')
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+  decoded (forward order = reverse(path)): [9, 8, 13]
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+    8 ('PhoneRequestsStream', 'f2p_UserID', 'UserInfo')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+
+rank=10  auc_roc=0.655556  hop=4  sort_by=auc_roc  path=[16, 13, 0, 1]
+  decoded (logged order):
+    16 ('SearchInfo', 'f2p_CategoryID', 'Category')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    0 ('VisitStream', 'f2p_UserID', 'UserInfo')
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+  decoded (forward order = reverse(path)): [1, 0, 13, 16]
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+    0 ('VisitStream', 'f2p_UserID', 'UserInfo')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    16 ('SearchInfo', 'f2p_CategoryID', 'Category')
+
+rank=11  auc_roc=0.650000  hop=3  sort_by=auc_roc  path=[13, 12, 13]
+  decoded (logged order):
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    12 ('SearchInfo', 'f2p_UserID', 'UserInfo')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+  decoded (forward order = reverse(path)): [13, 12, 13]
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    12 ('SearchInfo', 'f2p_UserID', 'UserInfo')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+
+rank=12  auc_roc=0.650000  hop=3  sort_by=auc_roc  path=[11, 2, 1]
+  decoded (logged order):
+    11 ('AdsInfo', 'rev_f2p_AdID', 'PhoneRequestsStream')
+    2 ('VisitStream', 'f2p_AdID', 'AdsInfo')
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+  decoded (forward order = reverse(path)): [1, 2, 11]
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+    2 ('VisitStream', 'f2p_AdID', 'AdsInfo')
+    11 ('AdsInfo', 'rev_f2p_AdID', 'PhoneRequestsStream')
+
+rank=13  auc_roc=0.644444  hop=3  sort_by=auc_roc  path=[13, 0, 1]
+  decoded (logged order):
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    0 ('VisitStream', 'f2p_UserID', 'UserInfo')
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+  decoded (forward order = reverse(path)): [1, 0, 13]
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+    0 ('VisitStream', 'f2p_UserID', 'UserInfo')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+
+rank=14  auc_roc=0.644444  hop=4  sort_by=auc_roc  path=[12, 13, 8, 9]
+  decoded (logged order):
+    12 ('SearchInfo', 'f2p_UserID', 'UserInfo')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    8 ('PhoneRequestsStream', 'f2p_UserID', 'UserInfo')
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+  decoded (forward order = reverse(path)): [9, 8, 13, 12]
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+    8 ('PhoneRequestsStream', 'f2p_UserID', 'UserInfo')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    12 ('SearchInfo', 'f2p_UserID', 'UserInfo')
+
+rank=15  auc_roc=0.644444  hop=3  sort_by=auc_roc  path=[7, 2, 1]
+  decoded (logged order):
+    7 ('AdsInfo', 'rev_f2p_AdID', 'SearchStream')
+    2 ('VisitStream', 'f2p_AdID', 'AdsInfo')
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+  decoded (forward order = reverse(path)): [1, 2, 7]
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+    2 ('VisitStream', 'f2p_AdID', 'AdsInfo')
+    7 ('AdsInfo', 'rev_f2p_AdID', 'SearchStream')
+
+rank=16  auc_roc=0.638889  hop=1  sort_by=auc_roc  path=[1]
+  decoded (logged order):
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+  decoded (forward order = reverse(path)): [1]
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+
+rank=17  auc_roc=0.638889  hop=2  sort_by=auc_roc  path=[16, 13]
+  decoded (logged order):
+    16 ('SearchInfo', 'f2p_CategoryID', 'Category')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+  decoded (forward order = reverse(path)): [13, 16]
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    16 ('SearchInfo', 'f2p_CategoryID', 'Category')
+
+rank=18  auc_roc=0.638889  hop=3  sort_by=auc_roc  path=[15, 14, 13]
+  decoded (logged order):
+    15 ('Location', 'rev_f2p_LocationID', 'SearchInfo')
+    14 ('SearchInfo', 'f2p_LocationID', 'Location')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+  decoded (forward order = reverse(path)): [13, 14, 15]
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    14 ('SearchInfo', 'f2p_LocationID', 'Location')
+    15 ('Location', 'rev_f2p_LocationID', 'SearchInfo')
+
+rank=19  auc_roc=0.638889  hop=3  sort_by=auc_roc  path=[1, 8, 9]
+  decoded (logged order):
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+    8 ('PhoneRequestsStream', 'f2p_UserID', 'UserInfo')
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+  decoded (forward order = reverse(path)): [9, 8, 1]
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+    8 ('PhoneRequestsStream', 'f2p_UserID', 'UserInfo')
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+
+rank=20  auc_roc=0.638889  hop=4  sort_by=auc_roc  path=[14, 13, 12, 13]
+  decoded (logged order):
+    14 ('SearchInfo', 'f2p_LocationID', 'Location')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    12 ('SearchInfo', 'f2p_UserID', 'UserInfo')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+  decoded (forward order = reverse(path)): [13, 12, 13, 14]
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    12 ('SearchInfo', 'f2p_UserID', 'UserInfo')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    14 ('SearchInfo', 'f2p_LocationID', 'Location')
+
+rank=21  auc_roc=0.638889  hop=3  sort_by=auc_roc  path=[17, 16, 13]
+  decoded (logged order):
+    17 ('Category', 'rev_f2p_CategoryID', 'SearchInfo')
+    16 ('SearchInfo', 'f2p_CategoryID', 'Category')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+  decoded (forward order = reverse(path)): [13, 16, 17]
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    16 ('SearchInfo', 'f2p_CategoryID', 'Category')
+    17 ('Category', 'rev_f2p_CategoryID', 'SearchInfo')
+
+rank=22  auc_roc=0.638889  hop=3  sort_by=auc_roc  path=[18, 2, 1]
+  decoded (logged order):
+    18 ('AdsInfo', 'f2p_LocationID', 'Location')
+    2 ('VisitStream', 'f2p_AdID', 'AdsInfo')
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+  decoded (forward order = reverse(path)): [1, 2, 18]
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+    2 ('VisitStream', 'f2p_AdID', 'AdsInfo')
+    18 ('AdsInfo', 'f2p_LocationID', 'Location')
+
+rank=23  auc_roc=0.638889  hop=4  sort_by=auc_roc  path=[8, 11, 2, 1]
+  decoded (logged order):
+    8 ('PhoneRequestsStream', 'f2p_UserID', 'UserInfo')
+    11 ('AdsInfo', 'rev_f2p_AdID', 'PhoneRequestsStream')
+    2 ('VisitStream', 'f2p_AdID', 'AdsInfo')
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+  decoded (forward order = reverse(path)): [1, 2, 11, 8]
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+    2 ('VisitStream', 'f2p_AdID', 'AdsInfo')
+    11 ('AdsInfo', 'rev_f2p_AdID', 'PhoneRequestsStream')
+    8 ('PhoneRequestsStream', 'f2p_UserID', 'UserInfo')
+
+rank=24  auc_roc=0.633333  hop=2  sort_by=auc_roc  path=[2, 1]
+  decoded (logged order):
+    2 ('VisitStream', 'f2p_AdID', 'AdsInfo')
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+  decoded (forward order = reverse(path)): [1, 2]
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+    2 ('VisitStream', 'f2p_AdID', 'AdsInfo')
+
+rank=25  auc_roc=0.633333  hop=1  sort_by=auc_roc  path=[13]
+  decoded (logged order):
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+  decoded (forward order = reverse(path)): [13]
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+
+rank=26  auc_roc=0.633333  hop=4  sort_by=auc_roc  path=[2, 1, 12, 13]
+  decoded (logged order):
+    2 ('VisitStream', 'f2p_AdID', 'AdsInfo')
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+    12 ('SearchInfo', 'f2p_UserID', 'UserInfo')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+  decoded (forward order = reverse(path)): [13, 12, 1, 2]
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    12 ('SearchInfo', 'f2p_UserID', 'UserInfo')
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+    2 ('VisitStream', 'f2p_AdID', 'AdsInfo')
+
+rank=27  auc_roc=0.633333  hop=4  sort_by=auc_roc  path=[16, 13, 8, 9]
+  decoded (logged order):
+    16 ('SearchInfo', 'f2p_CategoryID', 'Category')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    8 ('PhoneRequestsStream', 'f2p_UserID', 'UserInfo')
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+  decoded (forward order = reverse(path)): [9, 8, 13, 16]
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+    8 ('PhoneRequestsStream', 'f2p_UserID', 'UserInfo')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    16 ('SearchInfo', 'f2p_CategoryID', 'Category')
+
+rank=28  auc_roc=0.627778  hop=3  sort_by=auc_roc  path=[1, 0, 1]
+  decoded (logged order):
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+    0 ('VisitStream', 'f2p_UserID', 'UserInfo')
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+  decoded (forward order = reverse(path)): [1, 0, 1]
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+    0 ('VisitStream', 'f2p_UserID', 'UserInfo')
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+
+rank=29  auc_roc=0.627778  hop=3  sort_by=auc_roc  path=[19, 14, 13]
+  decoded (logged order):
+    19 ('Location', 'rev_f2p_LocationID', 'AdsInfo')
+    14 ('SearchInfo', 'f2p_LocationID', 'Location')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+  decoded (forward order = reverse(path)): [13, 14, 19]
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    14 ('SearchInfo', 'f2p_LocationID', 'Location')
+    19 ('Location', 'rev_f2p_LocationID', 'AdsInfo')
+
+rank=30  auc_roc=0.627778  hop=4  sort_by=auc_roc  path=[5, 13, 12, 13]
+  decoded (logged order):
+    5 ('SearchInfo', 'rev_f2p_SearchID', 'SearchStream')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    12 ('SearchInfo', 'f2p_UserID', 'UserInfo')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+  decoded (forward order = reverse(path)): [13, 12, 13, 5]
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    12 ('SearchInfo', 'f2p_UserID', 'UserInfo')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    5 ('SearchInfo', 'rev_f2p_SearchID', 'SearchStream')
+
+rank=31  auc_roc=0.627778  hop=4  sort_by=auc_roc  path=[10, 11, 2, 1]
+  decoded (logged order):
+    10 ('PhoneRequestsStream', 'f2p_AdID', 'AdsInfo')
+    11 ('AdsInfo', 'rev_f2p_AdID', 'PhoneRequestsStream')
+    2 ('VisitStream', 'f2p_AdID', 'AdsInfo')
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+  decoded (forward order = reverse(path)): [1, 2, 11, 10]
+    1 ('UserInfo', 'rev_f2p_UserID', 'VisitStream')
+    2 ('VisitStream', 'f2p_AdID', 'AdsInfo')
+    11 ('AdsInfo', 'rev_f2p_AdID', 'PhoneRequestsStream')
+    10 ('PhoneRequestsStream', 'f2p_AdID', 'AdsInfo')
+
+rank=32  auc_roc=0.627778  hop=4  sort_by=auc_roc  path=[16, 13, 12, 13]
+  decoded (logged order):
+    16 ('SearchInfo', 'f2p_CategoryID', 'Category')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    12 ('SearchInfo', 'f2p_UserID', 'UserInfo')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+  decoded (forward order = reverse(path)): [13, 12, 13, 16]
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    12 ('SearchInfo', 'f2p_UserID', 'UserInfo')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    16 ('SearchInfo', 'f2p_CategoryID', 'Category')
+
+rank=33  auc_roc=0.622222  hop=2  sort_by=auc_roc  path=[12, 13]
+  decoded (logged order):
+    12 ('SearchInfo', 'f2p_UserID', 'UserInfo')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+  decoded (forward order = reverse(path)): [13, 12]
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    12 ('SearchInfo', 'f2p_UserID', 'UserInfo')
+
+rank=34  auc_roc=0.611111  hop=3  sort_by=auc_roc  path=[9, 12, 13]
+  decoded (logged order):
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+    12 ('SearchInfo', 'f2p_UserID', 'UserInfo')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+  decoded (forward order = reverse(path)): [13, 12, 9]
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    12 ('SearchInfo', 'f2p_UserID', 'UserInfo')
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+
+rank=35  auc_roc=0.611111  hop=4  sort_by=auc_roc  path=[14, 13, 8, 9]
+  decoded (logged order):
+    14 ('SearchInfo', 'f2p_LocationID', 'Location')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    8 ('PhoneRequestsStream', 'f2p_UserID', 'UserInfo')
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+  decoded (forward order = reverse(path)): [9, 8, 13, 14]
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+    8 ('PhoneRequestsStream', 'f2p_UserID', 'UserInfo')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    14 ('SearchInfo', 'f2p_LocationID', 'Location')
+
+rank=36  auc_roc=0.611111  hop=2  sort_by=auc_roc  path=[14, 13]
+  decoded (logged order):
+    14 ('SearchInfo', 'f2p_LocationID', 'Location')
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+  decoded (forward order = reverse(path)): [13, 14]
+    13 ('UserInfo', 'rev_f2p_UserID', 'SearchInfo')
+    14 ('SearchInfo', 'f2p_LocationID', 'Location')
+
+rank=37  auc_roc=0.550000  hop=2  sort_by=auc_roc  path=[8, 9]
+  decoded (logged order):
+    8 ('PhoneRequestsStream', 'f2p_UserID', 'UserInfo')
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+  decoded (forward order = reverse(path)): [9, 8]
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+    8 ('PhoneRequestsStream', 'f2p_UserID', 'UserInfo')
+
+rank=38  auc_roc=0.544444  hop=2  sort_by=auc_roc  path=[10, 9]
+  decoded (logged order):
+    10 ('PhoneRequestsStream', 'f2p_AdID', 'AdsInfo')
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+  decoded (forward order = reverse(path)): [9, 10]
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+    10 ('PhoneRequestsStream', 'f2p_AdID', 'AdsInfo')
+
+rank=39  auc_roc=0.544444  hop=3  sort_by=auc_roc  path=[9, 8, 9]
+  decoded (logged order):
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+    8 ('PhoneRequestsStream', 'f2p_UserID', 'UserInfo')
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+  decoded (forward order = reverse(path)): [9, 8, 9]
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+    8 ('PhoneRequestsStream', 'f2p_UserID', 'UserInfo')
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+
+rank=40  auc_roc=0.533333  hop=1  sort_by=auc_roc  path=[9]
+  decoded (logged order):
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+  decoded (forward order = reverse(path)): [9]
+    9 ('UserInfo', 'rev_f2p_UserID', 'PhoneRequestsStream')
+

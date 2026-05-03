@@ -1,0 +1,176 @@
+[RUN_START] 2026-03-06T13:24:42.267721
+DATASET_NAME=rel-ratebeer
+TASK_NAME=user-churn
+NUM_LAYERS=4
+num_neighbors=[32, 32, 32, 32]
+train_sample: n_pos=250, n_neg=250
+val_sample:   n_pos=60, n_neg=60
+SEARCH_L_MAX=3
+SEARCH_K=3
+SEARCH_BEAM_WIDTH=6
+SEARCH_SAMPLING_SIZE=1
+SEARCH_RANK_METRIC=auc_roc
+------------------------------------------------------------
+2026-03-06 13:24:42,274 - INFO - [MPS] rank_metric=auc_roc (used for beam pruning, ranking, and top-k combination checks)
+2026-03-06 13:24:42,321 - INFO - [MPS] #candidate relations (connected to targets): 4
+2026-03-06 13:38:48,255 - INFO - [MPS][hop=1] best relations (lower score loss is better):
+2026-03-06 13:38:48,256 - INFO -   rel=15   loss=1.60205e-09 name=('users', 'rev_f2p_user_id', 'beer_ratings')
+2026-03-06 13:38:48,256 - INFO -   rel=3    loss=7922.56 name=('users', 'rev_f2p_user_id', 'place_ratings')
+2026-03-06 13:38:48,256 - INFO -   rel=11   loss=10212 name=('users', 'rev_f2p_user_id', 'favorites')
+2026-03-06 13:38:48,256 - INFO -   rel=33   loss=10744.1 name=('users', 'rev_f2p_user_id', 'availability')
+2026-03-06 13:38:48,256 - INFO - [MPS][hop=1] worst relations:
+2026-03-06 13:38:48,256 - INFO -   rel=15   loss=1.60205e-09 name=('users', 'rev_f2p_user_id', 'beer_ratings')
+2026-03-06 13:38:48,256 - INFO -   rel=3    loss=7922.56 name=('users', 'rev_f2p_user_id', 'place_ratings')
+2026-03-06 13:38:48,256 - INFO -   rel=11   loss=10212 name=('users', 'rev_f2p_user_id', 'favorites')
+2026-03-06 13:38:48,256 - INFO -   rel=33   loss=10744.1 name=('users', 'rev_f2p_user_id', 'availability')
+2026-03-06 13:38:48,256 - INFO - [MPS][hop=1] evaluating top-3 seeds with mpgnn() on split=val
+2026-03-06 13:53:30,230 - INFO - [MPS][hop=2] extending mp=[15] | #candidates=2 | taking top-2
+2026-03-06 13:53:30,231 - INFO - [MPS][hop=2] best extensions for mp=[15]:
+2026-03-06 13:53:30,231 - INFO -   rel=14   loss=543 name=('beer_ratings', 'f2p_user_id', 'users')
+2026-03-06 13:53:30,231 - INFO -   rel=16   loss=6738.5 name=('beer_ratings', 'f2p_beer_id', 'beers')
+2026-03-06 13:53:30,231 - INFO - [MPS][hop=2] worst extensions for mp=[15]:
+2026-03-06 13:53:30,231 - INFO -   rel=14   loss=543 name=('beer_ratings', 'f2p_user_id', 'users')
+2026-03-06 13:53:30,231 - INFO -   rel=16   loss=6738.5 name=('beer_ratings', 'f2p_beer_id', 'beers')
+2026-03-06 13:59:40,512 - INFO - [MPS][hop=2] extending mp=[3] | #candidates=2 | taking top-2
+2026-03-06 13:59:40,513 - INFO - [MPS][hop=2] best extensions for mp=[3]:
+2026-03-06 13:59:40,513 - INFO -   rel=2    loss=0 name=('place_ratings', 'f2p_user_id', 'users')
+2026-03-06 13:59:40,513 - INFO -   rel=0    loss=386.434 name=('place_ratings', 'f2p_place_id', 'places')
+2026-03-06 13:59:40,513 - INFO - [MPS][hop=2] worst extensions for mp=[3]:
+2026-03-06 13:59:40,513 - INFO -   rel=2    loss=0 name=('place_ratings', 'f2p_user_id', 'users')
+2026-03-06 13:59:40,513 - INFO -   rel=0    loss=386.434 name=('place_ratings', 'f2p_place_id', 'places')
+2026-03-06 14:05:41,435 - INFO - [MPS][hop=2] extending mp=[11] | #candidates=1 | taking top-1
+2026-03-06 14:05:41,435 - INFO - [MPS][hop=2] best extensions for mp=[11]:
+2026-03-06 14:05:41,435 - INFO -   rel=10   loss=0 name=('favorites', 'f2p_user_id', 'users')
+2026-03-06 14:05:41,435 - INFO - [MPS][hop=2] worst extensions for mp=[11]:
+2026-03-06 14:05:41,435 - INFO -   rel=10   loss=0 name=('favorites', 'f2p_user_id', 'users')
+2026-03-06 14:16:37,975 - INFO - [MPS][hop=3] extending mp=[14, 15] | #candidates=4 | taking top-3
+2026-03-06 14:16:37,976 - INFO - [MPS][hop=3] best extensions for mp=[14, 15]:
+2026-03-06 14:16:37,976 - INFO -   rel=11   loss=8952.7 name=('users', 'rev_f2p_user_id', 'favorites')
+2026-03-06 14:16:37,976 - INFO -   rel=33   loss=9123.23 name=('users', 'rev_f2p_user_id', 'availability')
+2026-03-06 14:16:37,976 - INFO -   rel=15   loss=11386.4 name=('users', 'rev_f2p_user_id', 'beer_ratings')
+2026-03-06 14:16:37,976 - INFO -   rel=3    loss=13188.8 name=('users', 'rev_f2p_user_id', 'place_ratings')
+2026-03-06 14:16:37,976 - INFO - [MPS][hop=3] worst extensions for mp=[14, 15]:
+2026-03-06 14:16:37,976 - INFO -   rel=11   loss=8952.7 name=('users', 'rev_f2p_user_id', 'favorites')
+2026-03-06 14:16:37,976 - INFO -   rel=33   loss=9123.23 name=('users', 'rev_f2p_user_id', 'availability')
+2026-03-06 14:16:37,976 - INFO -   rel=15   loss=11386.4 name=('users', 'rev_f2p_user_id', 'beer_ratings')
+2026-03-06 14:16:37,976 - INFO -   rel=3    loss=13188.8 name=('users', 'rev_f2p_user_id', 'place_ratings')
+2026-03-06 14:34:45,456 - INFO - [MPS][hop=3] extending mp=[16, 15] | #candidates=6 | taking top-3
+2026-03-06 14:34:45,457 - INFO - [MPS][hop=3] best extensions for mp=[16, 15]:
+2026-03-06 14:34:45,457 - INFO -   rel=9    loss=3254 name=('beers', 'rev_f2p_beer_id', 'beer_upcs')
+2026-03-06 14:34:45,457 - INFO -   rel=4    loss=7063.84 name=('beers', 'f2p_brewer_id', 'brewers')
+2026-03-06 14:34:45,457 - INFO -   rel=6    loss=7194.89 name=('beers', 'f2p_style_id', 'beer_styles')
+2026-03-06 14:34:45,457 - INFO -   rel=27   loss=7231.71 name=('beers', 'rev_f2p_beer_id', 'availability')
+2026-03-06 14:34:45,457 - INFO -   rel=17   loss=9247 name=('beers', 'rev_f2p_beer_id', 'beer_ratings')
+2026-03-06 14:34:45,457 - INFO -   rel=13   loss=32099.1 name=('beers', 'rev_f2p_beer_id', 'favorites')
+2026-03-06 14:34:45,457 - INFO - [MPS][hop=3] worst extensions for mp=[16, 15]:
+2026-03-06 14:34:45,457 - INFO -   rel=9    loss=3254 name=('beers', 'rev_f2p_beer_id', 'beer_upcs')
+2026-03-06 14:34:45,457 - INFO -   rel=4    loss=7063.84 name=('beers', 'f2p_brewer_id', 'brewers')
+2026-03-06 14:34:45,457 - INFO -   rel=6    loss=7194.89 name=('beers', 'f2p_style_id', 'beer_styles')
+2026-03-06 14:34:45,457 - INFO -   rel=27   loss=7231.71 name=('beers', 'rev_f2p_beer_id', 'availability')
+2026-03-06 14:34:45,457 - INFO -   rel=17   loss=9247 name=('beers', 'rev_f2p_beer_id', 'beer_ratings')
+2026-03-06 14:34:45,457 - INFO -   rel=13   loss=32099.1 name=('beers', 'rev_f2p_beer_id', 'favorites')
+2026-03-06 14:46:35,993 - INFO - [MPS][hop=3] extending mp=[2, 3] | #candidates=3 | taking top-3
+2026-03-06 14:46:35,993 - INFO - [MPS][hop=3] best extensions for mp=[2, 3]:
+2026-03-06 14:46:35,993 - INFO -   rel=3    loss=304 name=('users', 'rev_f2p_user_id', 'place_ratings')
+2026-03-06 14:46:35,994 - INFO -   rel=33   loss=399 name=('users', 'rev_f2p_user_id', 'availability')
+2026-03-06 14:46:35,994 - INFO -   rel=15   loss=982 name=('users', 'rev_f2p_user_id', 'beer_ratings')
+2026-03-06 14:46:35,994 - INFO - [MPS][hop=3] worst extensions for mp=[2, 3]:
+2026-03-06 14:46:35,994 - INFO -   rel=3    loss=304 name=('users', 'rev_f2p_user_id', 'place_ratings')
+2026-03-06 14:46:35,994 - INFO -   rel=33   loss=399 name=('users', 'rev_f2p_user_id', 'availability')
+2026-03-06 14:46:35,994 - INFO -   rel=15   loss=982 name=('users', 'rev_f2p_user_id', 'beer_ratings')
+2026-03-06 14:59:14,857 - INFO - [MPS][hop=3] extending mp=[0, 3] | #candidates=4 | taking top-3
+2026-03-06 14:59:14,857 - INFO - [MPS][hop=3] best extensions for mp=[0, 3]:
+2026-03-06 14:59:14,857 - INFO -   rel=1    loss=386 name=('places', 'rev_f2p_place_id', 'place_ratings')
+2026-03-06 14:59:14,857 - INFO -   rel=20   loss=472.001 name=('places', 'f2p_state_id', 'states')
+2026-03-06 14:59:14,857 - INFO -   rel=24   loss=476.931 name=('places', 'f2p_country_id', 'countries')
+2026-03-06 14:59:14,857 - INFO -   rel=29   loss=544.014 name=('places', 'rev_f2p_place_id', 'availability')
+2026-03-06 14:59:14,857 - INFO - [MPS][hop=3] worst extensions for mp=[0, 3]:
+2026-03-06 14:59:14,857 - INFO -   rel=1    loss=386 name=('places', 'rev_f2p_place_id', 'place_ratings')
+2026-03-06 14:59:14,857 - INFO -   rel=20   loss=472.001 name=('places', 'f2p_state_id', 'states')
+2026-03-06 14:59:14,857 - INFO -   rel=24   loss=476.931 name=('places', 'f2p_country_id', 'countries')
+2026-03-06 14:59:14,857 - INFO -   rel=29   loss=544.014 name=('places', 'rev_f2p_place_id', 'availability')
+2026-03-06 15:11:12,998 - INFO - [MPS][hop=3] extending mp=[10, 11] | #candidates=2 | taking top-2
+2026-03-06 15:11:12,999 - INFO - [MPS][hop=3] best extensions for mp=[10, 11]:
+2026-03-06 15:11:12,999 - INFO -   rel=11   loss=0 name=('users', 'rev_f2p_user_id', 'favorites')
+2026-03-06 15:11:12,999 - INFO -   rel=15   loss=0 name=('users', 'rev_f2p_user_id', 'beer_ratings')
+2026-03-06 15:11:12,999 - INFO - [MPS][hop=3] worst extensions for mp=[10, 11]:
+2026-03-06 15:11:12,999 - INFO -   rel=11   loss=0 name=('users', 'rev_f2p_user_id', 'favorites')
+2026-03-06 15:11:12,999 - INFO -   rel=15   loss=0 name=('users', 'rev_f2p_user_id', 'beer_ratings')
+2026-03-06 15:13:31,572 - INFO - [MPS] beam prune -> frontier=6 (beam_width=6, by auc_roc)
+2026-03-06 15:28:54,835 - INFO - [MPS][hop=4] extending mp=[15, 14, 15] | #candidates=2 | taking top-2
+2026-03-06 15:28:54,836 - INFO - [MPS][hop=4] best extensions for mp=[15, 14, 15]:
+2026-03-06 15:28:54,836 - INFO -   rel=16   loss=9732.99 name=('beer_ratings', 'f2p_beer_id', 'beers')
+2026-03-06 15:28:54,836 - INFO -   rel=14   loss=41721 name=('beer_ratings', 'f2p_user_id', 'users')
+2026-03-06 15:28:54,836 - INFO - [MPS][hop=4] worst extensions for mp=[15, 14, 15]:
+2026-03-06 15:28:54,836 - INFO -   rel=16   loss=9732.99 name=('beer_ratings', 'f2p_beer_id', 'beers')
+2026-03-06 15:28:54,836 - INFO -   rel=14   loss=41721 name=('beer_ratings', 'f2p_user_id', 'users')
+2026-03-06 15:45:32,185 - INFO - [MPS][hop=4] extending mp=[11, 14, 15] | #candidates=1 | taking top-1
+2026-03-06 15:45:32,186 - INFO - [MPS][hop=4] best extensions for mp=[11, 14, 15]:
+2026-03-06 15:45:32,186 - INFO -   rel=10   loss=0 name=('favorites', 'f2p_user_id', 'users')
+2026-03-06 15:45:32,186 - INFO - [MPS][hop=4] worst extensions for mp=[11, 14, 15]:
+2026-03-06 15:45:32,186 - INFO -   rel=10   loss=0 name=('favorites', 'f2p_user_id', 'users')
+2026-03-06 16:03:21,025 - INFO - [MPS][hop=4] extending mp=[4, 16, 15] | #candidates=3 | taking top-3
+2026-03-06 16:03:21,026 - INFO - [MPS][hop=4] best extensions for mp=[4, 16, 15]:
+2026-03-06 16:03:21,026 - INFO -   rel=5    loss=4659 name=('brewers', 'rev_f2p_brewer_id', 'beers')
+2026-03-06 16:03:21,026 - INFO -   rel=38   loss=6947 name=('brewers', 'f2p_state_id', 'states')
+2026-03-06 16:03:21,026 - INFO -   rel=36   loss=6960 name=('brewers', 'f2p_country_id', 'countries')
+2026-03-06 16:03:21,026 - INFO - [MPS][hop=4] worst extensions for mp=[4, 16, 15]:
+2026-03-06 16:03:21,026 - INFO -   rel=5    loss=4659 name=('brewers', 'rev_f2p_brewer_id', 'beers')
+2026-03-06 16:03:21,026 - INFO -   rel=38   loss=6947 name=('brewers', 'f2p_state_id', 'states')
+2026-03-06 16:03:21,026 - INFO -   rel=36   loss=6960 name=('brewers', 'f2p_country_id', 'countries')
+2026-03-06 16:21:53,615 - INFO - [MPS][hop=4] extending mp=[9, 16, 15] | #candidates=1 | taking top-1
+2026-03-06 16:21:53,616 - INFO - [MPS][hop=4] best extensions for mp=[9, 16, 15]:
+2026-03-06 16:21:53,616 - INFO -   rel=8    loss=8849.98 name=('beer_upcs', 'f2p_beer_id', 'beers')
+2026-03-06 16:21:53,616 - INFO - [MPS][hop=4] worst extensions for mp=[9, 16, 15]:
+2026-03-06 16:21:53,616 - INFO -   rel=8    loss=8849.98 name=('beer_upcs', 'f2p_beer_id', 'beers')
+2026-03-06 16:37:57,270 - INFO - [MPS][hop=4] extending mp=[6, 16, 15] | #candidates=1 | taking top-1
+2026-03-06 16:37:57,271 - INFO - [MPS][hop=4] best extensions for mp=[6, 16, 15]:
+2026-03-06 16:37:57,271 - INFO -   rel=7    loss=653 name=('beer_styles', 'rev_f2p_style_id', 'beers')
+2026-03-06 16:37:57,271 - INFO - [MPS][hop=4] worst extensions for mp=[6, 16, 15]:
+2026-03-06 16:37:57,271 - INFO -   rel=7    loss=653 name=('beer_styles', 'rev_f2p_style_id', 'beers')
+2026-03-06 16:53:06,702 - INFO - [MPS][hop=4] extending mp=[33, 14, 15] | #candidates=4 | taking top-3
+2026-03-06 16:53:06,702 - INFO - [MPS][hop=4] best extensions for mp=[33, 14, 15]:
+2026-03-06 16:53:06,702 - INFO -   rel=26   loss=5 name=('availability', 'f2p_beer_id', 'beers')
+2026-03-06 16:53:06,702 - INFO -   rel=28   loss=5 name=('availability', 'f2p_place_id', 'places')
+2026-03-06 16:53:06,702 - INFO -   rel=30   loss=5 name=('availability', 'f2p_country_id', 'countries')
+2026-03-06 16:53:06,702 - INFO -   rel=32   loss=5 name=('availability', 'f2p_user_id', 'users')
+2026-03-06 16:53:06,702 - INFO - [MPS][hop=4] worst extensions for mp=[33, 14, 15]:
+2026-03-06 16:53:06,702 - INFO -   rel=26   loss=5 name=('availability', 'f2p_beer_id', 'beers')
+2026-03-06 16:53:06,702 - INFO -   rel=28   loss=5 name=('availability', 'f2p_place_id', 'places')
+2026-03-06 16:53:06,702 - INFO -   rel=30   loss=5 name=('availability', 'f2p_country_id', 'countries')
+2026-03-06 16:53:06,702 - INFO -   rel=32   loss=5 name=('availability', 'f2p_user_id', 'users')
+2026-03-06 16:57:25,415 - INFO - [MPS] beam prune -> frontier=6 (beam_width=6, by auc_roc)
+2026-03-06 16:57:25,417 - INFO - [MPS] ALL_METAPATHS_SORTED split=val sort_by=auc_roc total=33
+2026-03-06 16:57:25,417 - INFO - (path=[15, 14, 15], hop=3, sort_by=auc_roc) rank=1 auc_roc=0.833333
+2026-03-06 16:57:25,417 - INFO - (path=[16, 15, 14, 15], hop=4, sort_by=auc_roc) rank=2 auc_roc=0.833333
+2026-03-06 16:57:25,417 - INFO - (path=[15], hop=1, sort_by=auc_roc) rank=3 auc_roc=0.825000
+2026-03-06 16:57:25,417 - INFO - (path=[11, 14, 15], hop=3, sort_by=auc_roc) rank=4 auc_roc=0.825000
+2026-03-06 16:57:25,417 - INFO - (path=[4, 16, 15], hop=3, sort_by=auc_roc) rank=5 auc_roc=0.825000
+2026-03-06 16:57:25,417 - INFO - (path=[9, 16, 15], hop=3, sort_by=auc_roc) rank=6 auc_roc=0.825000
+2026-03-06 16:57:25,417 - INFO - (path=[14, 15], hop=2, sort_by=auc_roc) rank=7 auc_roc=0.816667
+2026-03-06 16:57:25,417 - INFO - (path=[36, 4, 16, 15], hop=4, sort_by=auc_roc) rank=8 auc_roc=0.816667
+2026-03-06 16:57:25,417 - INFO - (path=[16, 15], hop=2, sort_by=auc_roc) rank=9 auc_roc=0.816667
+2026-03-06 16:57:25,417 - INFO - (path=[6, 16, 15], hop=3, sort_by=auc_roc) rank=10 auc_roc=0.816667
+2026-03-06 16:57:25,417 - INFO - (path=[8, 9, 16, 15], hop=4, sort_by=auc_roc) rank=11 auc_roc=0.816667
+2026-03-06 16:57:25,417 - INFO - (path=[33, 14, 15], hop=3, sort_by=auc_roc) rank=12 auc_roc=0.808333
+2026-03-06 16:57:25,417 - INFO - (path=[10, 11, 14, 15], hop=4, sort_by=auc_roc) rank=13 auc_roc=0.808333
+2026-03-06 16:57:25,417 - INFO - (path=[38, 4, 16, 15], hop=4, sort_by=auc_roc) rank=14 auc_roc=0.808333
+2026-03-06 16:57:25,417 - INFO - (path=[7, 6, 16, 15], hop=4, sort_by=auc_roc) rank=15 auc_roc=0.808333
+2026-03-06 16:57:25,417 - INFO - (path=[30, 33, 14, 15], hop=4, sort_by=auc_roc) rank=16 auc_roc=0.808333
+2026-03-06 16:57:25,417 - INFO - (path=[15, 2, 3], hop=3, sort_by=auc_roc) rank=17 auc_roc=0.800000
+2026-03-06 16:57:25,417 - INFO - (path=[5, 4, 16, 15], hop=4, sort_by=auc_roc) rank=18 auc_roc=0.800000
+2026-03-06 16:57:25,417 - INFO - (path=[26, 33, 14, 15], hop=4, sort_by=auc_roc) rank=19 auc_roc=0.800000
+2026-03-06 16:57:25,417 - INFO - (path=[28, 33, 14, 15], hop=4, sort_by=auc_roc) rank=20 auc_roc=0.800000
+2026-03-06 16:57:25,417 - INFO - (path=[14, 15, 14, 15], hop=4, sort_by=auc_roc) rank=21 auc_roc=0.783333
+2026-03-06 16:57:25,417 - INFO - (path=[15, 10, 11], hop=3, sort_by=auc_roc) rank=22 auc_roc=0.766667
+2026-03-06 16:57:25,417 - INFO - (path=[11], hop=1, sort_by=auc_roc) rank=23 auc_roc=0.683333
+2026-03-06 16:57:25,417 - INFO - (path=[3], hop=1, sort_by=auc_roc) rank=24 auc_roc=0.675000
+2026-03-06 16:57:25,417 - INFO - (path=[24, 0, 3], hop=3, sort_by=auc_roc) rank=25 auc_roc=0.658333
+2026-03-06 16:57:25,417 - INFO - (path=[11, 10, 11], hop=3, sort_by=auc_roc) rank=26 auc_roc=0.650000
+2026-03-06 16:57:25,417 - INFO - (path=[1, 0, 3], hop=3, sort_by=auc_roc) rank=27 auc_roc=0.650000
+2026-03-06 16:57:25,417 - INFO - (path=[10, 11], hop=2, sort_by=auc_roc) rank=28 auc_roc=0.641667
+2026-03-06 16:57:25,417 - INFO - (path=[2, 3], hop=2, sort_by=auc_roc) rank=29 auc_roc=0.633333
+2026-03-06 16:57:25,417 - INFO - (path=[0, 3], hop=2, sort_by=auc_roc) rank=30 auc_roc=0.633333
+2026-03-06 16:57:25,417 - INFO - (path=[3, 2, 3], hop=3, sort_by=auc_roc) rank=31 auc_roc=0.633333
+2026-03-06 16:57:25,417 - INFO - (path=[33, 2, 3], hop=3, sort_by=auc_roc) rank=32 auc_roc=0.625000
+2026-03-06 16:57:25,417 - INFO - (path=[20, 0, 3], hop=3, sort_by=auc_roc) rank=33 auc_roc=0.616667

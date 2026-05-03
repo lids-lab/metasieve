@@ -1,0 +1,40 @@
+2026-03-04 18:44:19,419 - INFO - (path=[3, 1, 18, 19], hop=4, sort_by=auc_roc) rank=1 auc_roc=0.791071
+2026-03-04 18:44:19,419 - INFO - (path=[5, 1, 18, 19], hop=4, sort_by=auc_roc) rank=2 auc_roc=0.790179
+2026-03-04 18:44:19,419 - INFO - (path=[12, 11, 1], hop=3, sort_by=auc_roc) rank=3 auc_roc=0.777679
+2026-03-04 18:44:19,419 - INFO - (path=[15, 3, 1], hop=3, sort_by=auc_roc) rank=4 auc_roc=0.776786
+2026-03-04 18:44:19,419 - INFO - (path=[4, 1, 18, 19], hop=4, sort_by=auc_roc) rank=5 auc_roc=0.775000
+2026-03-04 18:44:19,419 - INFO - (path=[12, 13], hop=2, sort_by=auc_roc) rank=6 auc_roc=0.774107
+2026-03-04 18:44:19,419 - INFO - (path=[13, 12, 13], hop=3, sort_by=auc_roc) rank=7 auc_roc=0.773214
+2026-03-04 18:44:19,419 - INFO - (path=[23, 1, 0, 1], hop=4, sort_by=auc_roc) rank=8 auc_roc=0.773214
+2026-03-04 18:44:19,419 - INFO - (path=[15, 1, 0, 1], hop=4, sort_by=auc_roc) rank=9 auc_roc=0.772321
+2026-03-04 18:44:19,419 - INFO - (path=[13, 12, 11, 1], hop=4, sort_by=auc_roc) rank=10 auc_roc=0.771429
+2026-03-04 18:44:19,419 - INFO - (path=[1], hop=1, sort_by=auc_roc) rank=11 auc_roc=0.770536
+2026-03-04 18:44:19,419 - INFO - (path=[1, 18, 19], hop=3, sort_by=auc_roc) rank=12 auc_roc=0.770536
+2026-03-04 18:44:19,419 - INFO - (path=[7, 18, 19], hop=3, sort_by=auc_roc) rank=13 auc_roc=0.769643
+2026-03-04 18:44:19,419 - INFO - (path=[1, 0, 1], hop=3, sort_by=auc_roc) rank=14 auc_roc=0.769643
+2026-03-04 18:44:19,419 - INFO - (path=[2, 3, 1], hop=3, sort_by=auc_roc) rank=15 auc_roc=0.768750
+2026-03-04 18:44:19,419 - INFO - (path=[13], hop=1, sort_by=auc_roc) rank=16 auc_roc=0.767857
+2026-03-04 18:44:19,419 - INFO - (path=[10, 13], hop=2, sort_by=auc_roc) rank=17 auc_roc=0.767857
+2026-03-04 18:44:19,419 - INFO - (path=[0, 10, 13], hop=3, sort_by=auc_roc) rank=18 auc_roc=0.767857
+2026-03-04 18:44:19,419 - INFO - (path=[17, 12, 13], hop=3, sort_by=auc_roc) rank=19 auc_roc=0.767857
+2026-03-04 18:44:19,419 - INFO - (path=[12, 13, 12, 13], hop=4, sort_by=auc_roc) rank=20 auc_roc=0.766964
+2026-03-04 18:44:19,419 - INFO - (path=[10, 11, 1], hop=3, sort_by=auc_roc) rank=21 auc_roc=0.766071
+2026-03-04 18:44:19,419 - INFO - (path=[19, 12, 13], hop=3, sort_by=auc_roc) rank=22 auc_roc=0.763393
+2026-03-04 18:44:19,419 - INFO - (path=[21, 10, 13], hop=3, sort_by=auc_roc) rank=23 auc_roc=0.762500
+2026-03-04 18:44:19,419 - INFO - (path=[17, 12, 11, 1], hop=4, sort_by=auc_roc) rank=24 auc_roc=0.761607
+2026-03-04 18:44:19,419 - INFO - (path=[14, 15, 3, 1], hop=4, sort_by=auc_roc) rank=25 auc_roc=0.760714
+2026-03-04 18:44:19,419 - INFO - (path=[11, 3, 1], hop=3, sort_by=auc_roc) rank=26 auc_roc=0.759821
+2026-03-04 18:44:19,419 - INFO - (path=[5, 1, 0, 1], hop=4, sort_by=auc_roc) rank=27 auc_roc=0.759821
+2026-03-04 18:44:19,419 - INFO - (path=[11, 1], hop=2, sort_by=auc_roc) rank=28 auc_roc=0.758929
+2026-03-04 18:44:19,419 - INFO - (path=[13, 0, 1], hop=3, sort_by=auc_roc) rank=29 auc_roc=0.758929
+2026-03-04 18:44:19,419 - INFO - (path=[3, 1], hop=2, sort_by=auc_roc) rank=30 auc_roc=0.758036
+2026-03-04 18:44:19,419 - INFO - (path=[19], hop=1, sort_by=auc_roc) rank=31 auc_roc=0.757143
+2026-03-04 18:44:19,419 - INFO - (path=[0, 1], hop=2, sort_by=auc_roc) rank=32 auc_roc=0.757143
+2026-03-04 18:44:19,419 - INFO - (path=[7, 12, 11, 1], hop=4, sort_by=auc_roc) rank=33 auc_roc=0.755357
+2026-03-04 18:44:19,419 - INFO - (path=[6, 7, 18, 19], hop=4, sort_by=auc_roc) rank=34 auc_roc=0.748214
+2026-03-04 18:44:19,419 - INFO - (path=[18, 19], hop=2, sort_by=auc_roc) rank=35 auc_roc=0.742857
+2026-03-04 18:44:19,419 - INFO - (path=[10, 13, 12, 13], hop=4, sort_by=auc_roc) rank=36 auc_roc=0.740179
+2026-03-04 18:44:19,419 - INFO - (path=[7, 0, 1], hop=3, sort_by=auc_roc) rank=37 auc_roc=0.738393
+2026-03-04 18:44:19,419 - INFO - (path=[9, 10, 13], hop=3, sort_by=auc_roc) rank=38 auc_roc=0.735714
+2026-03-04 18:44:19,419 - INFO - (path=[8, 7, 18, 19], hop=4, sort_by=auc_roc) rank=39 auc_roc=0.729464
+2026-03-04 18:44:19,419 - INFO - (path=[13, 18, 19], hop=3, sort_by=auc_roc) rank=40 auc_roc=0.716071

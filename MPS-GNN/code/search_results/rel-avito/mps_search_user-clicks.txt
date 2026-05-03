@@ -1,0 +1,40 @@
+2026-03-05 01:09:26,103 - INFO - (path=[1, 8, 9], hop=3, sort_by=auc_roc) rank=1 auc_roc=0.627679
+2026-03-05 01:09:26,103 - INFO - (path=[4, 7, 2, 1], hop=4, sort_by=auc_roc) rank=2 auc_roc=0.618750
+2026-03-05 01:09:26,103 - INFO - (path=[5, 13], hop=2, sort_by=auc_roc) rank=3 auc_roc=0.617857
+2026-03-05 01:09:26,103 - INFO - (path=[13, 0, 1], hop=3, sort_by=auc_roc) rank=4 auc_roc=0.616071
+2026-03-05 01:09:26,103 - INFO - (path=[9, 0, 1], hop=3, sort_by=auc_roc) rank=5 auc_roc=0.615179
+2026-03-05 01:09:26,103 - INFO - (path=[16, 13, 0, 1], hop=4, sort_by=auc_roc) rank=6 auc_roc=0.613393
+2026-03-05 01:09:26,103 - INFO - (path=[7, 2, 1], hop=3, sort_by=auc_roc) rank=7 auc_roc=0.606250
+2026-03-05 01:09:26,103 - INFO - (path=[16, 4, 5, 13], hop=4, sort_by=auc_roc) rank=8 auc_roc=0.605357
+2026-03-05 01:09:26,103 - INFO - (path=[2, 1, 8, 9], hop=4, sort_by=auc_roc) rank=9 auc_roc=0.603571
+2026-03-05 01:09:26,103 - INFO - (path=[8, 9], hop=2, sort_by=auc_roc) rank=10 auc_roc=0.602679
+2026-03-05 01:09:26,103 - INFO - (path=[4, 5, 13], hop=3, sort_by=auc_roc) rank=11 auc_roc=0.601786
+2026-03-05 01:09:26,103 - INFO - (path=[8, 9, 0, 1], hop=4, sort_by=auc_roc) rank=12 auc_roc=0.601786
+2026-03-05 01:09:26,103 - INFO - (path=[6, 7, 2, 1], hop=4, sort_by=auc_roc) rank=13 auc_roc=0.600893
+2026-03-05 01:09:26,103 - INFO - (path=[5, 13, 0, 1], hop=4, sort_by=auc_roc) rank=14 auc_roc=0.600000
+2026-03-05 01:09:26,103 - INFO - (path=[5, 4, 5, 13], hop=4, sort_by=auc_roc) rank=15 auc_roc=0.597321
+2026-03-05 01:09:26,103 - INFO - (path=[12, 13], hop=2, sort_by=auc_roc) rank=16 auc_roc=0.592857
+2026-03-05 01:09:26,103 - INFO - (path=[2, 1], hop=2, sort_by=auc_roc) rank=17 auc_roc=0.591071
+2026-03-05 01:09:26,103 - INFO - (path=[0, 1, 8, 9], hop=4, sort_by=auc_roc) rank=18 auc_roc=0.590179
+2026-03-05 01:09:26,103 - INFO - (path=[14, 4, 5, 13], hop=4, sort_by=auc_roc) rank=19 auc_roc=0.590179
+2026-03-05 01:09:26,103 - INFO - (path=[1, 12, 13], hop=3, sort_by=auc_roc) rank=20 auc_roc=0.589286
+2026-03-05 01:09:26,103 - INFO - (path=[0, 1, 12, 13], hop=4, sort_by=auc_roc) rank=21 auc_roc=0.588393
+2026-03-05 01:09:26,103 - INFO - (path=[6, 5, 13], hop=3, sort_by=auc_roc) rank=22 auc_roc=0.585714
+2026-03-05 01:09:26,103 - INFO - (path=[14, 13], hop=2, sort_by=auc_roc) rank=23 auc_roc=0.583929
+2026-03-05 01:09:26,103 - INFO - (path=[9, 12, 13], hop=3, sort_by=auc_roc) rank=24 auc_roc=0.583036
+2026-03-05 01:09:26,103 - INFO - (path=[0, 1], hop=2, sort_by=auc_roc) rank=25 auc_roc=0.582143
+2026-03-05 01:09:26,103 - INFO - (path=[18, 2, 1], hop=3, sort_by=auc_roc) rank=26 auc_roc=0.580357
+2026-03-05 01:09:26,103 - INFO - (path=[20, 2, 1], hop=3, sort_by=auc_roc) rank=27 auc_roc=0.578571
+2026-03-05 01:09:26,103 - INFO - (path=[12, 13, 0, 1], hop=4, sort_by=auc_roc) rank=28 auc_roc=0.575893
+2026-03-05 01:09:26,103 - INFO - (path=[15, 14, 13], hop=3, sort_by=auc_roc) rank=29 auc_roc=0.575893
+2026-03-05 01:09:26,103 - INFO - (path=[10, 9, 0, 1], hop=4, sort_by=auc_roc) rank=30 auc_roc=0.573214
+2026-03-05 01:09:26,103 - INFO - (path=[13], hop=1, sort_by=auc_roc) rank=31 auc_roc=0.572321
+2026-03-05 01:09:26,103 - INFO - (path=[9], hop=1, sort_by=auc_roc) rank=32 auc_roc=0.572321
+2026-03-05 01:09:26,103 - INFO - (path=[2, 1, 12, 13], hop=4, sort_by=auc_roc) rank=33 auc_roc=0.572321
+2026-03-05 01:09:26,103 - INFO - (path=[19, 14, 13], hop=3, sort_by=auc_roc) rank=34 auc_roc=0.571429
+2026-03-05 01:09:26,103 - INFO - (path=[13, 8, 9], hop=3, sort_by=auc_roc) rank=35 auc_roc=0.568750
+2026-03-05 01:09:26,103 - INFO - (path=[13, 12, 13], hop=3, sort_by=auc_roc) rank=36 auc_roc=0.563393
+2026-03-05 01:09:26,103 - INFO - (path=[1], hop=1, sort_by=auc_roc) rank=37 auc_roc=0.560714
+2026-03-05 01:09:26,103 - INFO - (path=[9, 8, 9], hop=3, sort_by=auc_roc) rank=38 auc_roc=0.560714
+2026-03-05 01:09:26,103 - INFO - (path=[1, 0, 1], hop=3, sort_by=auc_roc) rank=39 auc_roc=0.560714
+2026-03-05 01:09:26,103 - INFO - (path=[10, 9], hop=2, sort_by=auc_roc) rank=40 auc_roc=0.554464

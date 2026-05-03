@@ -1,0 +1,27 @@
+from torch_geometric.sampler.base import NumNeighbors
+
+num_neighbors = NumNeighbors({
+    ('badges', 'f2p_UserId', 'users'): [0, 0, 0, 128],
+    ('comments', 'f2p_PostId', 'posts'): [0, 128, 128, 128],
+    ('comments', 'f2p_UserId', 'users'): [128, 0, 0, 0],
+    ('postHistory', 'f2p_PostId', 'posts'): [0, 128, 128, 128],
+    ('postHistory', 'f2p_UserId', 'users'): [128, 0, 0, 128],
+    ('postLinks', 'f2p_PostId', 'posts'): [0, 128, 128, 128],
+    ('postLinks', 'f2p_RelatedPostId', 'posts'): [0, 128, 128, 128],
+    ('posts', 'f2p_AcceptedAnswerId', 'posts'): [0, 128, 128, 128],
+    ('posts', 'f2p_OwnerUserId', 'users'): [128, 0, 0, 128],
+    ('posts', 'f2p_ParentId', 'posts'): [0, 128, 128, 128],
+    ('posts', 'rev_f2p_AcceptedAnswerId', 'posts'): [0, 128, 128, 128],
+    ('posts', 'rev_f2p_ParentId', 'posts'): [0, 128, 128, 128],
+    ('posts', 'rev_f2p_PostId', 'comments'): [0, 128, 0, 0],
+    ('posts', 'rev_f2p_PostId', 'postHistory'): [0, 128, 0, 0],
+    ('posts', 'rev_f2p_PostId', 'postLinks'): [0, 0, 128, 128],
+    ('posts', 'rev_f2p_PostId', 'votes'): [0, 128, 0, 0],
+    ('posts', 'rev_f2p_RelatedPostId', 'postLinks'): [0, 0, 128, 128],
+    ('users', 'rev_f2p_OwnerUserId', 'posts'): [0, 0, 128, 128],
+    ('users', 'rev_f2p_UserId', 'comments'): [0, 0, 128, 128],
+    ('users', 'rev_f2p_UserId', 'postHistory'): [0, 0, 128, 128],
+    ('users', 'rev_f2p_UserId', 'votes'): [0, 0, 128, 128],
+    ('votes', 'f2p_PostId', 'posts'): [0, 128, 128, 128],
+    ('votes', 'f2p_UserId', 'users'): [128, 0, 0, 128],
+})
